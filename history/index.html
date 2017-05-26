@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>The GOTM history</title>
+<meta name="description" content="Describe your website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+  <link href="http://gotm-model.github.io/history/index.xml" rel="alternate" type="application/rss+xml" title="General Ocean Turbulence Model" />
+  <link href="http://gotm-model.github.io/history/index.xml" rel="feed" type="application/rss+xml" title="General Ocean Turbulence Model" />
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">General Ocean Turbulence Model</a></h1>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+      <p class="sidebar-p">Egon og Kaj was here ...</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">General Ocean Turbulence Model</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>The GOTM history</h1>
+         <!---
+title: The GOTM history
+link: http://test.gotm.net/information/early-history/
+author: bolding
+description: 
+post_id: 128
+created: 2015/12/09 10:43:37
+created_gmt: 2015/12/09 10:43:37
+comment_status: closed
+post_name: early-history
+status: publish
+post_type: page
+
+# The GOTM history
+-->
+
+<p>Many people have been giving important impulses to the development of GOTM. The first lines of the first PASCAL code had been programmed in late 1992 by Hans Burchard as part of a Ph.D. project at the Institute of Oceanography at the University of Hamburg, Germany, under the supervision of Jürgen Sündermann and Helmut Baumert. This was the basis for a one-dimensional water column model for simulating the so-called FLEX’76 data in the Northern North Sea. Substantial advice for these modelling activities (such as the introduction to the Patankar trick) came also from Eckard Kleine (Bundesamt für Seeschiffahrt und Hydrographie, Hamburg, Germany) who together with Helmut Baumert had a long time experience in turbulence modelling.</p>
+
+<p>A strong motivation for extending the model code (which at that stage only included the k-epsilon model) came in 1995 from George Mellor who provoked with the statement that he never saw a k-epsilon model (as contrasted to his Mellor-Yamada model) reproducing the Monin-Obukhov similarity theory. In an effort together with Ole Petersen (International Centre of Computational Hydrodynamics, Hørsholm, Denmark) the equivalence of the k-epsilon and the Mellor-Yamada models under certain circumstances and thus the successful reproduction of the Monin-Obukhov similarity theory could be demonstrated. Numerical stability problems occurred when the water column model (now already with a switch for choosing either the k-epsilon or the Mellor-Yamada model) was transferred to FORTRAN in late 1996. It was Boris Kagan who insisted that oscillations in the turbulent macro length scale under very small stable stratification are numerical artifacts and therefore unacceptable. The solution to that problem was finally to use double instead of single precision for the calculations. In a cooperation with Nadia Pinardi and Sergio Castellari during 1997 and 1998, the turbulence model code was incorporated into a version of MOM for calculating the general circulation and convective events in the Mediterranean Sea. During the same years, the one-dimensional water column model was challenged by in-situ turbulence observations by Walter Eifler and Adolf Stips. During this effort both, the strategies for modelling and measurements, were significantly improved.</p>
+
+<p>The idea (and the name) of GOTM as a community model was born in spring 1998, when Karsten Bolding joined the development. It was a major effort to collect the many different codes (each set up for only one test case), written in different programming languages, stored on different computers and merge them together into one product. In summer 1998, Manuel Ruiz Villarreal joined the GOTM developers for a few years. Later, Pierre-Philippe Mathieu carried out some changes which simplified the use of GOTM, such that he became GOTM author no. 4 for a few years (see photograph).</p>
+
+<p><img src="http://www.gotm.net/pages/information/pics/gotmgroup.jpg" alt="Bild" /></p>
+
+<p><em>October 18-22, 1999 in Ispra, Italy for the CARTUM autumn school This shows the still small GOTM developers group with Karsten Bolding, Manuel Ruiz Villarreal, Hans Burchard and Pierre-Philippe Mathieu.</em></p>
+
+<p>At this stage, the first version of GOTM was copied to the anonymous-ftp server of the Institute of Oceanography in Hamburg, Germany and started as a community model on May 1, 1999 as gotm1.0.</p>
+
+<p>Shortly after all four early GOTM developers left the inspiring environment of the Lago Maggiore, Lars Umlauf met Hans Burchard and Karsten Bolding in Irkutsk at Lake Baikal, where Lars surprised them with a presentation showing that the k-epsilon model is flawed under breaking surface waves and that the k-omega model should be preferably used. The following intensive wodka-fuelled discussions led to the inspiration to first build the k-omega model explicitly into GOTM and then to construct a generic length scale equation where two parameters allowed to smoothly shift between different options such as k-epsilon or k-omega. It actually took some time to get this generic model published (in the end is was accepted in the Journal of Marine Research), because for many physical oceanographers it was too pragmatic, but finally is got a great push by being implemented into ROMS as turbulence closure module. Another important addition by Lars Umlauf was the coding of the KPP parametric turbulence model into GOTM, just for comparison to the physically more consistent second-moment closures.</p>
+
+<p>In the meanwhile, GOTM had been coupled to biogeochemical models in a generic way (then called gotm-bio), including new numerical schemes for the dynamics of the sink and source terms to guarantee non-negativity of concentrations. In that stage, Jorn Bruggeman as a first-year PhD student in Biology joined the GOTM development after identifying weaknesses of these schemes and proposing improved numerics (such that now conservation could be achieved on the element level). Once engaged in GOTM, Jorn coded a graphical user interface (GUI) for GOTM, such that also non-UNIX people could use GOTM. Along with the GUI, a powerful graphical tool for displaying GOTM results had been written by Jorn. A lot of useful GOTM infrastructure has been added by Jorn such as the automatic generation of namelists.</p>
+
+<p>Together with Karsten Bolding, Jorn developed then the Framework of Aquatic Biogeochemical Models (<a href="http://sourceforge.net/projects/fabm/">FABM</a>) which was far more generic than the gotm-bio coupling in linking biogeochemical modules to GOTM and many other hydrodynamic drivers.</p>
+
+<p>In recent years, GOTM has been extended towards a one-dimensional model for lakes, by including the hypsometry of lakes. Here, besides Karsten Bolding and Jorn Bruggeman, also the new GOTM developer Knut Klingbeil has been very active in testing the code and making it more consistent.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>

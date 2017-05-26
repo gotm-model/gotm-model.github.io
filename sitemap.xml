@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://gotm-model.github.io/history/</loc>
+    <lastmod>2017-05-24T14:40:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gotm-model.github.io/about/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gotm-model.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gotm-model.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gotm-model.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
