@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gotm-model.github.io/portfolio/idealized/</loc>
+    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gotm-model.github.io/portfolio/realistic/</loc>
+    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gotm-model.github.io/history/</loc>
     <lastmod>2017-05-24T14:40:05+02:00</lastmod>
   </url>
@@ -9,11 +19,6 @@
   <url>
     <loc>http://gotm-model.github.io/about/</loc>
     <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gotm-model.github.io/portfolio/idealized/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
   </url>
   
   <url>
