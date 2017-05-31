@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Idealized test cases</title>
+<title>Idealized cases</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -42,6 +42,8 @@
       
       
         <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">News/Blogs</a></li>
       
         <li><a href="http://gotm-model.github.io/history/">History</a></li>
       
@@ -88,38 +90,19 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Idealized test cases</h1>
+         <h1>Idealized cases</h1>
          <p>Idealized test case demonstrating various GOTM features.</p>
 
-<!--
-- Coutte flow
-- Channel flow
-- Entrainment
-
-
-Table of content
-----------------
-
--   [Introduction](#introduction)
--->
-
 <ul>
-<li><a href="#couette">Couette</a></li>
-<li><a href="#channel">Channel</a>
-
-<ul>
-<li><a href="#sublevel">Sublevel</a></li>
-</ul></li>
-<li><a href="#entrainment">Entrainment</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="/cases/couette">Couette</a></li>
+<li><a href="/cases/channel">Channel</a></li>
+<li><a href="/cases/entrainment">Entrainment</a></li>
+<li><a href="/portfolio/idealized#conclusion">Conclusion</a></li>
 </ul>
 
-<p></p>
+<p>Figure from <a href="https://en.wikipedia.org/wiki/Couette_flow">here</a></p>
 
-<!--
-Introduction
-------------
--->
+<p></p>
 
 <p>Unstratified Couette flow driven by a constant surface wind stress</p>
 
@@ -127,122 +110,7 @@ Introduction
 
 <p>Stress-driven entrainment into a linearly stratified turbulent</p>
 
-<h2 id="couette">Couette</h2>
-
-<p>The Couette scenario is the most basic of all GOTM scenarios. It represents a
-shallow (10 m deep), unstratified layer of fluid above a flat bottom that is
-driven by a constant surface stress in the x-direction. Earth&rsquo;s rotation is
-ignored. This flow is often referred to as turbulent Couette flow. After the
-onset of the surface stress, a thin turbulent near-surface layer is generated
-that rapidly entrains into the non-turbulent deeper parts of the water column.
-The solution at the end of the simulation, when the problem has become fully
-stationary, is shown in the figure below. The velocity profile in panel (a)
-reveals the existence of two shear layers in the near-surface and near-bottom
-regions, respectively, that converge toward that analytical law-of-the-wall
-solutions (dashed red lines in the figure). The diffusivity profile in the
-turbulent Couette flow is nearly parabolic (panel b), and also converges to the
-linear law-of-the-wall solution near the boundaries. The Reynolds stress (or,
-likewise, the turbulent momentum flux) shown in panel &copy; is perfectly constant
-throughout the water column, and corresponds exactly to the applied surface
-stress. This is easily understood from the fact that all momentum entering the
-water column at the surface has to leave it again at the bottom under
-stationary conditions. The solution shown in the figure has been obtained with
-the k-ε model. Solutions for other two-equations models like the k-ω model or
-Mellor-Yamada model look similar (you can easily check this in the scenario
-directory by typing &ldquo;make komega&rdquo; or &ldquo;make MellorYamada&rdquo; to run GOTM with these
-alternative turbulence models). Technical details for this test case are
-described in the GOTM documentation. We now also provide the
-<a href="https://www.dropbox.com/s/xg2ccph2s5zjija/couette.m?dl=0">MATLAB script</a>
-used to
-generate the figure for this GOTM scenario. Note that only MATLAB 2015a and
-higher supports direct reading of NetCDF output.
-[caption id=&ldquo;attachment_191&rdquo;
-align=&ldquo;alignnone&rdquo; width=&ldquo;500&rdquo;]<img src="/portfolio/img/couette-705x1024.jpg" alt="" /> Profiles
-of (a) velocity, (b) turbulent diffusivity of momentum, and &copy; turbulent
-momentum flux for the Couette scenario after stationarity has been reached (in
-red: law-of-the-wall solution).[/caption]</p>
-
-<h2 id="channel">Channel</h2>
-
-<p>Similar to the idealized <a href="#couette">Couette scenario</a>, also in this test case,
-an unstratified, non-rotating water column of 10 m thickness is investigated.
-Here, however, the flow is driven by a constant barotropic pressure gradient
-resulting from the tilt of the free surface. The surface stress is set to zero.
-This type of flow is often referred as turbulent open channel flow. The figure
-below shows the stationary solution approached at the end of simulation.
-Different from the <a href="#couette">Couette scenario</a>, the velocity profile shown in
-panel (a) exhibits only a single shear-layer at the bottom that converges
-toward the logarithmic wall layer close to the bottom. The turbulent
-diffusivity (panel b) is approximately symmetric but exhibits a slight vertical
-asymmetry due to the different boundary conditions at the surface and the
-bottom. Also this quantity converges toward the (linear) law-of-the-wall
-relation near the bottom. While the turbulent momentum flux is vertically
-constant in the <a href="#couette">Couette flow</a>, for the open channel flow we find a
-linear variation. The vertical stress divergence is thus constant, and exactly
-balances the (constant) pressure gradient throughout the water column. The
-solution shown in the figure has been obtained with the k-ε model. Solutions
-for other two-equations models like the k-ω model or Mellor-Yamada model look
-similar (you can easily check this in the scenario directory by typing &ldquo;make
-komega&rdquo; or &ldquo;make MellorYamada&rdquo; to run GOTM with these alternative turbulence
-models). Technical details for this test case are described in the GOTM
-documentation. We now also provide the
-<a href="https://www.dropbox.com/s/xg2ccph2s5zjija/couette.m?dl=0">MATLAB script</a>
-used to
-generate the figure for this GOTM scenario. Note that only MATLAB 2015a and
-higher supports direct reading of NetCDF output.
-[caption id=&ldquo;attachment_209&rdquo;
-align=&ldquo;alignnone&rdquo; width=&ldquo;500&rdquo;]<img src="/portfolio/img/channel-705x1024.jpg" alt="Profiles of \(a\) velocity, \(b\) turbulent 
-diffusivity of momentum, and \(c\) turbulent momentum flux for the Channel 
-scenario after stationarity has been reached \(in red: law-of-the-wall 
-solution\)." /> Profiles of (a) velocity, (b)
-turbulent diffusivity of momentum, and &copy; turbulent momentum flux for the
-Channel scenario after stationarity has been reached (in red: law-of-the-wall
-solution).[/caption]</p>
-
-<h2 id="entrainment">Entrainment</h2>
-
-<p>The entrainment scenario is similar to the
-<a href="/examples/nns/couette/">Couette scenario</a>,
-except that the water column is now stably
-stratified by a vertically constant density gradient. Also in this scenario,
-the effect of Earth&rsquo;s rotation is ignored. The entrainment scenario  is
-ideally suited to benchmark the model performance in stress-driven entrainment
-situations against available experiments (see
-<a href="http://dx.doi.org/10.1016/j.csr.2004.08.004">Umlauf and Burchard, 2005</a>)
-The results shown in the
-figure below illustrate that after the onset of the constant surface stress in
-the x-direction, a thin near-surface layer is accelerated (panel a), and slowly
-entrains into the stratified, non-turbulent interior region. Shear-driven
-turbulence in this region is mirrored in the large turbulent diffusivities
-shown in panel &copy;, which generate a nearly well-mixed surface layer  that is
-separated from the interior by a pycnocline of gradually increasing strength
-(panel b). The white dashed line indicates the solution suggested by
-<a href="http://dx.doi.org/10.1017/S0022112079002366">Price (1979)</a>
-for shear-driven
-entrainment into a linearly stratified fluid
-[see Eq. (53) in <a href="http://dx.doi.org/10.1016/j.csr.2004.08.004">Umlauf and Burchard, 2005</a>].
-The numerical
-solution shown in the figure has been obtained with the k-ε model. Solutions
-for other two-equation models available in GOTM look similar. You can easily
-check this by modifying the GOTM namelist files to run the k-ω model
-(<a href="http://dx.doi.org/10.1016/S1463-5003(02)00039-2">Umlauf et al., 2003</a>)
-or the GLS (generic length scale) model described in
-<a href="http://dx.doi.org/10.1357/002224003322005087">Umlauf and Burchard (2003)</a>.
-Technical details for this GOTM scenario may be found in the GOTM documentation.
-We now also provide the
-<a href="https://www.dropbox.com/s/7tlj1kqibon4n4w/entrainment.m?dl=0">MATLAB script</a>
-used to generate the figure below. Note that only MATLAB 2015a and higher supports
-direct reading of NetCDF output.
-[caption id=&ldquo;attachment_217&rdquo; align=&ldquo;alignnone&rdquo;
-width=&ldquo;500&rdquo;]<img src="/portfolio/img/entrainment-705x1024.jpg" alt="entrainment" /> Temporal
-variability of (a) velocity, (b) stratification, and &copy; turbulent diffusivity
-for the entrainment scenario. The white dashed line shows the entrainment depth
-according to
-<a href="http://dx.doi.org/10.1017/S0022112079002366">Price (1979)</a>.[/caption]</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
-<p>Maybe add a few sentences here</p>
          
       </div>
     </div>

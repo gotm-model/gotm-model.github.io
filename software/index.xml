@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softwares on GOTM</title>
+    <link>http://gotm-model.github.io/software/</link>
+    <description>Recent content in Softwares on GOTM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy;2016 GOTM</copyright>
+    <lastBuildDate>Sat, 05 Nov 2016 18:25:22 +0530</lastBuildDate>
+    
+	<atom:link href="http://gotm-model.github.io/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows</title>
+      <link>http://gotm-model.github.io/software/windows/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>http://gotm-model.github.io/software/windows/</guid>
+      <description>Quick start  Get GOTM It is easiest to download the pre-built GOTM software for Windows (gotm.exe) , provided with each stable release. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site. Run To run a scenario, open a command prompt (&amp;ldquo;cmd&amp;rdquo;), cd to the scenario directory, and run GOTM by typing the full path to gotm.</description>
+    </item>
+    
+  </channel>
+</rss>
