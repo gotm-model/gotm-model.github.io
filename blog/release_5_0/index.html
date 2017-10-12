@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GOTM release - v5.0</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="http://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>GOTM release - v5.0</h2>
+                          <p class="author-category">
+                            Jorn Bruggeman, Karsten Bolding and Knut Klingbeil
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> October 11, 2017
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>Knut Klingbeil, Jorn Bruggeman, Lars Umlauf, Hans Burchard and Karsten Bolding will like to announce the new version of GOTM - v5.0.</p>
+
+<p>After far to long time we are finally ready to release a new version of GOTM. Hopefully we will have a more streamlined release model in the future where new versions will follow new features requiring changes to input specifications.</p>
+
+<p>In the list below we have collected some of the changes that have been done over the last almost 10 years. Many more are hidden in the logs in the GIT repository. We have not put any specific weight on the listed changes/new features/bug fixes - but it should be noted that thay have not taken equal amount of time to implement.</p>
+
+<p>One thing to note though is that utilities to interact with GOTM - i.e. everything that is not strictly Fortran - have been moved away from the core Fortran code.</p>
+
+<p>The present release has been used in production mode already for a quite some years and is regarded as very stable - but still - if you find errors please report back so we can fix and include in future releases.</p>
+
+<h3 id="new-features">New features</h3>
+
+<ul>
+<li>CVS to GIT transition</li>
+<li>Make to CMake change of build system</li>
+<li>Replaced extras/bio by <a href="http://www.fabm.net/wiki">FABM</a>
+
+<ul>
+<li>First preliminary version in 2011</li>
+<li>Both FABM and the support has been extended considerable since then.</li>
+</ul></li>
+<li>Flexible output system
+
+<ul>
+<li>Output specifications via YAML formatted configuration file</li>
+<li>Old ncdf output supports _NCDF_SAVE<em>DOUBLE</em>, nfirst and sync_out (deprecated - use flexible system)</li>
+</ul></li>
+<li>Airsea interface changes
+
+<ul>
+<li>Fairall et al. (1999) bulk formulas</li>
+<li>New air/sea methods (albedo_method, swr_method)</li>
+<li>Added rain impact to Kondo</li>
+<li>Truncate surface heat flux (simple ice model)</li>
+<li>Namelist variables <em>wind_factor</em>, <em>shf_factor</em> and <em>swr_factor</em>.</li>
+<li>Temporal interpolation of raw meteo data instead of bulk fluxes</li>
+</ul></li>
+<li>Very long term simulations possible</li>
+<li>Portable floating point declaration</li>
+<li>New input module</li>
+<li>Command line argument for compilation options
+
+<ul>
+<li>With new use-cases of GOTM an option to show information of a compiled version is handy</li>
+</ul></li>
+<li><em>extinct_method=7</em> for user-defined parameters via nml</li>
+<li>Support initial non-zero surface elevation</li>
+<li>New namelist variables <em>zeta_scale</em>, <em>zeta_offset</em></li>
+</ul>
+
+<h3 id="bugfixes">Bugfixes</h3>
+
+<ul>
+<li>Limitation of swr</li>
+<li>Use Craig &amp; Banner wavebreaking parameter cw from nml</li>
+<li>Windstress calculation (sign and magnitude)</li>
+<li>Changed advbcup from zerodiv to onesided</li>
+<li>W_height correction</li>
+<li>Wrong sign in const_NNS</li>
+<li>Bugfix I_0</li>
+<li>Compute h_press also for method 1</li>
+<li>Init of jul1,secs1 for timefmt=1</li>
+<li>Interpolate cloud cover in time</li>
+<li>Proper treatment of observed sst and sss</li>
+<li>NONLOCAL: gamm=&gt;gamv</li>
+<li>Normalization of bottom stress with rho_0</li>
+<li>Buoy_method=2: added avh=nub</li>
+<li>Kondo stability constant s0</li>
+<li>sign of salinity stratification for double-diffusion</li>
+<li>Albedo values for (default) Payne method</li>
+</ul>
+
+<h3 id="code-refractoring">Code refractoring</h3>
+
+<p>The <em>gui.py</em> directory has been completely removed from the GOTM code base and now forms the basis of a set of utilities in a separate software project. The main reason for this split is to allow for individual development paths for GOTM and the utilities.</p>
+
+<ul>
+<li><em>editscenario</em> for manipulating and converting .xml based configuration files to Fortran namelist files</li>
+<li><em>PyNcview</em> (and <em>multiplot</em>)</li>
+<li><em>gotmgui</em> for configuring and running GOTM via a GUI</li>
+</ul>
+
+<p>More tools are in the pipe-line and will be released on a <em>&lsquo;being ready&rsquo;</em> basis.</p>
+
+<p>The old GOTM/BIO code has been completely removed - superseded by FABM.</p>
+
+<h3 id="note">Note</h3>
+
+<p>To be able to manage your own model configurations using <em>editscenario</em> with this version of GOTM you must change the version tag in the .xml file from <strong>scenario version=&ldquo;gotm-4.1.0&rdquo;</strong> to <strong>scenario version=&ldquo;gotm-5.0&rdquo;</strong>. This has already been done in the prepared cases.</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+

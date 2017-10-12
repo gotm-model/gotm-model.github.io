@@ -43,9 +43,11 @@
       
         <li><a href="http://gotm-model.github.io/">Home</a></li>
       
-        <li><a href="http://gotm-model.github.io/blog/">News/Blogs</a></li>
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
       
         <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
       
         <li><a href="http://gotm-model.github.io/about/">About</a></li>
       
@@ -93,7 +95,7 @@
          <h1>Windows</h1>
          
 
-<h2 id="quick-start">Quick start</h2>
+<h3 id="quick-start">Quick start</h3>
 
 <ol>
 <li><strong>Get GOTM</strong> It is easiest to
@@ -113,9 +115,9 @@ need a stand-alone NetCDF viewer, we recommend
 <a href="https://sourceforge.net/projects/pyncview">PyNcView</a>.</li>
 </ol>
 
-<h2 id="building-from-scratch">Building from scratch</h2>
+<h3 id="building-from-scratch">Building from scratch</h3>
 
-<h3 id="prerequisites">Prerequisites</h3>
+<h4 id="prerequisites">Prerequisites</h4>
 
 <ul>
 <li>a supported Fortran compiler. We regularly test the Intel Fortran compiler,
@@ -125,7 +127,7 @@ provided with the free
 <li><a href="https://cmake.org">CMake 2.8.8 or later</a></li>
 </ul>
 
-<h3 id="download-the-code">Download the code</h3>
+<h4 id="download-the-code">Download the code</h4>
 
 <p>First, get the GOTM source code from GitHub. You can either download
 <a href="http://github.com/gotm-model/code/releases">the latest stable release of the code</a>
@@ -146,7 +148,7 @@ choosing &ldquo;Git Clone&hellip;&rdquo;. In the window that appears, set &ldquo
 want the source code (recommended: _CURRENT<em>DIRECTORY</em>\gotm-git) and click OK.
 This should download the latest code.</p>
 
-<h3 id="building">Building</h3>
+<h4 id="building">Building</h4>
 
 <ol>
 <li>Start &ldquo;CMake (cmake-gui)&rdquo; from the start menu.</li>
@@ -177,12 +179,13 @@ gotm.sln that CMake has created in the build directory chosen in CMake. To
 build and install GOTM, right-click the &ldquo;INSTALL&rdquo; project in the solution
 explorer, and choose &ldquo;Build&rdquo;. If you use MinGW, open a command prompt (run
 &ldquo;cmd&rdquo;) and cd to the build directory (not the src directory!) defined above.
-Then type and run &ldquo;mingw32-make install&rdquo;.
-After the build completes, the GOTM executable will be installed at
+Then type and run &ldquo;mingw32-make install&rdquo;.</li>
+</ol>
+
+<p>After the build completes, the GOTM executable will be installed at
 %LOCALAPPDATA%\gotm\bin\gotm.exe (%APPDATA%\gotm\bin\gotm.exe on Windows XP).
 At this point you can continue with step 2 in the quick start instructions at
-the top of this page.</li>
-</ol>
+the top of this page.</p>
 
          
       </div>

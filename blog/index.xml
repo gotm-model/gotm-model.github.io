@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GOTM</title>
+    <title>Blogs on GOTM</title>
     <link>http://gotm-model.github.io/blog/</link>
-    <description>Recent content on GOTM</description>
+    <description>Recent content in Blogs on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;2016 GOTM</copyright>
+    <lastBuildDate>Wed, 11 Oct 2017 12:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://gotm-model.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GOTM release - v5.0</title>
+      <link>http://gotm-model.github.io/blog/release_5_0/</link>
+      <pubDate>Wed, 11 Oct 2017 12:00:00 +0200</pubDate>
+      
+      <guid>http://gotm-model.github.io/blog/release_5_0/</guid>
+      <description>&lt;p&gt;Finally the version 5 of GOTM is ready for release. It comes with a
+very large number of changes and improvements. Some - but not all -
+are mention in the list below.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
   </channel>
 </rss>

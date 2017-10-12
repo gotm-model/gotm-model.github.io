@@ -45,7 +45,8 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>http://gotm-model.github.io/cases/flex/</guid>
-      <description>s = &amp;quot;Python syntax highlighting&amp;quot; print s  ! initalize radiation rad(nlev) = I_0 z =_ZERO_ do i=nlev-1,0,-1 z=z+h(i+1) ! compute short wave radiation rad(i)=I_0*(A*exp(-z/g1)+(1.-A)*exp(-z/g2)*bioshade(i+1)) ! compute total diffusivity avh(i)=nuh(i)+avmolT end do  A data set which has been used throughout the last 40 years as a calibration for mixing parameterisations has been collected during the measurements of the Fladenground Experiment 1976 (FLEX&amp;rsquo;76) campaign. Starting from a well-mixed winter situation, a surface mixed layer is established, which is several times deepened and partly removed by storm events.</description>
+      <description>A data set which has been used throughout the last 40 years as a calibration for mixing parameterisations has been collected during the measurements of the Fladenground Experiment 1976 (FLEX&amp;rsquo;76) campaign. Starting from a well-mixed winter situation, a surface mixed layer is established, which is several times deepened and partly removed by storm events.
+  Spring temperature development at the FLEX site in the Northern North Sea.   The measurements of meteorological forcing and potential temperature profiles were carried out in spring 1976 in the northern North Sea at a water depth of about 145 m and a geographical position at 58 deg 55&amp;rsquo;N and 0 deg 32&amp;rsquo;E.</description>
     </item>
     
     <item>
