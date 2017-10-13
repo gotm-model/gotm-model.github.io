@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Windows</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Windows</h1>
+         
+
+<h3 id="quick-start">Quick start</h3>
+
+<ol>
+<li><strong>Get GOTM</strong> It is easiest to
+<a href="http://github.com/gotm-model/code/releases">download the pre-built GOTM software for Windows (gotm.exe)</a>
+, provided with each stable release.</li>
+<li><strong>Get examples</strong>
+<a href="http://github.com/gotm-model/cases/releases">Download the example scenarios</a>
+for your version of
+GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn
+about ocean turbulence;
+<a href="/examples/">the example scenarios are discussed in detail on this web site</a>.</li>
+<li><strong>Run</strong> To run a scenario, open a command prompt (&ldquo;cmd&rdquo;), cd to the
+scenario directory, and run GOTM by typing the full path to gotm.exe.</li>
+<li><strong>View results</strong> GOTM produces output in NetCDF format (files with .nc
+extension). These can be read by many applications (e.g., MATLAB, R). If you
+need a stand-alone NetCDF viewer, we recommend
+<a href="https://sourceforge.net/projects/pyncview">PyNcView</a>.</li>
+</ol>
+
+<h3 id="building-from-scratch">Building from scratch</h3>
+
+<h4 id="prerequisites">Prerequisites</h4>
+
+<ul>
+<li>a supported Fortran compiler. We regularly test the Intel Fortran compiler,
+which integrates with Visual Studio, as well as the GNU Fortran compiler
+provided with the free
+<a href="http://mingw-w64.org">mingw-w64 compiler suite</a>.</li>
+<li><a href="https://cmake.org">CMake 2.8.8 or later</a></li>
+</ul>
+
+<h4 id="download-the-code">Download the code</h4>
+
+<p>First, get the GOTM source code from GitHub. You can either download
+<a href="http://github.com/gotm-model/code/releases">the latest stable release of the code</a>
+as a single zip file, or check out the very latest version (&ldquo;developer&rsquo;s
+version&rdquo;) of the code from
+<a href="http://github.com/gotm-model/code">GOTM&rsquo;s git repository</a>
+. If you need the developer&rsquo;s
+version, a graphical git client such as
+<a href="https://tortoisegit.org">TortoiseGit</a>
+can be used to obtain the source code from the Git repository. Note that
+TortoiseGit also requires
+<a href="https://git-for-windows.github.io">Git for Windows</a>
+to be installed. After Git for Windows and TortoiseGit are installed, you
+obtain the developer&rsquo;s version of GOTM by right-clicking in Windows Explorer
+within the directory where you want to place the source code directory, and
+choosing &ldquo;Git Clone&hellip;&rdquo;. In the window that appears, set &ldquo;URL&rdquo; to
+<a href="https://github.com/gotm-model/code.git">https://github.com/gotm-model/code.git</a>, set &ldquo;Directory&rdquo; to the path where you
+want the source code (recommended: _CURRENT<em>DIRECTORY</em>\gotm-git) and click OK.
+This should download the latest code.</p>
+
+<h4 id="building">Building</h4>
+
+<ol>
+<li>Start &ldquo;CMake (cmake-gui)&rdquo; from the start menu.</li>
+<li>Click the &ldquo;Browse Source&hellip;&rdquo; button and select the directory with the GOTM
+source code. This is the src directory at the root of the GOTM repository.</li>
+<li>Click the &ldquo;Browse Build&hellip;&rdquo; button and select a directory of your choice
+to build GOTM in - e.g. C:\Users_USERNAME_\build\gotm. It is recommended to
+choose an empty (or new) directory for this purpose. <strong>MinGW users</strong>: some
+versions of CMake (e.g., 3.0.2) generate invalid makefiles if the build
+directory is on a remote server (i.e., a path starting with \\); to avoid
+problems, place it on a local or mounted network drive instead.</li>
+<li>Click the &ldquo;Configure&rdquo; button. This first time you do this, CMake asks you
+to select a build system generator. If you intend to use Intel Visual Fortran,
+select your version of Visual Studio and press OK (choose &ldquo;Visual Studio
+<em>VERSION</em> <em>YEAR</em>&rdquo; - avoid the entries with IA64 and Win64 postfixes!). If you
+intend to use MinGW, choose &ldquo;MinGW Makefiles&rdquo;.</li>
+<li>Now all configuration variables for the build system are listed and you
+can change them according to your preferences. After changing any variable,
+press the &ldquo;Configure&rdquo; button again - additional settings may appear.</li>
+<li>If all configuration variables are set correctly, and you have clicked the
+&ldquo;Configure&rdquo; button until no new (red-colored) configuration variables appear,
+press the &lsquo;Generate&rsquo; button. If you previously selected Visual Studio as build
+system, this now creates the Visual Studio solution and projects in your chosen
+build directory. If you selected MinGW as build system, it will generate the
+make files.</li>
+<li>If you use Intel Fortran, open Visual Studio, and open the solution
+gotm.sln that CMake has created in the build directory chosen in CMake. To
+build and install GOTM, right-click the &ldquo;INSTALL&rdquo; project in the solution
+explorer, and choose &ldquo;Build&rdquo;. If you use MinGW, open a command prompt (run
+&ldquo;cmd&rdquo;) and cd to the build directory (not the src directory!) defined above.
+Then type and run &ldquo;mingw32-make install&rdquo;.</li>
+</ol>
+
+<p>After the build completes, the GOTM executable will be installed at
+%LOCALAPPDATA%\gotm\bin\gotm.exe (%APPDATA%\gotm\bin\gotm.exe on Windows XP).
+At this point you can continue with step 2 in the quick start instructions at
+the top of this page.</p>
+
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>

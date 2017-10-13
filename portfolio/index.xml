@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on GOTM</title>
+    <link>http://gotm-model.github.io/portfolio/</link>
+    <description>Recent content in Portfolios on GOTM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy;2016 GOTM</copyright>
+    <lastBuildDate>Sat, 05 Nov 2016 18:25:22 +0530</lastBuildDate>
+    
+	<atom:link href="http://gotm-model.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software</title>
+      <link>http://gotm-model.github.io/portfolio/software/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>http://gotm-model.github.io/portfolio/software/</guid>
+      <description>&lt;p&gt;GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Idealized cases</title>
+      <link>http://gotm-model.github.io/portfolio/idealized/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>http://gotm-model.github.io/portfolio/idealized/</guid>
+      <description>&lt;p&gt;Idealized test case demonstrating various GOTM features.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/couette&#34;&gt;Couette&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/channel&#34;&gt;Channel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/entrainment&#34;&gt;Entrainment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/portfolio/idealized#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Figure from &lt;a href=&#34;https://en.wikipedia.org/wiki/Couette_flow&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ocean cases</title>
+      <link>http://gotm-model.github.io/portfolio/ocean/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>http://gotm-model.github.io/portfolio/ocean/</guid>
+      <description>&lt;p&gt;Realistic test cases demonstrating various GOTM features.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/flex/&#34;&gt;FLEX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/gotland_deep/&#34;&gt;Gotland Deep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/liverpool_bay/&#34;&gt;Liverpool Bay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/northern_ns_seasonal/&#34;&gt;Northern NS (Seasonal)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/northern_ns_annual/&#34;&gt;Northern NS (Annual)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/cases/ows_papa/&#34;&gt;OWS Papa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gotm-model.github.io/portfolio/ocean#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Figure by Hans Burchard.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Documentation</title>
+      <link>http://gotm-model.github.io/portfolio/documentation/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>http://gotm-model.github.io/portfolio/documentation/</guid>
+      <description>&lt;p&gt;GOTM comes with a detailed documentation including some information on the
+theoretical background of individual the turbulence models.&lt;/p&gt;
+
+&lt;p&gt;Figure from &lt;a href=&#34;https://pixabay.com/en/photos/document/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

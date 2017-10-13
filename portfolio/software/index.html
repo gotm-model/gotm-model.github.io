@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Software</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Software</h1>
+         <p>GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.</p>
+
+<p></p>
+
+<ol>
+<li>The source code for GOTM and <a href="http://www.fabm.net">FABM</a> must have been cloned from Git repositories. The actual cloning will depend on the platform and Git-utilities used. Further information is provide <a href="https://help.github.com/articles/cloning-a-repository/">here</a>. A number of graphical frontends to Git are available - but the use of these is beyond the instructions provided here.</li>
+<li>A Fortran compiler supporting at least Fortran 2003 must be avaialble
+
+<ul>
+<li>On Linux <a href="https://gcc.gnu.org/fortran/">gfortran</a> versions including and above 4.7 have been tested as well has the <a href="https://software.intel.com/en-us/fortran-compilers">Intel Fortran compiler</a>.</li>
+<li>On Windows the <a href="https://software.intel.com/en-us/fortran-compilers">Intel Fortran compiler</a> configured with VisualStudio is working.</li>
+</ul></li>
+<li><a href="http://www.unidata.ucar.edu/software/netcdf">NetCDF</a>
+
+<ul>
+<li>On Linux/Mac GOTM and NetCDF must be compiled with the same Fortran compiler. The configuration and compilation of the NetCDF library is beyond the purpose of this guide.</li>
+<li>On Windows NetCDF is provided in the repository - compatible with the Intel Fortran compiler</li>
+</ul></li>
+<li><a href="http://www.cmake.org">CMake</a> must be installed. CMake is used to configure the compilation and generate native build systems - i.e. Make-based systems on Linux/Mac and VisualStudio on Windows. CMake can be run in command-line and GUI-mode. Further information is provided <a href="https://cmake.org/documentation/">here</a>. A detailed description is beyond the purpose of this guide. CMake advocates <em>out of source compilation</em> i.e. the actual compilation is separated from the source code. To facilitate this the use of a temporary build directory is encouraged.</li>
+</ol>
+
+<p>Only when the above 4 points are checked it makes sense to proceed.</p>
+
+<p>The GOTM executable can be configured in a number of ways depending on the intended use. This configuration is controlled by CMake - and its configuration file provided as part of the GOTM source code. The different configuration options have sensible default values so a fully functional executable can be obtained with very little configuration. On the other hand detailed control of included features, installation path etc. is also possible.</p>
+
+<ul>
+<li><a href="/software/linux/">Linux/Mac</a></li>
+<li><a href="/software/windows/">Windows</a></li>
+</ul>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>

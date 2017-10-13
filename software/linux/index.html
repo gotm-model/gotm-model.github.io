@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Linux/Mac</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Linux/Mac</h1>
+         
+
+<h3 id="overview">Overview</h3>
+
+<ol>
+<li><strong>Get GOTM</strong> For now we do not provide pre-compiled versions of GOTM for Linux and Mac. The main reason being that all pre-requisites for building locally are readily available on these platforms - notably a working Fortran compiler. So please follow the instructions below for three different ways to build GOTM - of increasing complexity.</li>
+<li><strong>Get examples</strong>
+<a href="http://github.com/gotm-model/cases/releases">Download the example scenarios</a>
+for your version of
+GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn
+about ocean turbulence;
+<a href="/examples/">the example scenarios are discussed in detail on this web site</a>.</li>
+<li><strong>Run</strong> To run a scenario, open a command prompt (&ldquo;cmd&rdquo;), cd to the
+scenario directory, and run GOTM by typing the full path to gotm.exe.</li>
+<li><strong>View results</strong> GOTM produces output in NetCDF format (files with .nc
+extension). These can be read by many applications (e.g., MATLAB, R). If you
+need a stand-alone NetCDF viewer, we recommend
+<a href="https://sourceforge.net/projects/pyncview">PyNcView</a>.</li>
+</ol>
+
+<h3 id="building-from-scratch">Building from scratch</h3>
+
+<h4 id="command-line-version-of-cmake">Command line version of CMake</h4>
+
+<p>For a fast - and simple - configuration the following can be used.</p>
+
+<ol>
+<li>Create and enter a build directory - e.g. /tmp/gotmbuild/</li>
+<li>cmake ~/GOTM/code/src -DGOTM_USE_FABM=false - do NOT include FABM</li>
+<li>cmake ~/GOTM/code/src -DFABM_BASE=~/FABM/fabm - do include FABM</li>
+<li>make install</li>
+</ol>
+
+<p>Adjust the path to the GOTM (and FABM) source code.</p>
+
+<h4 id="the-gui-version-of-cmake">The GUI version of CMake</h4>
+
+<ol>
+<li>Start &ldquo;CMake (cmake-gui)&rdquo;.</li>
+<li>Click the &ldquo;Browse Source&hellip;&rdquo; button and select the directory with the GOTM
+source code. This is the src directory at the root of the GOTM repository.</li>
+<li>Click the &ldquo;Browse Build&hellip;&rdquo; button and select a directory of your choice
+to build GOTM in - e.g. /home/<em>USERNAME</em>/build/gotm. It is recommended to
+choose an empty (or new) directory for this purpose.</li>
+<li>Click the &ldquo;Configure&rdquo; button. This first time you do this, CMake asks you
+to select a build system generator.</li>
+<li>Now all configuration variables for the build system are listed and you
+can change them according to your preferences. After changing any variable,
+press the &ldquo;Configure&rdquo; button again - additional settings may appear.</li>
+<li>If all configuration variables are set correctly, and you have clicked the
+&ldquo;Configure&rdquo; button until no new (red-colored) configuration variables appear,
+press the &lsquo;Generate&rsquo; button.</li>
+<li>If no erros occur a Makefile has been generated in the selected build directory.
+Open a Terminal and enter this directory and type <em>make</em>.</li>
+</ol>
+
+<h4 id="the-provided-configure-build-scripts">The provided configure/build scripts</h4>
+
+<p>Text in <em>italics</em> are commands and text in <strong>bold</strong> are variables.</p>
+
+<p>In the following it is assumed the GOTM and FABM source code is cloned to <strong>GOTM_BASE</strong> and <strong>FABM_BASE</strong>. Default values are:
+* <strong>GOTM_BASE</strong> = <em>$HOME/GOTM/code</em>
+* <strong>FABM_BASE</strong> = <em>$HOME/FABM/code</em></p>
+
+<h5 id="configuring">Configuring</h5>
+
+<p>The first step is to create a <em>build directory</em> and change to it: * <em>mkdir -p $HOME/build/gotm/ &amp;&amp; cd $HOME/build/gotm</em></p>
+
+<p>Executing the script <em>$GOTM_BASE/scripts/linux/gotm_configure.sh</em> will generate a Make-based build system in a sub-directory named after the compiler used - default is <em>gfortran</em>.</p>
+
+<p>This step must be completed without any errors before advancing to the actual compilation.</p>
+
+<h5 id="building-installing">Building/installing</h5>
+
+<p>Executing the script <em>$GOTM_BASE/scripts/linux/gotm_build.sh</em> will compile GOTM according to the configuration carried out in the previous step.</p>
+
+<p>A manual build can also be done like:
+* <em>cd $HOME/build/gotm/<compiler> &amp;&amp; make install</em></p>
+
+<p>CMake <em>installs</em> the generated executable and libraries in an <em>install_directory</em> - default i <strong>$HOME/local</strong>.
+To test if the compilation has been succesful - try:
+* <em>$HOME/local/bin/gotm -c</em></p>
+
+<p>For furher use of GOTM it is a big advantage to add <strong>$HOME/local/bin</strong> to the <strong>PATH</strong>.</p>
+
+<p>The scripts used above for configuration and compilation have some documentation included and it should be relative easy to adjust to specific need and taste.</p>
+
+<h4 id="after-a-successful-build">After a successful build</h4>
+
+<p>After the build completes, the GOTM executable will be installed in /home/<em>USERNAME</em>/local/bin/gotm (default) or a user configurable destination.
+At this point you can continue with step 2 in the quick start instructions at the top of this page.</p>
+
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>

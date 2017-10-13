@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>FLEX</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>FLEX</h1>
+         <p>A data set which has been used throughout the last 40 years as a calibration
+for mixing parameterisations has been collected during the measurements of the
+<strong>Fladenground Experiment 1976 (FLEX&rsquo;76)</strong> campaign. Starting from a well-mixed
+winter situation, a surface mixed layer is established, which is several times
+deepened and partly removed by storm events.</p>
+
+
+<figure >
+    
+        <img src="/cases/img/flex.png" alt="Spring temperature development at the FLEX site in the Northern North Sea." />
+    
+    
+    <figcaption>
+        <p>
+        Spring temperature development at the FLEX site in the Northern North Sea.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<!--
+[caption id="attachment_443" align="aligncenter" width="640"]![Spring temperature development at the FLEX site in the Northern North Sea](/portfolio/img/flex.png) 
+-->
+
+<p>The measurements of meteorological forcing and potential temperature
+profiles were carried out in spring 1976 in the northern North Sea at a water
+depth of about 145 m and a geographical position at 58 deg 55&rsquo;N and 0 deg 32&rsquo;E.
+The simulation is run from April 6 to June 7, 1976. The
+<a href="http://link.springer.com/article/10.1007/BF00232256">Kondo (1975)</a>
+bulk formulae have
+been used for pre-calculating the surface fluxes, which are given in the data
+files momentumflux.dat, and heatflux.dat. Other meteorological data files gives
+sea surface temperature (sst.dat) and short wave radiation (swr.dat). Tidal
+flow is forced by oscillating sea surface slopes (pressure.dat), temperature
+profiles for validation are provided directly from CTD (tprof_ctd.dat) or
+interpolated from CTD to semi-diurnal profiles (tprof.dat). Salinity from CTD
+(s_prof_ctd.dat) or from a 3D model (s_prof.dat) are used for nudging simulated
+salinity to &ldquo;observed&rdquo; data at a time scale of 2 days. Six-hourly values for
+light extinction are given by extinction.dat. Model simulations similar to
+those provided here have been published by
+<a href="http://dx.doi.org/10.1029/94JC03229">Burchard &amp; Baumert (1995)</a>.
+As there, also here a k-epsilon
+model is used as turbulence closure model, but here the
+<a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0469(2002)059%3C1550%3AAIMFTT%3E2.0.CO%3B2">Cheng et al. (2002) </a>
+stability functions are used.</p>
+
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>

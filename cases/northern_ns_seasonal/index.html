@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Northern North Sea (Seasonal)</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Northern North Sea (Seasonal)</h1>
+         <p>This <strong>Northern North Sea seasonal experiment</strong> has been carried out in the
+framework of the PROVESS (PROcesses of VErtical mixing in Shealf Seas) project
+(MAS3-CT97-0025, 1998-2001) which has been funded by the European Communities
+MAST-III program. The observations in the Northern North Sea were carried out
+in September and October 1998. Here, a period of 20 days from October 7 - 27,
+1998 is simulated. All forcing and validation data have been carefully
+processed from observations during this PROVESS-NNS experiment.
+[caption id=&ldquo;attachment_525&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;640&rdquo;]<img src="/portfolio/img/nns_seasonal.png" alt="Temperature contours and dissipation rate from model results \(top panel\) and observations \(bottom panel\) during 20 days of autumn cooling in the Northern North Sea. The dissipation rate measurements are from the FLY profiler." />
+Temperature contours and dissipation rate during 20 days of autumn cooling in
+the Northern North Sea. The dissipation rate measurements are from the FLY
+profiler. This plot was created with
+<a href="/portfolio/img/nns_seasonal.py">nns_seasonal.py</a>.
+[/caption]
+Two different observed dissipation rate data sets are
+included: eps_fly.dat: data from a FLY profiler, processed by School of Ocean
+Sciences, University of Bangor, Wales eps_mst.dat: data from an MST profiler,
+processed by the Joint Research Centre, Ispra, Italy. These files are read in
+into GOTM through the eobs namelist in obs.nml. The dissipation rate has only
+been observed at short intervals, periods without observations are set to
+minimum values in the files. These dissipation rate observations are read in
+into GOTM in order to allow for proper interpolation to the temporal and
+spatial output steps, and they are not used for any type of nudging. The data
+files are prepared such that the maximum simulation interval can be extended to
+September 7 at 10.00 h - November 2 at 13.00 h, 1998. For discussions of
+various model simulations, see
+<a href="http://www.sciencedirect.com/science/article/pii/S1385110102001260">Burchard et al. (2002)</a>
+and also the annual simulation in the test case nns_annual and
+<a href="http://www.sciencedirect.com/science/article/pii/S027843430200122X">Bolding et al. (2002)</a>.</p>
+
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
