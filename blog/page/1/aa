@@ -1,0 +1,31 @@
+| |CMake |
+| |GIT |
+| |extended GUI |
+| |Fairall et al. (1999) bulk formulas |
+| |albedo_method |
+| |swr_method |
+| |added rain impact to Kondo |
+| |truncate surface heat flux (simple ice model) |
+| |cmd line argument for compilation options |
+| |long term simulations possible |
+| |old ncdf output supports _NCDF_SAVE_DOUBLE_, nfirst and sync_out |
+| |portable floating point declaration |
+| |new input module |
+|bugfixes | limitation of swr |
+| |use Craig & Banner wavebreaking parameter cw from nml |
+| |windstress calculation (sign and magnitude) |
+| |changed advbcup from zerodiv to onesided |
+| |w_height correction |
+| |wrong sign in const_NNS |
+| |bugfix I_0 |
+| |compute h_press also for method 1 |
+| |init of jul1,secs1 for timefmt=1 |
+| |interpolate cloud cover in time |
+| |proper treatment of observed sst and sss |
+| |NONLOCAL: gamm=>gamv |
+| |normalization of bottom stress with rho_0 |
+| |buoy_method=2: added avh=nub |
+| |Kondo stability constant s0 |
+| |sign of salinity stratification for double-diffusion |
+| |albedo values for (default) Payne method |
+
