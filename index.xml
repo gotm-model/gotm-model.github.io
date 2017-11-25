@@ -163,6 +163,19 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Updated Windows NetCDF libraries</title>
+      <link>http://gotm-model.github.io/blog/windows_netcdf-update/</link>
+      <pubDate>Sat, 25 Nov 2017 12:00:00 +0200</pubDate>
+      
+      <guid>http://gotm-model.github.io/blog/windows_netcdf-update/</guid>
+      <description>&lt;p&gt;Mainly for developers.&lt;/p&gt;
+
+&lt;p&gt;Updated NetCDF libraries for Windows. Still 3.6.3 but now both 32 and 64 bit are supported.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>GOTM release - v5.0</title>
       <link>http://gotm-model.github.io/blog/release_5_0/</link>
       <pubDate>Wed, 11 Oct 2017 12:00:00 +0200</pubDate>
