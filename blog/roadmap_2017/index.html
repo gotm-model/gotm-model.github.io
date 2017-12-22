@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GOTM Roadmap - as of end of 2017</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="http://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>GOTM Roadmap - as of end of 2017</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> December 22, 2017
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<h3 id="list-of-planned-stable-releases">List of planned stable releases</h3>
+
+<ul>
+<li>Version 5.2 (upcoming)
+
+<ul>
+<li>Restart facility - developed in the <a href="http://prognoswater.org">PROGNOS</a> project and further supported by JRC.</li>
+<li>Option to read in longwave back-radiation instaed of calculating - funded by Don Pierson/<a href="http://katalog.uu.se/organisation/?orgId=X137:6">Erken</a></li>
+</ul></li>
+<li>Version 5.4
+
+<ul>
+<li>A rewrite of the standard <em>namelist</em> based initialization to a <em>yaml</em> based one.</li>
+</ul></li>
+<li>Version 5.6
+
+<ul>
+<li>The ability of GOTM to natively do ensemble simulations.</li>
+</ul></li>
+<li>Version 6.0
+
+<ul>
+<li>Merge of the lake-branch into master.</li>
+</ul></li>
+<li>Version 6.2
+
+<ul>
+<li>Ice model in GOTM</li>
+</ul></li>
+</ul>
+
+<h3 id="rationale">Rationale</h3>
+
+<p>The exact sequence of the releases is not carved in stone - especially the merge of the lake branch might be moved forward in time - but presently we are awaiting a publication related to this very important new feature.</p>
+
+<h4 id="version-5-2">Version 5.2</h4>
+
+<p>A proper restart facility in GOTM has been asked for for a very long time and finally we are almost there. The implementation has been greatly facilitated by the flexible output module Jorn Bruggeman has developed. The issue is how to create a list of necessary variables to store in the restart-file when the actual list of (state-)variables are not determined before at run-time. This problem has been solved by adding an attribute - <em>part_of_state</em> - during variable registration. Based on checking for this attribute when traversing the list of all variables a NetCDF file can be written/read as part of the restart logic. A further complication is the possible mis-match between the variables in the simulation and the content of the restart-file. This could be the case if e.g. a simulation warm-up period was done with physics only - and at the end of this period bio-geochemistry is enabled. In this case the state will contain all bio-geochemical variables - but the restart file will only contain the physical variables. To overcome this problem we have implemented a <em>logical</em> variable allowing for missing variables in the restart file. This option is false by default and must be explicity set to true in the namelist file in cases like the above.</p>
+
+<p>A wish from the lake-modelling people have been the abillity to read in observed longwave back-radiation - instead of calculating together with sensible and latent heat - as is is frequently measured for lake-sites (opposed to proper cloud-cover data). This will be available in this version - the format of the file is the standard scalar GOTM-format.</p>
+
+<h4 id="version-5-4">Version 5.4</h4>
+
+<p>Partly based on the experinces using YAML-based configuration in FABM and partly required by some of the other developments we do - autocalibration, sensitivity analysis and ensemble simulations - it has shown that the Fortran only namelist based initialization method does not really cut it with the use cases we have. This is a change that will have relative little impact on users - unless you do a lot of hand-editing of namelist files in which case you&rsquo;ll have to get used to edit yaml-files instead - but it will require substantial changes to the code it self (but only all the <em>init_</em> routines. A new blog will be written when we approach the first release candidates.</p>
+
+<h4 id="version-5-6">Version 5.6</h4>
+
+<p>As written above the change to the yaml-based configuration is partly a consequence of different use cases - like auto-calibration. This typically requires a very large number of simulations - counting from 1000&rsquo;s to tens of 1000&rsquo;s and maybe even more depending on the complexity of the problem. To facilitate this GOTM will be extended to run in <strong>ensemble</strong> mode where in principle any number of simulations can be done with one program invocation. GOTM will only be doing the forward integration - the actual definition of the ensemble members will be done by external programs. The most advanced method will use a master/worker self-scheduling algorihtm implemented using <a href="https://en.wikipedia.org/wiki/Message_Passing_Interface">MPI</a> to do any number of individual simulations from a single GOTM invocation. This work is already beyond proff of concept but will need some more testing before being released and the full functionallity still awaits the yaml-configuration feature.</p>
+
+<h4 id="version-6-0">Version 6.0</h4>
+
+<p>Since almost 6 years work has been done to make GOTM applicable for lake applications. This mainly involves incorporating the effect of the hypsograph - the ralationship between depth and area. A number of people have been involved but the work has never really been finished even though the code (a separate lake branch in the main repository) has been in production for some years. In addition to the <em>dA/dz</em> in the advection/diffusion equations inflow/outflow is also very important for lakes as they carry the nutrient loadings. A very flexible method has been implemented allowing any number of inflows and outsflows each inflow with individual loadings and for all separate configuration of interleaving of fixed depth ranges for the flow. The GOTM/Lake branch is tightly connected to FABM and the majority of the development has been carried out in projects where the main focus has been on bio-geochemistry instead of the physics. As mentioned the code is ready but we are awaiting the finishing of a publication on the changes in the algorithms in order to account for <em>dA/dz</em>.</p>
+
+<h4 id="version-6-2">Version 6.2</h4>
+
+<p>Until now an ice-model has not been integrated into the master branch. Two specific efforts has been made in 2014-2015 but not the Winton ice-model nor the Flato ice-model made it into the repository even though the latter has been published by University of Victoria, Canada. Recently, it has been decided to revive the efforts to have - at least - the Flato model included. GOTM has not been used a lot in the arctic - maybe explanined by the lack of aproper ice-model - but with the recent increased use in the lake community the need for ice is increasing. In accordance with the solution methods used in GOTM - the Flato model is likely the best choice solving differential equations for light and temperature layered configuration where the number of layers can be determined by the user - much like the way it is done in GOTM.</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
