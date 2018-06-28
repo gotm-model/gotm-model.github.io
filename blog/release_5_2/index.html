@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GOTM release - v5.2</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="http://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="http://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="http://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="http://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="http://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="http://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="http://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="http://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="http://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>GOTM release - v5.2</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> March 7, 2018
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>As a consequence of the more streamlined release model we are now ready with a new release of GOTM - version 5.2. Updating the stable version implies a new version for the development branch as well - now 5.3.</p>
+
+<p>As a user the following step must be taken in order to use the new stable
+version of the code.</p>
+
+<ul>
+<li>Check out the new branch - v5.2 - of the GOTM source code</li>
+<li>If you are using <em>editscenario</em> and related  <em>.xml</em>-file to keep track of
+your configuration the version description on the first line of the <em>.xml</em> file
+must be updated to <strong>gotm-5.2</strong>.</li>
+</ul>
+
+<p>Update to new versions have been done for all the standard test cases provided
+with GOTM.</p>
+
+<p>In this release two new features has been implemented as described below.</p>
+
+<h3 id="new-features">New features</h3>
+
+<ul>
+<li>Hot-start facility - developed in the <a href="http://prognoswater.org">PROGNOS</a> project and further supported by JRC.</li>
+<li>Option to read in longwave back-radiation instead of calculating - funded by Don Pierson/<a href="http://katalog.uu.se/organisation/?orgId=X137:6">Erken</a></li>
+<li>We have also added 3 new test-cases - two for the Mediterranean, one for the
+Black Sea and updated the gotland case.</li>
+</ul>
+
+<p>Hot-start (or restart) allow to split a simulation in two or more time-chunks.
+GOTM will at the end of a simulation write the state of the model to a NetCDF-
+formatted file - <em>restart.nc</em>. This file can be used to provide initial
+conditions at a subsequent simulation. The feature is controlled via the
+namelist variable <em>restart_offline</em> by setting it to true. There are different
+use-cases for the hot-start facility. One involves spinning up GOTM in physics
+only mode and when the physics is in balance enable bio-geochemistry. The
+<em>restart.nc</em> file from the spin-up run does not contain any bio-geochemical
+variables - on the other hand - when the bio-geochemical is started the full
+state is a combination of physical and biogeochemical state-variables. In this
+case the variable <em>restart_allow_missing_variable</em> must be set to .true..
+Missing variables in <em>restart.nc</em> will be reported to the screen - but the
+simulation will continue. The default setting of
+<em>restart_allow_missing_variable</em> is .false. as it is the safer setting.</p>
+
+<p>The lake people have for a while asked for an option to read in longwave back-
+radiation instead of calculating it as part of the normal air-sea flux
+calculation. This feature has been implemented.</p>
+
+<p>Please have a look at the planned <a href="../roadmap_2017/">roadmap</a>.</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="http://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="http://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="http://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="http://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="http://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="http://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="http://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
