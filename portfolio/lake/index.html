@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>FLEX</title>
+<title>Lake cases</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -92,57 +92,26 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>FLEX</h1>
-         <p>A data set which has been used throughout the last 40 years as a calibration
-for mixing parameterisations has been collected during the measurements of the
-<strong>Fladenground Experiment 1976 (FLEX&rsquo;76)</strong> campaign. Starting from a well-mixed
-winter situation, a surface mixed layer is established, which is several times
-deepened and partly removed by storm events.</p>
+         <h1>Lake cases</h1>
+         <p>GOTM configured in Lake mode - i.e. using a hypsograph to specify depth-area relations. The GOTM lake branch is kept in sync with the master branch and merging is hopefully soon to occur.</p>
+
+<ul>
+<li><a href="/cases/ravn/">Ravn</a></li>
+</ul>
+
+<p>Picture from <a href="https://pixabay.com/en/sunset-lake-water-reflection-clouds-549677/">here</a></p>
+
+<p></p>
+
+<p>Models are widely used in the management of lake and reservoir water quality, particularly for setting maximum allowable nutrient load targets. Mechanistic models, in particular, are increasingly used for decision support and management e.g. <a href="https://doi.org/10.1016/j.ecolmodel.2008.08.005">Trolle et al. 2008</a>, since they are able to account for multiple stressors, such as the effects of changes in nitrogen and phosphorus loads and climate e.g. <a href="[200~https://doi.org/10.1890/13-0790.1">Nielsen et al. 2014</a>. One of the earliest examples of mechanistic lake modelling is the Danish Lake Glumsø model by Jørgensen [1976], which already then was highly parameterized and involved dynamics of three trophic levels, including phytoplankton, zooplankton and fish. Additional mechanistic models have since been developed, such as SALMO by Recknagel and Benndorf [1982], DYRESM-CAEDYM by Hamilton and Schladow [1997], PCLake by Janse [1997] and PROTECH by Reynolds et al. [2001]. PCLake has since its origin undergone further development and today represent one of the most complex lake ecosystem models available. PCLake describe four trophic levels, including multiple phytoplankton groups, macrophytes, zooplankton, zoobenthos, and zooplanktivorous, benthivorous and piscivorous fish. <a href="https://doi.org/10.5194/gmd-9-2271-2016">Hu et al. 2016</a> produced a FABM implementation of PCLake, thereby enabling PCLake applications to physically heterogeneous water bodies, including also water bodies that stratify, in contrast to the original fully-mixed box model. Hence, the coupled GOTM-FABM-PCLake model can now be applied to stratifying lakes and reservoirs.</p>
 
 
 <figure>
     
-        <img src="/cases/img/flex.png" alt="Spring temperature development at the FLEX site in the Northern North Sea." />
+        <img src="/portfolio/img/sunset-549677_960_720.jpg" />
     
-    
-    <figcaption>
-        <p>
-        Spring temperature development at the FLEX site in the Northern North Sea.
-        
-            
-        
-        </p> 
-    </figcaption>
     
 </figure>
-
-
-<!--
-[caption id="attachment_443" align="aligncenter" width="640"]![Spring temperature development at the FLEX site in the Northern North Sea](/portfolio/img/flex.png) 
--->
-
-<p>The measurements of meteorological forcing and potential temperature
-profiles were carried out in spring 1976 in the northern North Sea at a water
-depth of about 145 m and a geographical position at 58 deg 55&rsquo;N and 0 deg 32&rsquo;E.
-The simulation is run from April 6 to June 7, 1976. The
-<a href="http://link.springer.com/article/10.1007/BF00232256">Kondo (1975)</a>
-bulk formulae have
-been used for pre-calculating the surface fluxes, which are given in the data
-files momentumflux.dat, and heatflux.dat. Other meteorological data files gives
-sea surface temperature (sst.dat) and short wave radiation (swr.dat). Tidal
-flow is forced by oscillating sea surface slopes (pressure.dat), temperature
-profiles for validation are provided directly from CTD (tprof_ctd.dat) or
-interpolated from CTD to semi-diurnal profiles (tprof.dat). Salinity from CTD
-(s_prof_ctd.dat) or from a 3D model (s_prof.dat) are used for nudging simulated
-salinity to &ldquo;observed&rdquo; data at a time scale of 2 days. Six-hourly values for
-light extinction are given by extinction.dat. Model simulations similar to
-those provided here have been published by
-<a href="http://dx.doi.org/10.1029/94JC03229">Burchard &amp; Baumert (1995)</a>.
-As there, also here a k-epsilon
-model is used as turbulence closure model, but here the
-<a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0469(2002)059%3C1550%3AAIMFTT%3E2.0.CO%3B2">Cheng et al. (2002) </a>
-stability functions are used.</p>
-
          
       </div>
     </div>

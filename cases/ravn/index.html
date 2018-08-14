@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>FLEX</title>
+<title>Ravn</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -92,22 +92,18 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>FLEX</h1>
-         <p>A data set which has been used throughout the last 40 years as a calibration
-for mixing parameterisations has been collected during the measurements of the
-<strong>Fladenground Experiment 1976 (FLEX&rsquo;76)</strong> campaign. Starting from a well-mixed
-winter situation, a surface mixed layer is established, which is several times
-deepened and partly removed by storm events.</p>
+         <h1>Ravn</h1>
+         <p>Lake Ravn is a 33 meter deep Danish lake, which stratifies for approx. five months each year. The lake is part of a National Monitoring Program, and the ecological quality of the lake has been followed by collection of bi-weekly or monthly data since 1989.</p>
 
 
 <figure>
     
-        <img src="/cases/img/flex.png" alt="Spring temperature development at the FLEX site in the Northern North Sea." />
+        <img src="/cases/img/ravn.jpg" alt="Lake Ravn, Denmark, D. Trolle (2005)" />
     
     
     <figcaption>
         <p>
-        Spring temperature development at the FLEX site in the Northern North Sea.
+        Lake Ravn, Denmark, D. Trolle (2005)
         
             
         
@@ -117,31 +113,27 @@ deepened and partly removed by storm events.</p>
 </figure>
 
 
-<!--
-[caption id="attachment_443" align="aligncenter" width="640"]![Spring temperature development at the FLEX site in the Northern North Sea](/portfolio/img/flex.png) 
--->
+<p>During stratification, hypolimnetic oxygen is depleted, and consequently phosphate is released from the reduced bottom sediments (see figure below). This nutrient release can, when later mixed into the upper waters, fuel phytoplankton production. While the ecological quality of the lake has increased to some extent following the late 90s, the lake may still be subject to harmful algal blooms during summer months. As for many other lakes across Europe, ecological quality in Lake Ravn must comply with the EU Water Framework Directive, and both empirical and mechanistic models have been used as decision support tools [e.g., Trolle et al. 2008], particularly for deriving maximum allowable nutrient load thresholds.</p>
 
-<p>The measurements of meteorological forcing and potential temperature
-profiles were carried out in spring 1976 in the northern North Sea at a water
-depth of about 145 m and a geographical position at 58 deg 55&rsquo;N and 0 deg 32&rsquo;E.
-The simulation is run from April 6 to June 7, 1976. The
-<a href="http://link.springer.com/article/10.1007/BF00232256">Kondo (1975)</a>
-bulk formulae have
-been used for pre-calculating the surface fluxes, which are given in the data
-files momentumflux.dat, and heatflux.dat. Other meteorological data files gives
-sea surface temperature (sst.dat) and short wave radiation (swr.dat). Tidal
-flow is forced by oscillating sea surface slopes (pressure.dat), temperature
-profiles for validation are provided directly from CTD (tprof_ctd.dat) or
-interpolated from CTD to semi-diurnal profiles (tprof.dat). Salinity from CTD
-(s_prof_ctd.dat) or from a 3D model (s_prof.dat) are used for nudging simulated
-salinity to &ldquo;observed&rdquo; data at a time scale of 2 days. Six-hourly values for
-light extinction are given by extinction.dat. Model simulations similar to
-those provided here have been published by
-<a href="http://dx.doi.org/10.1029/94JC03229">Burchard &amp; Baumert (1995)</a>.
-As there, also here a k-epsilon
-model is used as turbulence closure model, but here the
-<a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0469(2002)059%3C1550%3AAIMFTT%3E2.0.CO%3B2">Cheng et al. (2002) </a>
-stability functions are used.</p>
+
+<figure>
+    
+        <img src="/cases/img/ravn_results.png" alt="Simulation results" width="640" />
+    
+    
+    <figcaption>
+        <p>
+        Simulation results
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>In an attempt to better understand the effects of changes in external nutrient loads on the ecosystem of Lake Ravn, a coupled GOTM-FABM-PCLake model has recently been applied to the lake in a project funded by the Danish Ministry of the Environment. When comparing simulated and observed data, this model generally performs better relative to previous modelling attempts, and has improved the basis for making management decisions.</p>
 
          
       </div>

@@ -6,7 +6,6 @@
     <description>Recent content in Cases on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy;2016 GOTM</copyright>
     <lastBuildDate>Sat, 05 Nov 2016 18:25:22 +0530</lastBuildDate>
     
 	<atom:link href="http://gotm-model.github.io/cases/index.xml" rel="self" type="application/rss+xml" />
@@ -40,13 +39,23 @@
     </item>
     
     <item>
+      <title>Ravn</title>
+      <link>http://gotm-model.github.io/cases/ravn/</link>
+      <pubDate>Tue, 14 Aug 2018 12:00:00 +0000</pubDate>
+      
+      <guid>http://gotm-model.github.io/cases/ravn/</guid>
+      <description>Lake Ravn is a 33 meter deep Danish lake, which stratifies for approx. five months each year. The lake is part of a National Monitoring Program, and the ecological quality of the lake has been followed by collection of bi-weekly or monthly data since 1989.
+   Lake Ravn, Denmark, D. Trolle (2005)   During stratification, hypolimnetic oxygen is depleted, and consequently phosphate is released from the reduced bottom sediments (see figure below).</description>
+    </item>
+    
+    <item>
       <title>FLEX</title>
       <link>http://gotm-model.github.io/cases/flex/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>http://gotm-model.github.io/cases/flex/</guid>
       <description>A data set which has been used throughout the last 40 years as a calibration for mixing parameterisations has been collected during the measurements of the Fladenground Experiment 1976 (FLEX&amp;rsquo;76) campaign. Starting from a well-mixed winter situation, a surface mixed layer is established, which is several times deepened and partly removed by storm events.
-  Spring temperature development at the FLEX site in the Northern North Sea.   The measurements of meteorological forcing and potential temperature profiles were carried out in spring 1976 in the northern North Sea at a water depth of about 145 m and a geographical position at 58 deg 55&amp;rsquo;N and 0 deg 32&amp;rsquo;E.</description>
+   Spring temperature development at the FLEX site in the Northern North Sea.   The measurements of meteorological forcing and potential temperature profiles were carried out in spring 1976 in the northern North Sea at a water depth of about 145 m and a geographical position at 58 deg 55&amp;rsquo;N and 0 deg 32&amp;rsquo;E.</description>
     </item>
     
     <item>
