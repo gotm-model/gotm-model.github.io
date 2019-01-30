@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Softwares on GOTM</title>
-    <link>http://gotm-model.github.io/software/</link>
+    <link>https://gotm-model.github.io/software/</link>
     <description>Recent content in Softwares on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Nov 2016 18:25:22 +0530</lastBuildDate>
     
-	<atom:link href="http://gotm-model.github.io/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gotm-model.github.io/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux/Mac</title>
-      <link>http://gotm-model.github.io/software/linux/</link>
+      <link>https://gotm-model.github.io/software/linux/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
-      <guid>http://gotm-model.github.io/software/linux/</guid>
+      <guid>https://gotm-model.github.io/software/linux/</guid>
       <description>Overview  Get GOTM For now we do not provide pre-compiled versions of GOTM for Linux and Mac. The main reason being that all pre-requisites for building locally are readily available on these platforms - notably a working Fortran compiler. So please follow the instructions below for three different ways to build GOTM - of increasing complexity. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site.</description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>http://gotm-model.github.io/software/windows/</link>
+      <link>https://gotm-model.github.io/software/windows/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
-      <guid>http://gotm-model.github.io/software/windows/</guid>
+      <guid>https://gotm-model.github.io/software/windows/</guid>
       <description>Quick start  Get GOTM It is easiest to download the pre-built GOTM software for Windows (gotm.exe) , provided with each stable release. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site. Run To run a scenario, open a command prompt (&amp;ldquo;cmd&amp;rdquo;), cd to the scenario directory, and run GOTM by typing the full path to gotm.</description>
     </item>
     
