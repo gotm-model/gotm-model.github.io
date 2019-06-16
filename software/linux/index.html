@@ -121,19 +121,32 @@ need a stand-alone NetCDF viewer, we recommend
 
 <ol>
 <li>Create and enter a build directory - e.g. /tmp/gotmbuild/</li>
-<li>cmake ~/GOTM/code/src -DGOTM_USE_FABM=false - do NOT include FABM</li>
-<li>cmake ~/GOTM/code/src -DFABM_BASE=~/FABM/fabm - do include FABM</li>
-<li>make install</li>
+<li>cmake ~/GOTM/code -DGOTM_USE_FABM=off - do NOT include FABM~~</li>
+<li>cmake ~/GOTM/code -DGOTM_USE_BASE=on - do include FABM</li>
+<li>make <em>or</em> cmake &ndash;build .</li>
+<li>./gotm -c</li>
 </ol>
 
-<p>Adjust the path to the GOTM (and FABM) source code.</p>
+<pre><code>kb@orca ~/TT/build $ ./gotm -c
+ ------------------------------------------------------------------------
+ GOTM version:   v5.3-122-g9d840387 (cmake branch)
+ NetCDF version: 4.7.0 of May  1 2019 11:13:47 $
+ ------------------------------------------------------------------------
+ Compiler: Intel 19.0.0.20190117
+ ------------------------------------------------------------------------
+</code></pre>
+
+<p><del>2. cmake ~/GOTM/code/src -DGOTM_USE_FABM=false - do NOT include FABM</del>
+   <del>3. cmake ~/GOTM/code/src -DFABM_BASE=~/FABM/fabm - do include FABM</del></p>
+
+<p>Adjust the path to the GOTM <del>(and FABM)</del> source code.</p>
 
 <h4 id="the-gui-version-of-cmake">The GUI version of CMake</h4>
 
 <ol>
 <li>Start &ldquo;CMake (cmake-gui)&rdquo;.</li>
 <li>Click the &ldquo;Browse Source&hellip;&rdquo; button and select the directory with the GOTM
-source code. This is the src directory at the root of the GOTM repository.</li>
+source code. <del>This is the src directory at the root of the GOTM repository.</del></li>
 <li>Click the &ldquo;Browse Build&hellip;&rdquo; button and select a directory of your choice
 to build GOTM in - e.g. /home/<em>USERNAME</em>/build/gotm. It is recommended to
 choose an empty (or new) directory for this purpose.</li>
@@ -153,9 +166,9 @@ Open a Terminal and enter this directory and type <em>make</em>.</li>
 
 <p>Text in <em>italics</em> are commands and text in <strong>bold</strong> are variables.</p>
 
-<p>In the following it is assumed the GOTM and FABM source code is cloned to <strong>GOTM_BASE</strong> and <strong>FABM_BASE</strong>. Default values are:
+<p>In the following it is assumed the GOTM <del>and FABM</del> source code is cloned to <strong>GOTM_BASE</strong> ~~and FABM_BASE ~~. Default values are:
 * <strong>GOTM_BASE</strong> = <em>$HOME/GOTM/code</em>
-* <strong>FABM_BASE</strong> = <em>$HOME/FABM/code</em></p>
+<del>* <strong>FABM_BASE</strong> = <em>$HOME/FABM/code</em></del></p>
 
 <h5 id="configuring">Configuring</h5>
 

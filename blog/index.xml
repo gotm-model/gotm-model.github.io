@@ -6,10 +6,21 @@
     <description>Recent content in Blogs on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Mar 2018 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2019 12:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://gotm-model.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Modern CMake and sub-modules</title>
+      <link>https://gotm-model.github.io/blog/modern_cmake/</link>
+      <pubDate>Sun, 16 Jun 2019 12:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/modern_cmake/</guid>
+      <description>&lt;p&gt;We have re-written the CMake configuration file(s) to be in line with principles of Modern CMake. In addition - using these principles - we have moved code pieces not part of &lt;em&gt;essential&lt;/em&gt; GOTM out into individual projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GOTM release - v5.2</title>

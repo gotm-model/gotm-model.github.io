@@ -19,6 +19,8 @@
       <guid>https://gotm-model.github.io/portfolio/software/</guid>
       <description>&lt;p&gt;GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Begin change as of 2019-06-14&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
@@ -184,6 +186,17 @@
 theoretical background of individual the turbulence models.&lt;/p&gt;
 
 &lt;p&gt;Figure from &lt;a href=&#34;https://pixabay.com/en/photos/document/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Modern CMake and sub-modules</title>
+      <link>https://gotm-model.github.io/blog/modern_cmake/</link>
+      <pubDate>Sun, 16 Jun 2019 12:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/modern_cmake/</guid>
+      <description>&lt;p&gt;We have re-written the CMake configuration file(s) to be in line with principles of Modern CMake. In addition - using these principles - we have moved code pieces not part of &lt;em&gt;essential&lt;/em&gt; GOTM out into individual projects.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
