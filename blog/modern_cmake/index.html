@@ -181,8 +181,13 @@
 
 <p>When making a new clone it is important to add options to inform <em>Git</em> about the submodules. This is done like:</p>
 
-<pre><code>git clone --recursive https://github.com/gotm-model/code.git
+<pre><code>git clone https://github.com/gotm-model/code.git
 git submodule update --init --recursive
+</code></pre>
+
+<p>With <em>git</em> 1.7.3 and up the commands can be combined to one:</p>
+
+<pre><code>git clone --recurse-submodules https://github.com/gotm-model/code.git
 </code></pre>
 
 <p>When the code is cloned the instructions just given above can be used.</p>
