@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EditScenario and friends</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>EditScenario and friends</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> July 6, 2019
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<h3 id="status-on-python">Status on Python</h3>
+
+<p>I use Intels Python distribution - with mixed feelings - and lately when I&rsquo;ve done Python sysadm I&rsquo;ve started to reciecve messages about ending support.</p>
+
+<p>From <a href="https://www.python.org/dev/peps/pep-0373/#maintenance-releases">here</a> it is also clear the Python2 is approaching the end:</p>
+
+<pre><code>The End Of Life date (EOL, sunset date) for Python 2.7 has been moved five years into the future, to 2020. 
+</code></pre>
+
+<p>In combination with Jorns new Python3 only laptop it made it clear that steps were needed in order to be able to operate GOTM in the usual way also after January 1. 2020. This has lead to a number of changes in the python code so basic functionallity is available both in Python2 and Python3.
+It has also lead to the fact that certain features are only available in Python2. These are typically GUI related extra features.</p>
+
+<p>Good news is that the different packages are available from PyPi and are as easy to install as:</p>
+
+<pre><code>pip install &lt;package_name&gt; [--user]  
+</code></pre>
+
+<p>For further information see <a href="https://pypi.org/">PyPi</a></p>
+
+<h3 id="status-on-packages">Status on packages</h3>
+
+<table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th align="center">&nbsp;&nbsp;  Py2 &nbsp;&nbsp;</th>
+<th align="center">&nbsp;&nbsp; Py3 &nbsp;&nbsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td></td>
+<td><em>xmlstore</em></td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td></td>
+<td><em>xmlplot</em></td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td></td>
+<td><em>editscenario</em></td>
+<td align="center">x</td>
+<td align="center">x<sup>1</sup></td>
+</tr>
+
+<tr>
+<td></td>
+<td><em>gotmgui</em></td>
+<td align="center">x</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td></td>
+<td><em>pygotm</em><sup>2</sup></td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td></td>
+<td><em>PyNcView</em></td>
+<td align="center">x<sup>3</sup></td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+
+<p>In principle Python is platform independent and we have tested on Mac, Linux and Windows but there are so many things that can influence compatability that there is no guarantee that it will work on all computers.</p>
+
+<ol>
+<li>The graphical part of <em>editscenario</em> - i.e viewing GOTM <a href="https://github.com/fabm-model/fabm/wiki/GOTM#depth-independent-variables"><em>time-series</em></a> and <a href="https://github.com/fabm-model/fabm/wiki/GOTM#depth-dependent-variables"><em>profiles</em></a> - will likely not work with Python3. In Python2 it will only work if <em>PyQt</em> or <em>PySide</em> is installed. The latter is an endavor on its own and beyond our support capabilities.</li>
+<li>We have not uploaded <em>pygotm</em> to PyPi yet (as of the release of this blog). As <em>pygotm</em> is not a pure Python package it also includes a shared library basically containing all the functionality of GOTM. <em>pygotm</em> will in principle work with Python3 - <em>import pygotm</em> will produce no errors - but as <em>gotmgui</em> will not work with Python3 the usefullness will be very limited.</li>
+<li>Maintaining <em>PyNcView</em> is time consuming and support and further development will end when support for Python2 ends. It is also not envisaged that <em>PyNcView</em> will be updated to Python3. <em>PyNcView</em> is available via PyPi but might not work.</li>
+</ol>
+
+<p>So the short message of this blog is really:</p>
+
+<pre><code>pip install editscenario &lt;--user&gt;
+</code></pre>
+
+<p>to be able to use <em>editscenario</em> both from Python2 and Python3.</p>
+
+<p><em>gotmgui</em> is  Python2 only and will - until further notice - require manual installation of <em>pygotm</em>.</p>
+
+<p><em>PyNcView</em> is unsupported from now on but is Python2 only.</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
