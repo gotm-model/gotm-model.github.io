@@ -191,6 +191,17 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Towards GOTM 5.4</title>
+      <link>https://gotm-model.github.io/blog/towards_release_5_4/</link>
+      <pubDate>Mon, 29 Jul 2019 12:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/towards_release_5_4/</guid>
+      <description>&lt;p&gt;Version 5.4 of GOTM contains a number of changes making the normal release method un-suitable. The new version contains a mixture of under the hood compile configuration changes, use of &lt;em&gt;Git&lt;/em&gt; sub-modules, new run time configuration method and new features.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>EditScenario and friends</title>
       <link>https://gotm-model.github.io/blog/editscenario/</link>
       <pubDate>Sat, 06 Jul 2019 12:00:00 +0200</pubDate>

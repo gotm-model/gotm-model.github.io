@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Towards GOTM 5.4</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>Towards GOTM 5.4</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> July 29, 2019
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>This is still a draft of the blog-post - <em>kb 2019-07-19</em>.</p>
+
+<p>This message is mainly for those who want to help developing GOTM further. Not everything will work as expected - and we are aware of issues with the present code. Even so the code is released and we hope for feedback in order to proceed and reletive soon have a full release of GOTM v5.4.</p>
+
+<p>As the sum of the changes are rather big it is necessary with a more thorough test than what is normally the case. The changes falls in 3 catagories each described in sub-sections below.</p>
+
+<h4 id="cmake-configuration-re-write-and-sub-modules-use">CMake configuration re-write and sub-modules use</h4>
+
+<p>A description of the changes have already been given <a href="../modern_cmake/">here</a></p>
+
+<p>The main take home message is that <em>GOTM</em> now comes with external dependencies already included as part of the <em>git clone ..</em> command. This implies that there is no need to explicitly define <strong>FABM_BASE</strong> as part of the CMake configuration step.</p>
+
+<h4 id="new-run-time-configuration-yaml">New run-time configuration - YAML</h4>
+
+<p>For some of the use cases we have experienced over the last few years the Fortran namelist files have become a limiting factor. Without going into to much detail the main problem was related to automatic generation of namelist files when GOTM was used in sensitivity and auto-calibration work.</p>
+
+<p>The YAML format is not completely new on GOTM context as the relative new output manager uses a YAML configuration file. Also FABM uses YAML format for run-time configuration. One of the objectives of the YAML specification was to create a human readable format - so understanding the content of the configuration file is as easy - if not easier - than the namelist files. All configurations are now contained in one single file. As the YAML file can be generated by GOTM itself it is possible to actively use the meta data used internally by the field-manager in GOTM. This has been used to make annotations in the YAML file.</p>
+
+<p>We have - for now - kept compatibility with namelists i.e. it is still possible to run GOTM using namelist configuration files. To do this users must add <strong>&ndash;read_nml</strong> when executing GOTM. We strongly urge people to shift to the YAML-based configuration file. To ease the transition we provide support for an automatic conversion from namelists to YAML. A strong argument for converting is that new features in GOTM is not guarenteed work with namelists - there was a reason why we wanted to shift away.</p>
+
+<p>The default behaviour of GOTM is to read from gotm.yaml but it is now possible to override the default behaviour by specifying an alternative YAML file on the command line as <em>gotm test-gotm.yaml</em> in which case the configuration will be read from <em>test-yaml.gotm</em> instead. This is usefull in an ensemble context where 100&rsquo;s or 1000&rsquo;s of simulations are to be done and the configuration can be in e.g. <em>gotm.yaml.0000, gotm.yaml.0001, &hellip;</em>.</p>
+
+
+<figure>
+    
+        <img src="/pics/gotm_help.png" />
+    
+    
+</figure>
+
+
+<p>A few examples on command line use:</p>
+
+<pre><code>gotm
+</code></pre>
+
+<p>will run <em>gotm</em> using <em>gotm.yaml</em> as configuration file.</p>
+
+<pre><code>gotm gotm_test.yaml
+</code></pre>
+
+<p>will run <em>gotm</em> but using <em>gotm_test.yaml</em> as configuration file.</p>
+
+<pre><code>gotm --write_yaml gotm_default.yaml
+</code></pre>
+
+<p>will generate an annotated <em>gotm_default.yaml</em> and exit. The annotations are generated based on the metadata in the GOTM Fortran it self. It is important that no <em>gotm.yaml</em> exists as it will used to start a normal simulation.</p>
+
+<pre><code>gotm --write_yaml gotm_nml.yaml --read_nml
+</code></pre>
+
+<p>will generate <em>gotm_nml.yaml</em> and exit. Configuration will be read from existing namelist-files and used. This is a method to transfer a namelist based configuration to a YAML-based configuration.</p>
+
+<pre><code>gotm --write_schema gotm.schema
+</code></pre>
+
+<p>will write a XML-formatted file. This option might later be used with e.g. <em>editscenario</em>.</p>
+
+<pre><code>gotm  --output_id _01
+</code></pre>
+
+<p>will change output file names from e.g. <em>nns_annual.nc</em> to <em>nns_annual_01.nc</em>. So it is possible to store different test runs in different output files without the need to manually change output.yaml.</p>
+
+<h4 id="new-features">New features</h4>
+
+<p>The major new feature in this release is the YAML-based runtime configuration.</p>
+
+<p>In addition preliminary support for ice is provided in this release. The ice-models are from an external project and does not share any code with the previous attempts to include ice in GOTM (and GETM). Work will be continued on further developing and refining the ice models - but using the concepts of sub-modules this work can be done withput interfering with the core GOTM source code. The idea is to have an API that will allow for a number of different ice-models where one will be selected at run-time. The presence of ice will have an impact on fluxes of heat and momentum accross the air-sea interface. Depending on the complexity of the ice-model different output will be available - but as a minimum always the ice thickness.</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
