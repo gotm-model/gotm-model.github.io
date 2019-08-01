@@ -191,6 +191,18 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Check NetCDF library availability</title>
+      <link>https://gotm-model.github.io/blog/check_netcdf/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/check_netcdf/</guid>
+      <description>&lt;p&gt;By far the most frequent issue arising when people want to build GOTM is NetCDF.
+We have included a small script that can be used to test if NetCDF requirements are fulfilled.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Towards GOTM 5.4</title>
       <link>https://gotm-model.github.io/blog/towards_release_5_4/</link>
       <pubDate>Mon, 29 Jul 2019 12:00:00 +0200</pubDate>

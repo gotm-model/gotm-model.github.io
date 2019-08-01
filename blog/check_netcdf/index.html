@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Check NetCDF library availability</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>Check NetCDF library availability</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> August 1, 2019
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>The script is only useable for Linux and Mac users as the NetCDF libraries are included for Windows.</p>
+
+<p>Since NetCDF 4.4.1 a utility called - <em>nf-config</em> - is installed alongside the libraries. This utility is used by the GOTM CMake configuration to include necessary compile and link information (1).</p>
+
+<p>So first thing is to check the availability of <em>nf-config</em>:</p>
+
+<pre><code>command -v nf-config
+</code></pre>
+
+<p>If <em>nf-config</em> exists we can continue to the next test - can CMake actually find the NetCDF libraries. You must be in the GOTM main folder when executing this command.</p>
+
+<pre><code>cmake -P extern/flexout/cmake/Modules/FindNetCDF.cmake
+</code></pre>
+
+<p>If the latter command writes - among other things - Found NetCDF - it is safe to proceed with the configuration and compilation of GOTM.</p>
+
+<p>The above hhave been put in a small script with some additional information written to the terminal. The script is execuated as:</p>
+
+<pre><code>./check_netcdf.sh
+</code></pre>
+
+<p>1) There is anoother way of specifying the information but that is only for very old systems - before 4.4.1 - or in other special cases.</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
