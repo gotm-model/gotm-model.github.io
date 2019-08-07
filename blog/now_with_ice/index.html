@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>... now with ice ...</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>... now with ice ...</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> August 7, 2019
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>The use of submodules has made it much easier to integrate external projects without major risk of side effects.</p>
+
+<h4 id="cmake-configuration">CMake configuration</h4>
+
+<p>This blog contains information that goes along with <a href="../towards_release_5_4/">this</a>.</p>
+
+<p>The inclusion of ice follows the method used to include FABM. A CMake variable <strong>GOTM_USE_STIM</strong> can be <strong>on</strong> or <strong>off</strong> - default will be <strong>off</strong>. As STIM can only be configured as a submodule no further configuration is necessary.</p>
+
+<p>STIM provides a frame-work for including a number of different simple ice models. Presently two different models are fully working - and a third one is on progess. The STIM page will contain more information and hopefully be expanded in the future.</p>
+
+<h4 id="new-run-time-configuration-yaml">New run-time configuration - YAML</h4>
+
+<p>The resolute case has been used to test and develop the implementation - further set-ups will follow during the fall.</p>
+
+<p>The present version must be run with the <em>&ndash;read_nml</em> option and an empty gotm.yaml.</p>
+
+<p>The ice simulations is controlled via a <em>namelist</em> called <em>ice.nml</em></p>
+
+<pre><code>&amp;ice
+ice_model = 2,
+Hice = 1.29,
+sensible_ice_water = 20.,
+/
+</code></pre>
+
+<p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The last parameter is a future fudge parameter - but is not used for now.</p>
+
+<p>To have a view at the ice related variables the following can be added to <em>output.yaml</em></p>
+
+<pre><code>ice:
+   time_unit: hour
+   time_step: 24
+   sync_interval: 0
+   time_method: 1
+   variables:
+      - source: airt
+      - source: ice/*
+</code></pre>
+
+<h4 id="a-few-results">A few results</h4>
+
+<p>Will come shortly - my plot system is down &hellip;</p>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
