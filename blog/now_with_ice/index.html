@@ -120,6 +120,8 @@
 
 
 
+<p>Updated 2019-08-15 with new information on YAML-based ice configuration.</p>
+
 <p>The use of submodules has made it much easier to integrate external projects without major risk of side effects.</p>
 
 <h4 id="cmake-configuration">CMake configuration</h4>
@@ -134,7 +136,7 @@
 
 <p>The resolute case has been used to test and develop the implementation - further set-ups will follow during the fall.</p>
 
-<p>The present version must be run with the <em>&ndash;read_nml</em> option and an empty gotm.yaml.</p>
+<p>~~The present version must be run with the <em>&ndash;read_nml</em> option and an empty gotm.yaml.</p>
 
 <p>The ice simulations is controlled via a <em>namelist</em> called <em>ice.nml</em></p>
 
@@ -145,7 +147,19 @@ sensible_ice_water = 20.,
 /
 </code></pre>
 
+<p>~~</p>
+
+<p>Ice is configured through the YAML configuration - and a default entry is included when creating a setup via the <strong>&ndash;write_yaml <file></strong> option. It appears under the surface section and looks like:</p>
+
+<pre><code>  ice:
+    ice_model: 0                     #  [0=None, 1=Lebedev (1938), 2=MyLake, 3=Winton; default=0]
+    Hice: 0.0                        # total ice thickness [m; default=0.0]
+    sensible_ice_water: 0.0          # sensible heat flux ice/water [W; default=0.0]
+</code></pre>
+
 <p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The last parameter is a future fudge parameter - but is not used for now.</p>
+
+<p>And additional option might be added to use the <em>old</em> GOTM implementation - even in the case GOTM is compiled with support for STIM.</p>
 
 <p>To have a view at the ice related variables the following can be added to <em>output.yaml</em></p>
 
