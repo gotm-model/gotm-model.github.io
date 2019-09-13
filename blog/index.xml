@@ -6,10 +6,23 @@
     <description>Recent content in Blogs on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2019 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://gotm-model.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>EditScenario and friends</title>
+      <link>https://gotm-model.github.io/blog/editscenario/</link>
+      <pubDate>Fri, 13 Sep 2019 10:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/editscenario/</guid>
+      <description>&lt;p&gt;Updated status on September 13. 2019.&lt;/p&gt;
+
+&lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>... now with ice ...</title>
@@ -41,17 +54,6 @@ We have included a small script that can be used to test if NetCDF requirements 
       
       <guid>https://gotm-model.github.io/blog/towards_release_5_4/</guid>
       <description>&lt;p&gt;Version 5.4 of GOTM contains a number of changes making the normal release method un-suitable. The new version contains a mixture of under the hood compile configuration changes, use of &lt;em&gt;Git&lt;/em&gt; sub-modules, new run time configuration method and new features.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>EditScenario and friends</title>
-      <link>https://gotm-model.github.io/blog/editscenario/</link>
-      <pubDate>Sat, 06 Jul 2019 12:00:00 +0200</pubDate>
-      
-      <guid>https://gotm-model.github.io/blog/editscenario/</guid>
-      <description>&lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

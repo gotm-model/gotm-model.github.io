@@ -191,6 +191,19 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>EditScenario and friends</title>
+      <link>https://gotm-model.github.io/blog/editscenario/</link>
+      <pubDate>Fri, 13 Sep 2019 10:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/editscenario/</guid>
+      <description>&lt;p&gt;Updated status on September 13. 2019.&lt;/p&gt;
+
+&lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>... now with ice ...</title>
       <link>https://gotm-model.github.io/blog/now_with_ice/</link>
       <pubDate>Wed, 07 Aug 2019 12:00:00 +0200</pubDate>
@@ -220,17 +233,6 @@ We have included a small script that can be used to test if NetCDF requirements 
       
       <guid>https://gotm-model.github.io/blog/towards_release_5_4/</guid>
       <description>&lt;p&gt;Version 5.4 of GOTM contains a number of changes making the normal release method un-suitable. The new version contains a mixture of under the hood compile configuration changes, use of &lt;em&gt;Git&lt;/em&gt; sub-modules, new run time configuration method and new features.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>EditScenario and friends</title>
-      <link>https://gotm-model.github.io/blog/editscenario/</link>
-      <pubDate>Sat, 06 Jul 2019 12:00:00 +0200</pubDate>
-      
-      <guid>https://gotm-model.github.io/blog/editscenario/</guid>
-      <description>&lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
