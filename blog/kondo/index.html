@@ -148,7 +148,7 @@
 </figure>
 </p>
 
-<p>For the actual calcuation of the momentum and heat fluxes the speed up is 40% - but when the percentage of the heat flux calculation is very, very small - the effect is not very big in a 1D model context.</p>
+<p>For the actual calcuation of the momentum and heat fluxes the speed up is 40% - but when the percentage of the flux calculations is very, very small - the effect is not very big in a 1D model context.</p>
 
 <p>In addition I&rsquo;ve created a small tool consisting of a Fortran test program and associated Python plot script.</p>
 
@@ -171,6 +171,10 @@ kb@orca ~/source/build/intel/19.2/code/tests $ ./test_bulk
  qa=     6.807542851252644E-003
 kb@orca ~/source/build/intel/19.2/code/tests $ python $GOTM_BASE/scripts/python/plot_bulk.py
 </code></pre>
+
+<p>Adjust your <em>BUILDDIR</em>.</p>
+
+<p>Many other tests can be done by changing <em>basic_varibles</em> in test_bulk.F90. the present settings are for stable atmospheric conditions.</p>
       
        </div>
      </div>
