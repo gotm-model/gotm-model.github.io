@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Kondo - what was wrong</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>Kondo - what was wrong</h2>
+                          <p class="author-category">
+                            Karsten Bolding
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> September 19, 2019
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<h3 id="variable-naming-inconsistencies">Variable naming inconsistencies</h3>
+
+<p>The original paper by Kondo(1975) used <strong>d</strong> to refer to momentum, <strong>e</strong> to refer to latent heat and <strong>h</strong> to refer to sensible heat. In <em>kondo.F90</em> - and inherited by <em>fairall.F90</em> - the names of variables <strong>qh</strong> and <strong>qe</strong> for sensible and latent heat respectivly was calculated using wrongly named <strong>ced</strong> and <strong>chd</strong>. On top the naming in the output .nc file was wrong so latent heat was refered to as sensible heat - and vice versa.</p>
+
+<p>If the above all sounds confusing - then relax. Order has been achieved - the variable naming is now consistent and the correct variable meta data are in place in the output files. Old plots of sensible and latent heat will be wrong but the sum of surface heat fluxes are correct.</p>
+
+<h3 id="checking-the-bulk-transfer-coefficients">Checking the bulk transfer coefficients</h3>
+
+<p>During my work with <em>kondo.F90</em> I found ways to optimize the code. I&rsquo;ve checked the code and old and new versions give <em>the same</em> - in the sense close enough.</p>
+
+<p>Furthermore, there should not have been any impact on simulation results - or if so - only very, very minor - here from the NNS annual setup.
+
+<figure>
+    
+        <img src="../sensible-new-old.png" width="100%" />
+    
+    
+</figure>
+
+
+<figure>
+    
+        <img src="../latent-new-old.png" width="100%" />
+    
+    
+</figure>
+</p>
+
+<p>For the actual calcuation of the momentum and heat fluxes the speed up is 40% - but when the percentage of the heat flux calculation is very, very small - the effect is not very big in a 1D model context.</p>
+
+<p>In addition I&rsquo;ve created a small tool consisting of a Fortran test program and associated Python plot script.</p>
+
+<p>The following lines show how to use the tool - note CMake configuration must have been done.</p>
+
+<pre><code>kb@orca ~ $ BUILDDIR=~/source/build/intel/19.2/code/tests
+kb@orca ~ $ cd $BUILDDIR
+kb@orca ~/source/build/intel/19.2/code/tests $ make test_bulk
+kb@orca ~/source/build/intel/19.2/code/tests $ ./test_bulk
+ basic variables:
+ rh=      90.0000000000000     
+ airp=    101325.000000000     
+ tw=      10.0000000000000     
+ ta=      10.0010000000475     
+ 
+ humidity related variables:
+ rhoa=    1.24112344433306     
+ L=       2500000.00000000     
+ qs=     7.414878832585809E-003
+ qa=     6.807542851252644E-003
+kb@orca ~/source/build/intel/19.2/code/tests $ python $GOTM_BASE/scripts/python/plot_bulk.py
+</code></pre>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+
