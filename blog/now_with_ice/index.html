@@ -105,7 +105,7 @@
                           </p>
 
                           <p class="date-comments">
-                          <i class="fa fa-calendar-o"></i> August 7, 2019
+                          <i class="fa fa-calendar-o"></i> February 10, 2020
                           </p>
 
                           
@@ -120,7 +120,7 @@
 
 
 
-<p>Updated 2019-08-15 with new information on YAML-based ice configuration.</p>
+<p>Updated from 2019-08-07. Ice module is ready for production runs.</p>
 
 <p>The use of submodules has made it much easier to integrate external projects without major risk of side effects.</p>
 
@@ -132,34 +132,19 @@
 
 <p>STIM provides a frame-work for including a number of different simple ice models. Presently two different models are fully working - and a third one is on progess. The STIM page will contain more information and hopefully be expanded in the future.</p>
 
-<h4 id="new-run-time-configuration-yaml">New run-time configuration - YAML</h4>
+<h4 id="run-time-configuration-yaml-only">Run-time configuration - YAML only</h4>
 
-<p>The resolute case has been used to test and develop the implementation - further set-ups will follow during the fall.</p>
-
-<p><del>The present version must be run with the <em>&ndash;read_nml</em> option and an empty gotm.yaml.</del></p>
-
-<p>~~The ice simulations is controlled via a <em>namelist</em> called <em>ice.nml</em> ~~</p>
-
-<pre><code>&amp;ice
-ice_model = 2,
-Hice = 1.29,
-sensible_ice_water = 20.,
-/
-</code></pre>
-
-<p>Ice is configured through the YAML configuration - and a default entry is included when creating a setup via the <strong>&ndash;write_yaml <file></strong> option. It appears under the surface section and looks like:</p>
+<p>The configuration is very sipmple and takes only 3 variables. Se below:</p>
 
 <pre><code>  ice:
-    ice_model: 0                     #  [0=None, 1=Lebedev (1938), 2=MyLake, 3=Winton; default=0]
+    ice_model: 0                     # [0=None, 1=Lebedev (1938), 2=MyLake, 3=Winton; default=0]
     Hice: 0.0                        # total ice thickness [m; default=0.0]
-    sensible_ice_water: 0.0          # sensible heat flux ice/water [W; default=0.0]
+    ocean_ice_flux: 0.0              # heat flux from ocean to ice [W/m2; default=0.0]
 </code></pre>
 
-<p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The last parameter is a future fudge parameter - but is not used for now.</p>
+<p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The ocean_ice_flux is a non-resolved flux of heat from ocean water to the ice.</p>
 
 <p>And additional option might be added to use the <em>old</em> GOTM implementation - even in the case GOTM is compiled with support for STIM.</p>
-
-<p>To have a view at the ice related variables the following can be added to <em>output.yaml</em></p>
 
 <pre><code>ice:
    time_unit: hour
@@ -171,9 +156,17 @@ sensible_ice_water = 20.,
       - source: ice/*
 </code></pre>
 
-<h4 id="a-few-results">A few results</h4>
+<h4 id="a-simulation-example">A simulation example</h4>
 
-<p>Will come shortly - my plot system is down &hellip;</p>
+<p>Below is shown 7 year simulation with all 3 different ice models compared to observations from the Northern Baltic Sea. Ice thickness data provided by Adolf Stips, JRC.</p>
+
+
+<figure>
+    
+        <img src="../baltic_ice.png" width="100%" />
+    
+    
+</figure>
       
        </div>
      </div>

@@ -191,6 +191,17 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>... now with ice ...</title>
+      <link>https://gotm-model.github.io/blog/now_with_ice/</link>
+      <pubDate>Mon, 10 Feb 2020 12:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/now_with_ice/</guid>
+      <description>&lt;p&gt;Version 5.4 of GOTM will contain a feature preview of ice modelling using &lt;a href=&#34;https://github.com/BoldingBruggeman/stim&#34;&gt;STIM&lt;/a&gt;. Additional work will have to go into the development - but the coupled GOTM/STIM system does produce results that resembles reality.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Kondo - what was wrong</title>
       <link>https://gotm-model.github.io/blog/kondo/</link>
       <pubDate>Thu, 19 Sep 2019 10:00:00 +0200</pubDate>
@@ -210,17 +221,6 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
       <description>&lt;p&gt;Updated status on September 13. 2019.&lt;/p&gt;
 
 &lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>... now with ice ...</title>
-      <link>https://gotm-model.github.io/blog/now_with_ice/</link>
-      <pubDate>Wed, 07 Aug 2019 12:00:00 +0200</pubDate>
-      
-      <guid>https://gotm-model.github.io/blog/now_with_ice/</guid>
-      <description>&lt;p&gt;Version 5.4 of GOTM will contain a feature preview of ice modelling using &lt;a href=&#34;https://github.com/BoldingBruggeman/stim&#34;&gt;STIM&lt;/a&gt;. Additional work will have to go into the development - but the coupled GOTM/STIM system does produce results that resembles reality.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
