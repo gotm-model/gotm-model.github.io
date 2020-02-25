@@ -191,6 +191,17 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Numerical in-stabillities in the BBL</title>
+      <link>https://gotm-model.github.io/blog/bbl_stability/</link>
+      <pubDate>Thu, 20 Feb 2020 12:00:00 +0200</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/bbl_stability/</guid>
+      <description>&lt;p&gt;Instabilities in the BBL for the FLEX setup at high vertical resolution.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>... now with ice ...</title>
       <link>https://gotm-model.github.io/blog/now_with_ice/</link>
       <pubDate>Mon, 10 Feb 2020 12:00:00 +0200</pubDate>
