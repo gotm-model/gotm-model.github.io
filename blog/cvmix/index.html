@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CVMix module</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>CVMix module</h2>
+                          <p class="author-category">
+                            Qing Li
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> June 22, 2020
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>The Community Vertical Mixing Project (<a href="http://cvmix.github.io">CVMix</a>) is a portable vertical mixing software package providing an extensible framework for the development of first-order closures. Currently it includes subroutines allowing the surface and interior turbulent mixing closures in the K-profile parameterization (KPP, <a href="https://doi.org/10.1029/94RG01872">Large et al., 1994</a>), as well as a few KPP variants that include the effects of Langmuir turbulence (e.g., <a href="https://doi.org/10.1016/j.ocemod.2015.07.020">Li et al., 2016</a>, <a href="https://doi.org/10.1175/JPO-D-15-0106.1">Reichl et al., 2016</a> and <a href="https://doi.org/10.1175/JPO-D-17-0085.1">Li and Fox-Kemper, 2017</a>).</p>
+
+<p>Following the efforts of <a href="https://doi.org/10.1029/2019MS001810">Li et al., 2019</a>, CVMix is now included in GOTM as a submodule with an interface enabling KPP and its Langmuir turbulence variants. The CVMix module is enabled by building GOTM with the CMake flag <code>-DGOTM_USE_CVMIX=true</code> and using <code>turb_method=100</code> in the GOTM configuration file. It includes an interface <code>do_cvmix()</code> separate from <code>do_turbulence()</code> which assembles the CVMix subroutines to do KPP.</p>
+
+<p>KPP in CVMix (KPP-CVMix) is compared with the generic length scale model (GLS; <a href="https://doi.org/10.1357/002224003322005087">Umlauf and Burchard, 2003</a>) in the k-epsilon formulation with the weak-equilibrium stability function by <a href="https://doi.org/10.1175/1520-0485(2001)031%3C1413:OTPIOP%3E2.0.CO;2">Canuto et al., 2001</a> (GLS-C01A) using the <a href="https://gotm.net/cases/gotland_deep/">Gotland Deep</a> test case. The figure below shows a seasonal cycle of the simulated temperature in the two cases.</p>
+
+
+<figure>
+    
+        <img src="../gotland_cvmix.png" width="100%" />
+    
+    
+</figure>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+

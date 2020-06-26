@@ -191,6 +191,28 @@ theoretical background of individual the turbulence models.&lt;/p&gt;
     </item>
     
     <item>
+      <title>CVMix module</title>
+      <link>https://gotm-model.github.io/blog/cvmix/</link>
+      <pubDate>Mon, 22 Jun 2020 19:59:15 -0600</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/cvmix/</guid>
+      <description>&lt;p&gt;CVMix is now included GOTM, bringing more options of turbulence closures including KPP and its variants with Langmuir turbulence.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stokes drift</title>
+      <link>https://gotm-model.github.io/blog/stokes_drift/</link>
+      <pubDate>Mon, 22 Jun 2020 19:59:15 -0600</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/stokes_drift/</guid>
+      <description>&lt;p&gt;A new Stokes drift module is added. This allows input of Stokes drift and exploration of Langmuir turbulence parameterizations and more in GOTM.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Numerical in-stabillities in the BBL</title>
       <link>https://gotm-model.github.io/blog/bbl_stability/</link>
       <pubDate>Thu, 20 Feb 2020 12:00:00 +0200</pubDate>

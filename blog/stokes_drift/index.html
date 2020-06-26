@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Stokes drift</title>
+<meta name="description" content="General Ocean Turbulence Model">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://gotm-model.github.io/css/owl.theme.css">
+
+
+  <link href="https://gotm-model.github.io/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="https://gotm-model.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://gotm-model.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
+    
+      <p class="sidebar-p">General Ocean Turbulence Model</p>
+    
+      <p class="sidebar-p"></p>
+    
+      <p class="sidebar-p">GOTM is the result of the effort by a number of people to make 'state-of-the-art' turbulence model for natural waters. Since its inception more than 20 years ago GOTM has grown into a full-fledged 1D water column model with a very extended configuration possibilities including coupling to a collection of bio-geochemical models.</p>
+    
+      <p class="sidebar-p">Developed by a group of volunteers over 20+ years.</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://gotm-model.github.io/">Home</a></li>
+      
+        <li><a href="https://gotm-model.github.io/blog/">Blogs</a></li>
+      
+        <li><a href="https://gotm-model.github.io/history/">History</a></li>
+      
+        <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
+      
+        <li><a href="https://gotm-model.github.io/about/">About</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://github.com/gotm-model/code" data-animate-hover="pulse">
+    <i class="fa fa-github"></i>
+  </a>
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2016 GOTM
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+</div>
+
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>Stokes drift</h2>
+                          <p class="author-category">
+                            Qing Li
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> June 22, 2020
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+
+<p>A Stokes drift module is now added in GOTM, providing a way to include the Stokes drift information in GOTM for use in ocean surface boundary layer turbulence closure schemes. Currently it is used to enable Langmuir turbulence parameterizations in KPP via CVMix. But it supports input of the full vertical profile of Stokes drift and its shear, which allows exploration of Langmuir turbulence parameterizations in various forms and other applications. See <a href="https://doi.org/10.1029/2019MS001810">Li et al., 2019</a> for some examples.</p>
+
+<p>The Stokes drift module is enabled by default with the Stokes drift set to zero. It provides multiple options to input Stokes drift in GOTM. It introduces the following variables:</p>
+
+<ul>
+<li>Stokes drift profiles in x- and y-directions (<code>usprof</code>, <code>vsprof</code>), with input options
+
+<ul>
+<li>Read from a file</li>
+<li>Compute from the input surface value and a decay scale assuming an exponential profile</li>
+<li>Compute from the input wind using the empirical &lsquo;theory wave&rsquo; approach of <a href="https://doi.org/10.1016/j.ocemod.2017.03.016">Li et al., 2017</a></li>
+</ul></li>
+<li>Stokes drift shear profiles in x- and y-directions (<code>dusdz</code>, <code>dvsdz</code>), with input options
+
+<ul>
+<li>Read from a file</li>
+<li>Compute from the Stokes drift profile</li>
+</ul></li>
+<li>Surface value of the Stokes drift in x- and y-directions (<code>us0</code>, <code>vs0</code>) and a decay scale (<code>ds</code>), with input options
+
+<ul>
+<li>Constant</li>
+<li>Read from a file</li>
+</ul></li>
+<li>(If CVMix is used) A few variants of the turbulent Langmuir number introduced by <a href="https://doi.org/10.1017/S0022112096004375">McWilliams et al., 1997</a>, <a href="https://doi.org/10.1175/2007JPO3842.1">Harcourt and D&rsquo;Asaro, 2008</a>, <a href="https://doi.org/10.1029/2011JC007516">Van Roekel et al., 2012</a> and <a href="https://doi.org/10.1175/JPO-D-15-0106.1">Reichl et al., 2016</a></li>
+<li>(If CVMix is used) A few variants of the Langmuir enhancement factor introduced by <a href="https://doi.org/10.1016/j.ocemod.2015.07.020">Li et al., 2016</a> and <a href="https://doi.org/10.1175/JPO-D-15-0106.1">Reichl et al., 2016</a></li>
+</ul>
+
+<p>The figure below shows an example of using the Stokes drift module in comparing different variants of Langmuir turbulence parameterizations in KPP (<a href="https://doi.org/10.1016/j.ocemod.2015.07.020">KPPLT-VR12</a>, <a href="https://doi.org/10.1175/JPO-D-17-0085.1">KPPLT-LF17</a>) and the original KPP without Langmuir turbulence (<a href="https://doi.org/10.1029/94RG01872">KPP-CVMix</a>). The top panel shows the simulated temperature in KPP-CVMix whereas the lower two panels show the differences in KPPLT-VR12 and KPPLT-LF17 from KPP-CVMix. The test case is initialized and forced with conditions during the winter months (Sep. 22, 2012 - Dec. 5, 2012) of the Ocean Surface Mixing, Ocean Submesoscale Interaction Study in the northeast Atlantic (OSMOSIS, 48.7N, 16.2W; <a href="https://doi.org/10.1002/2015JC011423">Damerell et al., 2016</a>). See more details of this test case in <a href="https://doi.org/10.1029/2019MS001810">Li et al., 2019</a>.</p>
+
+
+<figure>
+    
+        <img src="../osmosis-winter_cvmix.png" width="100%" />
+    
+    
+</figure>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
+
+         
+      </div>
+   
+
+          </div>
+      </div>
+  </div>
+  <script src="https://gotm-model.github.io/js/jquery.min.js"></script>
+<script src="https://gotm-model.github.io/js/bootstrap.min.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.cookie.js"> </script>
+<script src="https://gotm-model.github.io/js/ekko-lightbox.js"></script>
+<script src="https://gotm-model.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://gotm-model.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://gotm-model.github.io/js/owl.carousel.min.js"></script>
+<script src="https://gotm-model.github.io/js/front.js"></script>
+
+</body>
+</html>
+

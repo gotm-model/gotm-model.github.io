@@ -6,10 +6,32 @@
     <description>Recent content in Blogs on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Feb 2020 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 19:59:15 -0600</lastBuildDate>
     
 	<atom:link href="https://gotm-model.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CVMix module</title>
+      <link>https://gotm-model.github.io/blog/cvmix/</link>
+      <pubDate>Mon, 22 Jun 2020 19:59:15 -0600</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/cvmix/</guid>
+      <description>&lt;p&gt;CVMix is now included GOTM, bringing more options of turbulence closures including KPP and its variants with Langmuir turbulence.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stokes drift</title>
+      <link>https://gotm-model.github.io/blog/stokes_drift/</link>
+      <pubDate>Mon, 22 Jun 2020 19:59:15 -0600</pubDate>
+      
+      <guid>https://gotm-model.github.io/blog/stokes_drift/</guid>
+      <description>&lt;p&gt;A new Stokes drift module is added. This allows input of Stokes drift and exploration of Langmuir turbulence parameterizations and more in GOTM.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Numerical in-stabillities in the BBL</title>
