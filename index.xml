@@ -17,7 +17,9 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://gotm-model.github.io/portfolio/software/</guid>
-      <description>&lt;p&gt;GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/gotm-model/code&#34;&gt;&lt;img src=&#34;https://travis-ci.org/gotm-model/code.svg?branch=master&#34; alt=&#34;Build Status&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Begin change as of 2019-06-14&lt;/strong&gt;&lt;/p&gt;
 
