@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>... now with ice ...</title>
+<title>404 Page not found</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -35,8 +35,7 @@
   <div id="all">
       <div class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left">
-              
-<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="https://gotm-model.github.io/">GOTM</a></h1>
     
@@ -93,86 +92,22 @@
   </div>
 </div>
 
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
   <div class="small-navbar visible-xs">
   <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+  <h1 class="small-navbar-heading"><a href="https://gotm-model.github.io/">GOTM</a></h1>
 </div>
 
-
-
-            <div class="row">
-                  <div class="col-sm-4">
-                    <div class="image">
-                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
-                    </div>
-                  </div>
-
-                  <div class="col-md-8">
-                      <h2>... now with ice ...</h2>
-                          <p class="author-category">
-                            Karsten Bolding
-                          </p>
-
-                          <p class="date-comments">
-                          <i class="fa fa-calendar-o"></i> February 10, 2020
-                          </p>
-
-                          
-                  
-                      </div>
-                    </div>
-                  </br>
-
-<div class="row">
-   <div class="content-column-content">
-          <div class="col-lg-8">
-
-
-<p>Updated from 2019-08-07. Ice module is ready for production runs.</p>
-<p>The use of submodules has made it much easier to integrate external projects without major risk of side effects.</p>
-<h4 id="cmake-configuration">CMake configuration</h4>
-<p>This blog contains information that goes along with <a href="../towards_release_5_4/">this</a>.</p>
-<p>The inclusion of ice follows the method used to include FABM. A CMake variable <strong>GOTM_USE_STIM</strong> can be <strong>on</strong> or <strong>off</strong> - default will be <strong>off</strong>. As STIM can only be configured as a submodule no further configuration is necessary.</p>
-<p>STIM provides a frame-work for including a number of different simple ice models. Presently two different models are fully working - and a third one is on progess. The STIM page will contain more information and hopefully be expanded in the future.</p>
-<h4 id="run-time-configuration---yaml-only">Run-time configuration - YAML only</h4>
-<p>The configuration is very sipmple and takes only 3 variables. Se below:</p>
-<pre><code>  ice:
-    ice_model: 0                     # [0=None, 1=Lebedev (1938), 2=MyLake, 3=Winton; default=0]
-    Hice: 0.0                        # total ice thickness [m; default=0.0]
-    ocean_ice_flux: 0.0              # heat flux from ocean to ice [W/m2; default=0.0]
-</code></pre><p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The ocean_ice_flux is a non-resolved flux of heat from ocean water to the ice.</p>
-<p>And additional option might be added to use the <em>old</em> GOTM implementation - even in the case GOTM is compiled with support for STIM.</p>
-<pre><code>ice:
-   time_unit: hour
-   time_step: 24
-   sync_interval: 0
-   time_method: 1
-   variables:
-      - source: airt
-      - source: ice/*
-</code></pre><h4 id="a-simulation-example">A simulation example</h4>
-<p>Below is shown 7 year simulation with all 3 different ice models compared to observations from the Northern Baltic Sea. Ice thickness data provided by Adolf Stips, JRC.</p>
-<figure>
-    <img src="../baltic_ice.png" width="100%"/> 
-</figure>
-      
-       </div>
-     </div>
-   </div>
-
-
-
-
-
-        <a href="#" class="back-to-top">
-        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
-
-        </a>
-
-         
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+        <h1>Page not found</h1>
+        <p><a href="https://gotm-model.github.io/">Return to the home page</a>.</p>
       </div>
-   
+    </div>
+  </div>
+</div>
 
           </div>
       </div>
@@ -191,4 +126,3 @@
 
 </body>
 </html>
-
