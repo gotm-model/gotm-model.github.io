@@ -119,41 +119,23 @@
           <div class="col-lg-8">
 
 
-
 <h3 id="variable-naming-inconsistencies">Variable naming inconsistencies</h3>
-
 <p>The original paper by Kondo(1975) used <strong>d</strong> to refer to momentum, <strong>e</strong> to refer to latent heat and <strong>h</strong> to refer to sensible heat. In <em>kondo.F90</em> - and inherited by <em>fairall.F90</em> - the names of variables <strong>qh</strong> and <strong>qe</strong> for sensible and latent heat respectivly was calculated using wrongly named <strong>ced</strong> and <strong>chd</strong>. On top the naming in the output .nc file was wrong so latent heat was refered to as sensible heat - and vice versa.</p>
-
 <p>If the above all sounds confusing - then relax. Order has been achieved - the variable naming is now consistent and the correct variable meta data are in place in the output files. Old plots of sensible and latent heat will be wrong but the sum of surface heat fluxes are correct.</p>
-
 <h3 id="checking-the-bulk-transfer-coefficients">Checking the bulk transfer coefficients</h3>
-
 <p>During my work with <em>kondo.F90</em> I found ways to optimize the code. I&rsquo;ve checked the code and old and new versions give <em>the same</em> - in the sense close enough.</p>
-
 <p>Furthermore, there should not have been any impact on simulation results - or if so - only very, very minor - here from the NNS annual setup.
-
 <figure>
-    
-        <img src="../sensible-new-old.png" width="100%" />
-    
-    
+    <img src="../sensible-new-old.png" width="100%"/> 
 </figure>
 
-
 <figure>
-    
-        <img src="../latent-new-old.png" width="100%" />
-    
-    
+    <img src="../latent-new-old.png" width="100%"/> 
 </figure>
 </p>
-
 <p>For the actual calcuation of the momentum and heat fluxes the speed up is 40% - but when the percentage of the flux calculations is very, very small - the effect is not very big in a 1D model context.</p>
-
 <p>In addition I&rsquo;ve created a small tool consisting of a Fortran test program and associated Python plot script.</p>
-
 <p>The following lines show how to use the tool - note CMake configuration must have been done.</p>
-
 <pre><code>kb@orca ~ $ BUILDDIR=~/source/build/intel/19.2/code/tests
 kb@orca ~ $ cd $BUILDDIR
 kb@orca ~/source/build/intel/19.2/code/tests $ make test_bulk
@@ -170,10 +152,7 @@ kb@orca ~/source/build/intel/19.2/code/tests $ ./test_bulk
  qs=     7.414878832585809E-003
  qa=     6.807542851252644E-003
 kb@orca ~/source/build/intel/19.2/code/tests $ python $GOTM_BASE/scripts/python/plot_bulk.py
-</code></pre>
-
-<p>Adjust your <em>BUILDDIR</em>.</p>
-
+</code></pre><p>Adjust your <em>BUILDDIR</em>.</p>
 <p>Many other tests can be done by changing <em>basic_varibles</em> in test_bulk.F90. the present settings are for stable atmospheric conditions.</p>
       
        </div>

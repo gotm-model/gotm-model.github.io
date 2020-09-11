@@ -119,40 +119,26 @@
           <div class="col-lg-8">
 
 
-
 <h3 id="status-on-python">Status on Python</h3>
-
 <p>I use Intels Python distribution - with mixed feelings - and lately when I&rsquo;ve done Python sysadm I&rsquo;ve started to reciecve messages about ending support. We have also tested how the tools work with package-manager installed Python3 on debian based distributions - with success.</p>
-
 <p>On Windows we suggest to use Anaconda as Python distribution.</p>
-
 <p>From <a href="https://www.python.org/dev/peps/pep-0373/#maintenance-releases">here</a> it is also clear the Python2 is approaching the end:</p>
-
 <pre><code>The End Of Life date (EOL, sunset date) for Python 2.7 has been moved five years into the future, to 2020. 
-</code></pre>
-
-<p>In combination with Jorns new Python3 only laptop it made it clear that steps were needed in order to be able to operate GOTM in the usual way also after January 1. 2020. This has lead to a number of changes in the python code so basic functionallity is available both in Python2 and Python3.
+</code></pre><p>In combination with Jorns new Python3 only laptop it made it clear that steps were needed in order to be able to operate GOTM in the usual way also after January 1. 2020. This has lead to a number of changes in the python code so basic functionallity is available both in Python2 and Python3.
 It has also lead to the fact that certain features are only available in Python2. These are typically GUI related extra features.</p>
-
 <p>Good news is that the different packages are available from PyPi and are as easy to install as:</p>
-
 <pre><code>pip install &lt;package_name&gt; [--user]  
-</code></pre>
-
-<p>For further information see <a href="https://pypi.org/">PyPi</a></p>
-
+</code></pre><p>For further information see <a href="https://pypi.org/">PyPi</a></p>
 <h3 id="status-on-packages">Status on packages</h3>
-
 <table>
 <thead>
 <tr>
-<th>&nbsp;</th>
+<th> </th>
 <th>Name</th>
-<th align="center">&nbsp;&nbsp;  Py2 &nbsp;&nbsp;</th>
-<th align="center">&nbsp;&nbsp; Py3 &nbsp;&nbsp;</th>
+<th align="center">    Py2   </th>
+<th align="center">   Py3   </th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td></td>
@@ -160,67 +146,54 @@ It has also lead to the fact that certain features are only available in Python2
 <td align="center">x</td>
 <td align="center">x</td>
 </tr>
-
 <tr>
 <td></td>
 <td><em>xmlplot</em></td>
 <td align="center">x</td>
 <td align="center">x</td>
 </tr>
-
 <tr>
 <td></td>
 <td><em>editscenario</em></td>
 <td align="center">x</td>
-<td align="center">x<sup>1</sup></td>
+<td align="center">x<!-- raw HTML omitted -->1<!-- raw HTML omitted --></td>
 </tr>
-
 <tr>
 <td></td>
 <td><em>gotmgui</em></td>
 <td align="center">x</td>
 <td align="center"></td>
 </tr>
-
 <tr>
 <td></td>
-<td><em>pygotm</em><sup>2</sup></td>
+<td>_pygotm_<!-- raw HTML omitted -->2<!-- raw HTML omitted --></td>
 <td align="center">x</td>
 <td align="center">x</td>
 </tr>
-
 <tr>
 <td></td>
-<td><em>PyNcView</em><sup>3</sup></td>
+<td>_PyNcView_<!-- raw HTML omitted -->3<!-- raw HTML omitted --></td>
 <td align="center">x</td>
 <td align="center">x</td>
 </tr>
-
 <tr>
-<td>&nbsp;</td>
+<td> </td>
 <td></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 </tbody>
 </table>
-
 <p>In principle Python is platform independent and we have tested on Mac, Linux and Windows but there are so many things that can influence compatability that there is no guarantee that it will work on all computers.</p>
-
 <ol>
 <li>The graphical part of <em>editscenario</em> - i.e viewing GOTM <a href="https://github.com/fabm-model/fabm/wiki/GOTM#depth-independent-variables"><em>time-series</em></a> and <a href="https://github.com/fabm-model/fabm/wiki/GOTM#depth-dependent-variables"><em>profiles</em></a> - will likely not work with Python3.</li>
 <li>We have not uploaded <em>pygotm</em> to PyPi yet (as of the release of this blog). As <em>pygotm</em> is not a pure Python package it also includes a shared library basically containing all the functionality of GOTM. <em>pygotm</em> will in principle work with Python3 - <em>import pygotm</em> will produce no errors - but as <em>gotmgui</em> will not work with Python3 the usefullness will be very limited.</li>
 <li>Maintaining <em>PyNcView</em> is time consuming but has turned out to be quite essential to our daily workflow. Jorn has as a consequence upgraded <em>PyNcView</em> to work in Python3.</li>
 </ol>
-
 <p>Some of the tools require <em>PyQt</em> 4 or 5, or <em>PySide</em>. Installing these is beyond this blog.</p>
-
 <p>So the short message of this blog is really:</p>
-
 <pre><code>pip install pyncview &lt;--user&gt;
-</code></pre>
-
-<p>Futher development will only provide support for Python3.</p>
+</code></pre><p>Futher development will only provide support for Python3.</p>
       
        </div>
      </div>

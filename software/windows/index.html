@@ -93,10 +93,7 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>Windows</h1>
-         
-
-<h3 id="quick-start">Quick start</h3>
-
+         <h3 id="quick-start">Quick start</h3>
 <ol>
 <li><strong>Get GOTM</strong> It is easiest to
 <a href="http://github.com/gotm-model/code/releases">download the pre-built GOTM software for Windows (gotm.exe)</a>
@@ -114,11 +111,8 @@ extension). These can be read by many applications (e.g., MATLAB, R). If you
 need a stand-alone NetCDF viewer, we recommend
 <a href="https://sourceforge.net/projects/pyncview">PyNcView</a>.</li>
 </ol>
-
 <h3 id="building-from-scratch">Building from scratch</h3>
-
 <h4 id="prerequisites">Prerequisites</h4>
-
 <ul>
 <li>a supported Fortran compiler. We regularly test the Intel Fortran compiler,
 which integrates with Visual Studio.<del>, as well as the GNU Fortran compiler
@@ -126,9 +120,7 @@ provided with the free
 <a href="http://mingw-w64.org">mingw-w64 compiler suite</a>.</del></li>
 <li><a href="https://cmake.org">CMake <del>2.8.8</del> 3.0 or later</a></li>
 </ul>
-
 <h4 id="download-the-code">Download the code</h4>
-
 <p>First, get the GOTM source code from GitHub. You can either download
 <a href="http://github.com/gotm-model/code/releases">the latest stable release of the code</a>
 as a single zip file, or check out the very latest version (&ldquo;developer&rsquo;s
@@ -143,20 +135,18 @@ TortoiseGit also requires
 to be installed. After Git for Windows and TortoiseGit are installed, you
 obtain the developer&rsquo;s version of GOTM by right-clicking in Windows Explorer
 within the directory where you want to place the source code directory, and
-choosing &ldquo;Git Clone&hellip;&rdquo;. In the window that appears, set &ldquo;URL&rdquo; to
-<a href="https://github.com/gotm-model/code.git">https://github.com/gotm-model/code.git</a>, set &ldquo;Directory&rdquo; to the path where you
-want the source code (recommended: _CURRENT<em>DIRECTORY</em>\gotm-git) and click OK.
+choosing &ldquo;Git Clone&hellip;&quot;. In the window that appears, set &ldquo;URL&rdquo; to
+<a href="https://github.com/gotm-model/code.git,">https://github.com/gotm-model/code.git,</a> set &ldquo;Directory&rdquo; to the path where you
+want the source code (recommended: <em>CURRENT_DIRECTORY</em>\gotm-git) and click OK.
 This should download the latest code.</p>
-
 <h4 id="building">Building</h4>
-
 <ol>
 <li>Start &ldquo;CMake (cmake-gui)&rdquo; from the start menu.</li>
 <li>Click the &ldquo;Browse Source&hellip;&rdquo; button and select the directory with the GOTM
 source code. <del>This is the src directory at the root of the GOTM repository.</del></li>
 <li>Click the &ldquo;Browse Build&hellip;&rdquo; button and select a directory of your choice
 to build GOTM in - e.g. C:\Users_USERNAME_\build\gotm. It is recommended to
-choose an empty (or new) directory for this purpose. <strong>MinGW users</strong>: some
+choose an empty (or new) directory for this purpose. **MinGW users**: some
 versions of CMake (e.g., 3.0.2) generate invalid makefiles if the build
 directory is on a remote server (i.e., a path starting with \\); to avoid
 problems, place it on a local or mounted network drive instead.</li>
@@ -181,7 +171,6 @@ explorer, and choose &ldquo;Build&rdquo;. If you use MinGW, open a command promp
 &ldquo;cmd&rdquo;) and cd to the build directory (not the src directory!) defined above.
 Then type and run &ldquo;mingw32-make install&rdquo;.</li>
 </ol>
-
 <p>After the build completes, the GOTM executable will be installed at
 %LOCALAPPDATA%\gotm\bin\gotm.exe (%APPDATA%\gotm\bin\gotm.exe on Windows XP).
 At this point you can continue with step 2 in the quick start instructions at

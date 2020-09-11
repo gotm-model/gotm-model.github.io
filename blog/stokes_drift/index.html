@@ -119,43 +119,34 @@
           <div class="col-lg-8">
 
 
-
 <p>A Stokes drift module is now added in GOTM, providing a way to include the Stokes drift information in GOTM for use in ocean surface boundary layer turbulence closure schemes. Currently it is used to enable Langmuir turbulence parameterizations in KPP via CVMix. But it supports input of the full vertical profile of Stokes drift and its shear, which allows exploration of Langmuir turbulence parameterizations in various forms and other applications. See <a href="https://doi.org/10.1029/2019MS001810">Li et al., 2019</a> for some examples.</p>
-
 <p>The Stokes drift module is enabled by default with the Stokes drift set to zero. It provides multiple options to input Stokes drift in GOTM. It introduces the following variables:</p>
-
 <ul>
 <li>Stokes drift profiles in x- and y-directions (<code>usprof</code>, <code>vsprof</code>), with input options
-
 <ul>
 <li>Read from a file</li>
 <li>Compute from the input surface value and a decay scale assuming an exponential profile</li>
 <li>Compute from the input wind using the empirical &lsquo;theory wave&rsquo; approach of <a href="https://doi.org/10.1016/j.ocemod.2017.03.016">Li et al., 2017</a></li>
-</ul></li>
+</ul>
+</li>
 <li>Stokes drift shear profiles in x- and y-directions (<code>dusdz</code>, <code>dvsdz</code>), with input options
-
 <ul>
 <li>Read from a file</li>
 <li>Compute from the Stokes drift profile</li>
-</ul></li>
+</ul>
+</li>
 <li>Surface value of the Stokes drift in x- and y-directions (<code>us0</code>, <code>vs0</code>) and a decay scale (<code>ds</code>), with input options
-
 <ul>
 <li>Constant</li>
 <li>Read from a file</li>
-</ul></li>
+</ul>
+</li>
 <li>(If CVMix is used) A few variants of the turbulent Langmuir number introduced by <a href="https://doi.org/10.1017/S0022112096004375">McWilliams et al., 1997</a>, <a href="https://doi.org/10.1175/2007JPO3842.1">Harcourt and D&rsquo;Asaro, 2008</a>, <a href="https://doi.org/10.1029/2011JC007516">Van Roekel et al., 2012</a> and <a href="https://doi.org/10.1175/JPO-D-15-0106.1">Reichl et al., 2016</a></li>
 <li>(If CVMix is used) A few variants of the Langmuir enhancement factor introduced by <a href="https://doi.org/10.1016/j.ocemod.2015.07.020">Li et al., 2016</a> and <a href="https://doi.org/10.1175/JPO-D-15-0106.1">Reichl et al., 2016</a></li>
 </ul>
-
 <p>The figure below shows an example of using the Stokes drift module in comparing different variants of Langmuir turbulence parameterizations in KPP (<a href="https://doi.org/10.1016/j.ocemod.2015.07.020">KPPLT-VR12</a>, <a href="https://doi.org/10.1175/JPO-D-17-0085.1">KPPLT-LF17</a>) and the original KPP without Langmuir turbulence (<a href="https://doi.org/10.1029/94RG01872">KPP-CVMix</a>). The top panel shows the simulated temperature in KPP-CVMix whereas the lower two panels show the differences in KPPLT-VR12 and KPPLT-LF17 from KPP-CVMix. The test case is initialized and forced with conditions during the winter months (Sep. 22, 2012 - Dec. 5, 2012) of the Ocean Surface Mixing, Ocean Submesoscale Interaction Study in the northeast Atlantic (OSMOSIS, 48.7N, 16.2W; <a href="https://doi.org/10.1002/2015JC011423">Damerell et al., 2016</a>). See more details of this test case in <a href="https://doi.org/10.1029/2019MS001810">Li et al., 2019</a>.</p>
-
-
 <figure>
-    
-        <img src="../osmosis-winter_cvmix.png" width="100%" />
-    
-    
+    <img src="../osmosis-winter_cvmix.png" width="100%"/> 
 </figure>
       
        </div>

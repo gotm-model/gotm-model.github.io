@@ -93,10 +93,7 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>Linux/Mac</h1>
-         
-
-<h3 id="overview">Overview</h3>
-
+         <h3 id="overview">Overview</h3>
 <ol>
 <li><strong>Get GOTM</strong> For now we do not provide pre-compiled versions of GOTM for Linux and Mac. The main reason being that all pre-requisites for building locally are readily available on these platforms - notably a working Fortran compiler. So please follow the instructions below for three different ways to build GOTM - of increasing complexity.</li>
 <li><strong>Get examples</strong>
@@ -112,13 +109,9 @@ extension). These can be read by many applications (e.g., MATLAB, R). If you
 need a stand-alone NetCDF viewer, we recommend
 <a href="https://sourceforge.net/projects/pyncview">PyNcView</a>.</li>
 </ol>
-
 <h3 id="building-from-scratch">Building from scratch</h3>
-
 <h4 id="command-line-version-of-cmake">Command line version of CMake</h4>
-
 <p>For a fast - and simple - configuration the following can be used.</p>
-
 <ol>
 <li>Create and enter a build directory - e.g. /tmp/gotmbuild/</li>
 <li>cmake ~/GOTM/code -DGOTM_USE_FABM=off - do NOT include FABM~~</li>
@@ -126,7 +119,6 @@ need a stand-alone NetCDF viewer, we recommend
 <li>make <em>or</em> cmake &ndash;build .</li>
 <li>./gotm -c</li>
 </ol>
-
 <pre><code>kb@orca ~/TT/build $ ./gotm -c
  ------------------------------------------------------------------------
  GOTM version:   v5.3-122-g9d840387 (cmake branch)
@@ -134,17 +126,12 @@ need a stand-alone NetCDF viewer, we recommend
  ------------------------------------------------------------------------
  Compiler: Intel 19.0.0.20190117
  ------------------------------------------------------------------------
-</code></pre>
-
-<p><del>2. cmake ~/GOTM/code/src -DGOTM_USE_FABM=false - do NOT include FABM</del>
-   <del>3. cmake ~/GOTM/code/src -DFABM_BASE=~/FABM/fabm - do include FABM</del></p>
-
+</code></pre><p><del>2. cmake ~/GOTM/code/src -DGOTM_USE_FABM=false - do NOT include FABM</del>
+<del>3. cmake ~/GOTM/code/src -DFABM_BASE=~/FABM/fabm - do include FABM</del></p>
 <p>Adjust the path to the GOTM <del>(and FABM)</del> source code.</p>
-
 <h4 id="the-gui-version-of-cmake">The GUI version of CMake</h4>
-
 <ol>
-<li>Start &ldquo;CMake (cmake-gui)&rdquo;.</li>
+<li>Start &ldquo;CMake (cmake-gui)&quot;.</li>
 <li>Click the &ldquo;Browse Source&hellip;&rdquo; button and select the directory with the GOTM
 source code. <del>This is the src directory at the root of the GOTM repository.</del></li>
 <li>Click the &ldquo;Browse Build&hellip;&rdquo; button and select a directory of your choice
@@ -161,40 +148,31 @@ press the &lsquo;Generate&rsquo; button.</li>
 <li>If no erros occur a Makefile has been generated in the selected build directory.
 Open a Terminal and enter this directory and type <em>make</em>.</li>
 </ol>
-
-<h4 id="the-provided-configure-build-scripts">The provided configure/build scripts</h4>
-
+<h4 id="the-provided-configurebuild-scripts">The provided configure/build scripts</h4>
 <p>Text in <em>italics</em> are commands and text in <strong>bold</strong> are variables.</p>
-
-<p>In the following it is assumed the GOTM <del>and FABM</del> source code is cloned to <strong>GOTM_BASE</strong> ~~and FABM_BASE ~~. Default values are:
-* <strong>GOTM_BASE</strong> = <em>$HOME/GOTM/code</em>
-<del>* <strong>FABM_BASE</strong> = <em>$HOME/FABM/code</em></del></p>
-
+<p>In the following it is assumed the GOTM <del>and FABM</del> source code is cloned to <strong>GOTM_BASE</strong> ~~and FABM_BASE ~~. Default values are:</p>
+<ul>
+<li><strong>GOTM_BASE</strong> = <em>$HOME/GOTM/code</em>
+~~* **FABM_BASE** = *$HOME/FABM/code*~~</li>
+</ul>
 <h5 id="configuring">Configuring</h5>
-
 <p>The first step is to create a <em>build directory</em> and change to it: * <em>mkdir -p $HOME/build/gotm/ &amp;&amp; cd $HOME/build/gotm</em></p>
-
 <p>Executing the script <em>$GOTM_BASE/scripts/linux/gotm_configure.sh</em> will generate a Make-based build system in a sub-directory named after the compiler used - default is <em>gfortran</em>.</p>
-
 <p>This step must be completed without any errors before advancing to the actual compilation.</p>
-
-<h5 id="building-installing">Building/installing</h5>
-
+<h5 id="buildinginstalling">Building/installing</h5>
 <p>Executing the script <em>$GOTM_BASE/scripts/linux/gotm_build.sh</em> will compile GOTM according to the configuration carried out in the previous step.</p>
-
-<p>A manual build can also be done like:
-* <em>cd $HOME/build/gotm/<compiler> &amp;&amp; make install</em></p>
-
+<p>A manual build can also be done like:</p>
+<ul>
+<li><em>cd $HOME/build/gotm/<!-- raw HTML omitted --> &amp;&amp; make install</em></li>
+</ul>
 <p>CMake <em>installs</em> the generated executable and libraries in an <em>install_directory</em> - default i <strong>$HOME/local</strong>.
-To test if the compilation has been succesful - try:
-* <em>$HOME/local/bin/gotm -c</em></p>
-
+To test if the compilation has been succesful - try:</p>
+<ul>
+<li><em>$HOME/local/bin/gotm -c</em></li>
+</ul>
 <p>For furher use of GOTM it is a big advantage to add <strong>$HOME/local/bin</strong> to the <strong>PATH</strong>.</p>
-
 <p>The scripts used above for configuration and compilation have some documentation included and it should be relative easy to adjust to specific need and taste.</p>
-
 <h4 id="after-a-successful-build">After a successful build</h4>
-
 <p>After the build completes, the GOTM executable will be installed in /home/<em>USERNAME</em>/local/bin/gotm (default) or a user configurable destination.
 At this point you can continue with step 2 in the quick start instructions at the top of this page.</p>
 

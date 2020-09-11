@@ -93,61 +93,39 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>Software</h1>
-         <p><a href="https://travis-ci.org/gotm-model/code"><img src="https://travis-ci.org/gotm-model/code.svg?branch=master" alt="Build Status" /></a></p>
-
+         <p><a href="https://travis-ci.org/gotm-model/code"><img src="https://travis-ci.org/gotm-model/code.svg?branch=master" alt="Build Status"></a></p>
 <p>GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.</p>
-
 <p><strong>Begin change as of 2019-06-14</strong></p>
-
-<p></p>
-
 <p>On 2019-06-14 we have updated the CMake configuration files to be in accordance with the concept of <em>Modern CMake</em>. This has the implication that the build instructions have to be slightly modified - and simplified.</p>
-
 <p>The main change between the old and new configuration is the use of <em>submodules</em>. Submodules makes it possible to use <em>git</em> to knit together different software components to form a whole. The individual components can be developed in their respective projects and only updated in GOTM when ready for prime time.</p>
-
 <p>From a user point of view this implies the following changes when working with the code (here we show the changed operation when using the command line - graphical frontends to <em>git</em> will allow for similar operations):</p>
-
 <p><strong>GOTM new clone:</strong></p>
-
 <pre><code>git clone --recursive https://github.com/gotm-model/code.git
 git submodule update --init --recursive
-</code></pre>
-
-<p><strong>GOTM already cloned:</strong></p>
-
+</code></pre><p><strong>GOTM already cloned:</strong></p>
 <pre><code>git submodule update --init --recursive
-</code></pre>
-
-<p><strong>GOTM pull:</strong></p>
-
+</code></pre><p><strong>GOTM pull:</strong></p>
 <pre><code>git pull --recurse-submodules
-</code></pre>
-
-<p>For some time we will keep the original instructions in <del>strikeout</del> but new users should follow the updated instructions.</p>
-
+</code></pre><p>For some time we will keep the original instructions in <del>strikeout</del> but new users should follow the updated instructions.</p>
 <p><strong>End change as of 2019-06-14</strong></p>
-
 <ol>
 <li>The source code for <del>GOTM and <a href="http://www.fabm.net">FABM</a> must have been cloned from the Git repositories -</del> <a href="https://github.com/gotm-model/code">GOTM</a> must be cloned <del>and <a href="https://github.com/fabm-model/fabm">FABM</a> - respectively</del>. The actual cloning will depend on the platform and Git-utilities used. Further information is provide <a href="https://help.github.com/articles/cloning-a-repository/">here</a>. A number of graphical frontends to Git are available - but the use of these is beyond the instructions provided here.</li>
 <li>A Fortran compiler supporting at least Fortran 2003 must be avaialble
-
 <ul>
 <li>On Linux <a href="https://gcc.gnu.org/fortran/">gfortran</a> versions including and above 4.7 have been tested as well has the <a href="https://software.intel.com/en-us/fortran-compilers">Intel Fortran compiler</a>.</li>
 <li>On Windows the <a href="https://software.intel.com/en-us/fortran-compilers">Intel Fortran compiler</a> configured with VisualStudio is working.</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="http://www.unidata.ucar.edu/software/netcdf">NetCDF</a>
-
 <ul>
 <li>On Linux/Mac GOTM and NetCDF must be compiled with the same Fortran compiler. The configuration and compilation of the NetCDF library is beyond the purpose of this guide.</li>
 <li>On Windows NetCDF is provided in the repository - compatible with the Intel Fortran compiler</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="http://www.cmake.org">CMake</a> must be installed. CMake is used to configure the compilation and generate native build systems - i.e. Make-based systems on Linux/Mac and VisualStudio on Windows. CMake can be run in command-line and GUI-mode. Further information is provided <a href="https://cmake.org/documentation/">here</a>. A detailed description is beyond the purpose of this guide. CMake advocates <em>out of source compilation</em> i.e. the actual compilation is separated from the source code. To facilitate this the use of a temporary build directory is encouraged.</li>
 </ol>
-
 <p>Only when the above 4 points are checked it makes sense to proceed.</p>
-
 <p>The GOTM executable can be configured in a number of ways depending on the intended use. This configuration is controlled by CMake - and its configuration file provided as part of the GOTM source code. The different configuration options have sensible default values so a fully functional executable can be obtained with very little configuration. On the other hand detailed control of included features, installation path etc. is also possible.</p>
-
 <ul>
 <li><a href="/software/linux/">Linux/Mac</a></li>
 <li><a href="/software/windows/">Windows</a></li>

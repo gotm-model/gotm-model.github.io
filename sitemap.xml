@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -53,17 +53,12 @@
   </url>
   
   <url>
-    <loc>https://gotm-model.github.io/cases/northern_ns_annual/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gotm-model.github.io/cases/northern_ns_seasonal/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://gotm-model.github.io/cases/ows_papa/</loc>
+    <loc>https://gotm-model.github.io/cases/northern_ns_annual/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
   </url>
   
@@ -73,8 +68,28 @@
   </url>
   
   <url>
+    <loc>https://gotm-model.github.io/cases/ows_papa/</loc>
+    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gotm-model.github.io/portfolio/documentation/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gotm-model.github.io/blog/</loc>
+    <lastmod>2020-09-11T12:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gotm-model.github.io/</loc>
+    <lastmod>2020-09-11T12:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gotm-model.github.io/blog/parsac/</loc>
+    <lastmod>2020-09-11T12:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -123,6 +138,16 @@
   </url>
   
   <url>
+    <loc>https://gotm-model.github.io/cases/</loc>
+    <lastmod>2018-08-14T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gotm-model.github.io/portfolio/</loc>
+    <lastmod>2018-08-14T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gotm-model.github.io/blog/release_5_2/</loc>
     <lastmod>2018-03-07T12:00:00+02:00</lastmod>
   </url>
@@ -158,52 +183,21 @@
   </url>
   
   <url>
+    <loc>https://gotm-model.github.io/software/</loc>
+    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gotm-model.github.io/software/windows/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://gotm-model.github.io/publications/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/blog/</loc>
-    <lastmod>2020-06-22T19:59:15-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/cases/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://gotm-model.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/portfolio/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/software/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://gotm-model.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

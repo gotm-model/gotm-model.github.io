@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Northern NS (Annual)</title>
+<title>ParSAC calibration slowing down when printing output to console</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -26,7 +26,8 @@
   <div id="all">
       <div class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left">
-              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+              
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="/">GOTM</a></h1>
     
@@ -82,57 +83,69 @@
   </div>
 </div>
 
-              
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
   <div class="small-navbar visible-xs">
   <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
   <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
 </div>
 
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="content-column-content">
-         <h1>Northern NS (Annual)</h1>
-         <p>Here the <strong>annual simulation of the Northern Sea</strong> at 59 deg 20&rsquo; N and 1 deg
-17&rsquo; E during the year 1998 as discussed by
-<a href="http://www.sciencedirect.com/science/article/pii/S027843430200122X">Bolding et al. (2002)</a>
-is
-performed. For this simulation, time series of surface slopes were extrapolated
-from observations during autumn 1998 based on four partial tides by means of
-harmonic analysis. All necessary meteorological data are from the UK
-Meteorological Office Model in a 6-hourly temporal resolution (meteo.dat). For
-the period of the PROVESS campaign (Sep 7 - Nov 7, 1998, see
-<a href="http://www.sciencedirect.com/science/article/pii/S1385110102001259">Howarth et al., 2002</a>
-;
-<a href="http://www.sciencedirect.com/science/article/pii/S027843430200122X">Bolding et al., 2002</a>)
-higher resolution data (half-hourly) from research vessels are available and
-pasted in an extended meteo data file (meteonns.dat). See GOTM test case
-nns_seasonal for a shorter term scenario only including the campaign period.
-For calculating the resulting surface fluxes, the bulk formulae from
-<a href="http://link.springer.com/article/10.1007/BF00232256">Kondo (1975)</a>
-are used here. For
-the evolution of the vertical salinity profile, which is known to stabilise
-stratification during summer months, a relaxation to results obtained with a
-prognostic three-dimensional model of the North Sea (
-<a href="http://www.sciencedirect.com/science/article/pii/027843439590885S">Pohlmann, 1996</a>
-). By
-doing so, the horizontal advection, which is the dominant process for salinity
-dynamics in the Northern North Sea, is parameterised.
-[caption id=&quot;attachment_517&rdquo; align=&quot;aligncenter&rdquo; width=&quot;640&rdquo;]<img src="/portfolio/img/nns_annual.png" alt="Annual cycle of simulated temperature and NPZD development at the PROVESS-NNS site in the Northern North Sea.">
-Annual
-cycle of simulated temperature and NPZD development at the PROVESS-NNS site in
-the Northern North Sea. This plot was created with
-<a href="/portfolio/img/nns_annual.py">nns_annual.py</a>.
-[/caption]
-The nns_annual scenario is also used as a basis for driving the
-NPZD model. This is achieved by choosing fabm_calc = .true. (in gotm_fabm.nml),
-and models = &lsquo;gotm_npzd&rsquo; in fabm.nml.</p>
+
+
+            <div class="row">
+                  <div class="col-sm-4">
+                    <div class="image">
+                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                      <h2>ParSAC calibration slowing down when printing output to console</h2>
+                          <p class="author-category">
+                            Jorrit Mesman
+                          </p>
+
+                          <p class="date-comments">
+                          <i class="fa fa-calendar-o"></i> September 11, 2020
+                          </p>
+
+                          
+                  
+                      </div>
+                    </div>
+                  </br>
+
+<div class="row">
+   <div class="content-column-content">
+          <div class="col-lg-8">
+
+
+<p>I recently noticed that the <a href="https://bolding-bruggeman.com/portfolio/parsac/">ParSAC</a> calibration of my coupled GOTM-FABM-biogeochemical model was slowing down over time (see first figure). Since I tend to use 150,000+ iterations, calibrations take a long while (i.e. more than 1 day), but I didn&rsquo;t understand why it slowed down. Karsten and Jorn pointed out that a memory leak might be the potential cause.</p>
+<p>ParSAC was called through the system-function in the R software and I had set the show.output.on.console arguement to TRUE. This printed the text output of the ParSAC calibration to the Rstudio console, but caused increasing memory use over time. By simply setting the argument to FALSE, the calibration no longer slowed down over time (see second figure), and speed markedly improved (for a test case with the same number of calibrations, a speed up of 157 hours to 44 hours).</p>
+<p>The aim of this short blog post is to make users aware that printing output to console is a potential bottleneck for the speed of the ParSAC calibration. An indication of a memory leak is the number of entries in your database file increasing slower and slower over time. Fortunately, the solution is relatively straightforward once you figure out what is the issue.</p>
+<figure>
+    <img src="../parsac_showOutput_true.png" width="100%"/> 
+</figure>
+
+<figure>
+    <img src="../parsac_showOutput_false.png" width="100%"/> 
+</figure>
+      
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+        <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+
+        </a>
 
          
       </div>
-    </div>
-  </div>
-</div>
+   
 
           </div>
       </div>
@@ -149,3 +162,4 @@ and models = &lsquo;gotm_npzd&rsquo; in fabm.nml.</p>
 
 </body>
 </html>
+

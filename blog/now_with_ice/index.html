@@ -119,33 +119,20 @@
           <div class="col-lg-8">
 
 
-
 <p>Updated from 2019-08-07. Ice module is ready for production runs.</p>
-
 <p>The use of submodules has made it much easier to integrate external projects without major risk of side effects.</p>
-
 <h4 id="cmake-configuration">CMake configuration</h4>
-
 <p>This blog contains information that goes along with <a href="../towards_release_5_4/">this</a>.</p>
-
 <p>The inclusion of ice follows the method used to include FABM. A CMake variable <strong>GOTM_USE_STIM</strong> can be <strong>on</strong> or <strong>off</strong> - default will be <strong>off</strong>. As STIM can only be configured as a submodule no further configuration is necessary.</p>
-
 <p>STIM provides a frame-work for including a number of different simple ice models. Presently two different models are fully working - and a third one is on progess. The STIM page will contain more information and hopefully be expanded in the future.</p>
-
-<h4 id="run-time-configuration-yaml-only">Run-time configuration - YAML only</h4>
-
+<h4 id="run-time-configuration---yaml-only">Run-time configuration - YAML only</h4>
 <p>The configuration is very sipmple and takes only 3 variables. Se below:</p>
-
 <pre><code>  ice:
     ice_model: 0                     # [0=None, 1=Lebedev (1938), 2=MyLake, 3=Winton; default=0]
     Hice: 0.0                        # total ice thickness [m; default=0.0]
     ocean_ice_flux: 0.0              # heat flux from ocean to ice [W/m2; default=0.0]
-</code></pre>
-
-<p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The ocean_ice_flux is a non-resolved flux of heat from ocean water to the ice.</p>
-
+</code></pre><p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The ocean_ice_flux is a non-resolved flux of heat from ocean water to the ice.</p>
 <p>And additional option might be added to use the <em>old</em> GOTM implementation - even in the case GOTM is compiled with support for STIM.</p>
-
 <pre><code>ice:
    time_unit: hour
    time_step: 24
@@ -154,18 +141,10 @@
    variables:
       - source: airt
       - source: ice/*
-</code></pre>
-
-<h4 id="a-simulation-example">A simulation example</h4>
-
+</code></pre><h4 id="a-simulation-example">A simulation example</h4>
 <p>Below is shown 7 year simulation with all 3 different ice models compared to observations from the Northern Baltic Sea. Ice thickness data provided by Adolf Stips, JRC.</p>
-
-
 <figure>
-    
-        <img src="../baltic_ice.png" width="100%" />
-    
-    
+    <img src="../baltic_ice.png" width="100%"/> 
 </figure>
       
        </div>

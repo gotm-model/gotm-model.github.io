@@ -119,33 +119,25 @@
           <div class="col-lg-8">
 
 
-
 <p>As a consequence of the more streamlined release model we are now ready with a new release of GOTM - version 5.2. Updating the stable version implies a new version for the development branch as well - now 5.3.</p>
-
 <p>As a user the following step must be taken in order to use the new stable
 version of the code.</p>
-
 <ul>
 <li>Check out the new branch - v5.2 - of the GOTM source code</li>
 <li>If you are using <em>editscenario</em> and related  <em>.xml</em>-file to keep track of
 your configuration the version description on the first line of the <em>.xml</em> file
 must be updated to <strong>gotm-5.2</strong>.</li>
 </ul>
-
 <p>Update to new versions have been done for all the standard test cases provided
 with GOTM.</p>
-
 <p>In this release two new features has been implemented as described below.</p>
-
 <h3 id="new-features">New features</h3>
-
 <ul>
 <li>Hot-start facility - developed in the <a href="http://prognoswater.org">PROGNOS</a> project and further supported by JRC.</li>
 <li>Option to read in longwave back-radiation instead of calculating - funded by Don Pierson/<a href="http://katalog.uu.se/organisation/?orgId=X137:6">Erken</a></li>
 <li>We have also added 3 new test-cases - two for the Mediterranean, one for the
 Black Sea and updated the gotland case.</li>
 </ul>
-
 <p>Hot-start (or restart) allow to split a simulation in two or more time-chunks.
 GOTM will at the end of a simulation write the state of the model to a NetCDF-
 formatted file - <em>restart.nc</em>. This file can be used to provide initial
@@ -160,11 +152,9 @@ case the variable <em>restart_allow_missing_variable</em> must be set to .true..
 Missing variables in <em>restart.nc</em> will be reported to the screen - but the
 simulation will continue. The default setting of
 <em>restart_allow_missing_variable</em> is .false. as it is the safer setting.</p>
-
 <p>The lake people have for a while asked for an option to read in longwave back-
 radiation instead of calculating it as part of the normal air-sea flux
 calculation. This feature has been implemented.</p>
-
 <p>Please have a look at the planned <a href="../roadmap_2017/">roadmap</a>.</p>
       
        </div>

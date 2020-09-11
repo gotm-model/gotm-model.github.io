@@ -119,36 +119,28 @@
           <div class="col-lg-8">
 
 
-
 <p>Knut Klingbeil, Jorn Bruggeman, Lars Umlauf, Hans Burchard and Karsten Bolding will like to announce the new version of GOTM - v5.0.</p>
-
 <p>After far to long time we are finally ready to release a new version of GOTM. Hopefully we will have a more streamlined release model in the future where new versions will follow new features requiring changes to input specifications.</p>
-
 <p>In the list below we have collected some of the changes that have been done over the last almost 10 years. Many more are hidden in the logs in the GIT repository. We have not put any specific weight on the listed changes/new features/bug fixes - but it should be noted that thay have not taken equal amount of time to implement.</p>
-
 <p>One thing to note though is that utilities to interact with GOTM - i.e. everything that is not strictly Fortran - have been moved away from the core Fortran code.</p>
-
 <p>The present release has been used in production mode already for a quite some years and is regarded as very stable - but still - if you find errors please report back so we can fix and include in future releases.</p>
-
 <h3 id="new-features">New features</h3>
-
 <ul>
 <li>CVS to GIT transition</li>
 <li>Make to CMake change of build system</li>
 <li>Replaced extras/bio by <a href="http://www.fabm.net/wiki">FABM</a>
-
 <ul>
 <li>First preliminary version in 2011</li>
 <li>Both FABM and the support has been extended considerable since then.</li>
-</ul></li>
+</ul>
+</li>
 <li>Flexible output system
-
 <ul>
 <li>Output specifications via YAML formatted configuration file</li>
-<li>Old ncdf output supports _NCDF_SAVE<em>DOUBLE</em>, nfirst and sync_out (deprecated - use flexible system)</li>
-</ul></li>
+<li>Old ncdf output supports <em>NCDF_SAVE_DOUBLE</em>, nfirst and sync_out (deprecated - use flexible system)</li>
+</ul>
+</li>
 <li>Airsea interface changes
-
 <ul>
 <li>Fairall et al. (1999) bulk formulas</li>
 <li>New air/sea methods (albedo_method, swr_method)</li>
@@ -156,22 +148,21 @@
 <li>Truncate surface heat flux (simple ice model)</li>
 <li>Namelist variables <em>wind_factor</em>, <em>shf_factor</em> and <em>swr_factor</em>.</li>
 <li>Temporal interpolation of raw meteo data instead of bulk fluxes</li>
-</ul></li>
+</ul>
+</li>
 <li>Very long term simulations possible</li>
 <li>Portable floating point declaration</li>
 <li>New input module</li>
 <li>Command line argument for compilation options
-
 <ul>
 <li>With new use-cases of GOTM an option to show information of a compiled version is handy</li>
-</ul></li>
+</ul>
+</li>
 <li><em>extinct_method=7</em> for user-defined parameters via nml</li>
 <li>Support initial non-zero surface elevation</li>
 <li>New namelist variables <em>zeta_scale</em>, <em>zeta_offset</em></li>
 </ul>
-
 <h3 id="bugfixes">Bugfixes</h3>
-
 <ul>
 <li>Limitation of swr</li>
 <li>Use Craig &amp; Banner wavebreaking parameter cw from nml</li>
@@ -191,24 +182,17 @@
 <li>sign of salinity stratification for double-diffusion</li>
 <li>Albedo values for (default) Payne method</li>
 </ul>
-
 <h3 id="code-refactoring">Code refactoring</h3>
-
 <p>The <em>gui.py</em> directory has been completely removed from the GOTM code base and now forms the basis of a set of utilities in a separate software project. The main reason for this split is to allow for individual development paths for GOTM and the utilities.</p>
-
 <ul>
 <li><a href="https://github.com/BoldingBruggeman/editscenario">editscenario</a> for manipulating and converting .xml based configuration files to Fortran namelist files</li>
 <li><a href="https://github.com/BoldingBruggeman/pyncview">PyNcview</a> (and <em>multiplot</em>)</li>
 <li><em>gotmgui</em> for configuring and running GOTM via a GUI - not quite ready yet.</li>
 </ul>
-
 <p>More tools are in the pipe-line and will be released on a <em>&lsquo;being ready&rsquo;</em> basis.</p>
-
 <p>The old GOTM/BIO code has been completely removed - superseded by FABM.</p>
-
 <h3 id="note">Note</h3>
-
-<p>To be able to manage your own model configurations using <em>editscenario</em> with this version of GOTM you must change the version tag in the .xml file from <strong>scenario version=&ldquo;gotm-4.1.0&rdquo;</strong> to <strong>scenario version=&ldquo;gotm-5.0&rdquo;</strong>. This has already been done in the prepared cases.</p>
+<p>To be able to manage your own model configurations using <em>editscenario</em> with this version of GOTM you must change the version tag in the .xml file from <strong>scenario version=&quot;gotm-4.1.0&rdquo;</strong> to <strong>scenario version=&quot;gotm-5.0&rdquo;</strong>. This has already been done in the prepared cases.</p>
       
        </div>
      </div>
