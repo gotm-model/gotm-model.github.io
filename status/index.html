@@ -23,9 +23,11 @@
         <th>9b80b810</th>
         <th>9b80b810</th>
         <th>9b80b810</th>
+        <th>9b80b810</th>
       </tr>
       <tr>
         <th>Cases version</th>
+        <th>bd1e1c3</th>
         <th>bd1e1c3</th>
         <th>bd1e1c3</th>
         <th>bd1e1c3</th>
@@ -34,26 +36,30 @@
       <tr>
         <th>Extra ID</th>
         <th>gfortran-7</th>
+        <th>gfortran-8</th>
         <th>gfortran-9</th>
         <th>gfortran-10</th>
         <th>intel</th>
       </tr>
       <tr>
         <th>Date and time</th>
-        <th>2020-11-04T22:31:18.575704</th>
-        <th>2020-11-04T22:32:39.519318</th>
-        <th>2020-11-04T22:33:58.295365</th>
-        <th>2020-11-04T22:35:35.278085</th>
+        <th>2020-11-05T08:46:47.133967</th>
+        <th>2020-11-05T08:48:03.342838</th>
+        <th>2020-11-05T08:49:26.006337</th>
+        <th>2020-11-05T08:50:47.186969</th>
+        <th>2020-11-05T08:52:18.960808</th>
       </tr>
       <tr>
         <th>Compiler</th>
         <th>GNU 7.5.0</th>
+        <th>GNU 8.4.0</th>
         <th>GNU 9.3.0</th>
         <th>GNU 10.2.0</th>
         <th>Intel 19.1.0.20200306</th>
       </tr>
       <tr>
         <th>Platform</th>
+        <th>Linux-5.4.0-52-generic-x86_64-with-glibc2.29</th>
         <th>Linux-5.4.0-52-generic-x86_64-with-glibc2.29</th>
         <th>Linux-5.4.0-52-generic-x86_64-with-glibc2.29</th>
         <th>Linux-5.4.0-52-generic-x86_64-with-glibc2.29</th>
@@ -65,9 +71,11 @@
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>cmake</th>
+        <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
@@ -79,9 +87,11 @@
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>channel</th>
+        <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
@@ -93,9 +103,11 @@
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>entrainment</th>
+        <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
@@ -107,9 +119,11 @@
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>flex</th>
+        <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
@@ -121,9 +135,15 @@
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>lago_maggiore</th>
+        <td class="failed" title="        register_turbulence_variables()
+        register_diagnostic_variables()
+ FATAL ERROR: input::timeseries_file_update: Simulation starts before time of first observation in heatflux_file.dat.
+STOP 1
+">FAILED</td>
         <td class="failed" title="        register_turbulence_variables()
         register_diagnostic_variables()
  FATAL ERROR: input::timeseries_file_update: Simulation starts before time of first observation in heatflux_file.dat.
@@ -151,9 +171,15 @@ STOP 1
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>medsea_east</th>
+        <td class="failed" title="        Stokes drift off.
+        done.
+ FATAL ERROR: input::profile_file_update: Simulation starts before time of first observation in s_prof_file.dat.
+STOP 1
+">FAILED</td>
         <td class="failed" title="        Stokes drift off.
         done.
  FATAL ERROR: input::profile_file_update: Simulation starts before time of first observation in s_prof_file.dat.
@@ -177,6 +203,11 @@ STOP 1
       </tr>
       <tr>
         <th>medsea_west</th>
+        <td class="failed" title="        Stokes drift off.
+        done.
+ FATAL ERROR: input::profile_file_update: Simulation starts before time of first observation in s_prof_file.dat.
+STOP 1
+">FAILED</td>
         <td class="failed" title="        Stokes drift off.
         done.
  FATAL ERROR: input::profile_file_update: Simulation starts before time of first observation in s_prof_file.dat.
@@ -218,11 +249,17 @@ STOP 1
         <td class="failed" title=" ERROR: the following setting(s) were not recognized:
  - /cfg_version
  FATAL ERROR: gotm.yaml is invalid.
+STOP 1
+">FAILED</td>
+        <td class="failed" title=" ERROR: the following setting(s) were not recognized:
+ - /cfg_version
+ FATAL ERROR: gotm.yaml is invalid.
 1
 ">FAILED</td>
       </tr>
       <tr>
         <th>nns_seasonal</th>
+        <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
@@ -234,9 +271,15 @@ STOP 1
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>plume</th>
+        <td class="failed" title=" - /mimic_3d/int_press/plume_slope_x
+ - /mimic_3d/int_press/plume_slope_y
+ FATAL ERROR: gotm.yaml is invalid.
+STOP 1
+">FAILED</td>
         <td class="failed" title=" - /mimic_3d/int_press/plume_slope_x
  - /mimic_3d/int_press/plume_slope_y
  FATAL ERROR: gotm.yaml is invalid.
@@ -278,11 +321,21 @@ STOP 1
         <td class="failed" title=" ERROR: the following setting(s) were not recognized:
  - /surface/ice
  FATAL ERROR: gotm.yaml is invalid.
+STOP 1
+">FAILED</td>
+        <td class="failed" title=" ERROR: the following setting(s) were not recognized:
+ - /surface/ice
+ FATAL ERROR: gotm.yaml is invalid.
 1
 ">FAILED</td>
       </tr>
       <tr>
         <th>reynolds</th>
+        <td class="failed" title="    To use namelists instead, specify --read_nml.
+    To migrate namelists to yaml, specify --read_nml --write_yaml gotm.yaml.
+    To generate gotm.yaml with default settings, specify --write_yaml gotm.yaml.
+STOP 2
+">FAILED</td>
         <td class="failed" title="    To use namelists instead, specify --read_nml.
     To migrate namelists to yaml, specify --read_nml --write_yaml gotm.yaml.
     To generate gotm.yaml with default settings, specify --write_yaml gotm.yaml.
@@ -310,6 +363,7 @@ STOP 2
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>seagrass</th>
@@ -317,9 +371,11 @@ STOP 2
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
+        <td class="success">SUCCESS</td>
       </tr>
       <tr>
         <th>wave_breaking</th>
+        <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
         <td class="success">SUCCESS</td>
