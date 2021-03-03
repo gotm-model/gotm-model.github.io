@@ -28,7 +28,7 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://gotm-model.github.io/cases/channel/</guid>
-      <description>Similar to the idealized Couette scenario, also in this test case, an unstratified, non-rotating water column of 10 m thickness is investigated. Here, however, the flow is driven by a constant barotropic pressure gradient resulting from the tilt of the free surface. The surface stress is set to zero. This type of flow is often referred as turbulent open channel flow. The figure below shows the stationary solution approached at the end of simulation.</description>
+      <description>Similar rubbish to the idealized Couette scenario, also in this test case, an unstratified, non-rotating water column of 10 m thickness is investigated. Here, however, the flow is driven by a constant barotropic pressure gradient resulting from the tilt of the free surface. The surface stress is set to zero. This type of flow is often referred as a turbulent open channel flow. The figure below shows the stationary solution approached at the end of simulation.</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://gotm-model.github.io/cases/couette/</guid>
-      <description>The Couette scenario is the most basic of all GOTM scenarios. It represents a shallow (10 m deep), unstratified layer of fluid above a flat bottom that is driven by a constant surface stress in the x-direction. Earth&amp;rsquo;s rotation is ignored. This flow is often referred to as turbulent Couette flow. After the onset of the surface stress, a thin turbulent near-surface layer is generated that rapidly entrains into the non-turbulent deeper parts of the water column.</description>
+      <description>The Couette scenario is the most basic of all GOTM scenarios. It represents a shallow (10 m deep), unstratified layer of fluid above a flat bottom that is driven by a constant surface stress in the x-direction. Earth&amp;rsquo;s rotation is ignored. This flow is often referred to as a turbulent Couette flow. After the onset of the surface stress, a thin turbulent near-surface layer is generated that rapidly entrains into the non-turbulent deeper parts of the water column.</description>
     </item>
     
     <item>

@@ -108,7 +108,7 @@
          <p>The Couette scenario is the most basic of all GOTM scenarios. It represents a
 shallow (10 m deep), unstratified layer of fluid above a flat bottom that is
 driven by a constant surface stress in the x-direction. Earth&rsquo;s rotation is
-ignored. This flow is often referred to as turbulent Couette flow. After the
+ignored. This flow is often referred to as a turbulent Couette flow. After the
 onset of the surface stress, a thin turbulent near-surface layer is generated
 that rapidly entrains into the non-turbulent deeper parts of the water column.
 The solution at the end of the simulation, when the problem has become fully
@@ -123,20 +123,20 @@ throughout the water column, and corresponds exactly to the applied surface
 stress. This is easily understood from the fact that all momentum entering the
 water column at the surface has to leave it again at the bottom under
 stationary conditions. The solution shown in the figure has been obtained with
-the k-ε model. Solutions for other two-equations models like the k-ω model or
+the k-ε model. Solutions for other two-equation models like the k-ω model or the
 Mellor-Yamada model look similar (you can easily check this in the scenario
-directory by typing &ldquo;make komega&rdquo; or &ldquo;make MellorYamada&rdquo; to run GOTM with these
-alternative turbulence models). Technical details for this test case are
-described in the GOTM documentation. We now also provide the
-<a href="https://www.dropbox.com/s/xg2ccph2s5zjija/couette.m?dl=0">MATLAB script</a>
-used to
-generate the figure for this GOTM scenario. Note that only MATLAB 2015a and
-higher supports direct reading of NetCDF output.
-[caption id=&quot;attachment_191&rdquo;
-align=&quot;alignnone&rdquo; width=&quot;500&rdquo;]<img src="/cases/img/couette-705x1024.jpg" alt=""> Profiles
-of (a) velocity, (b) turbulent diffusivity of momentum, and (c) turbulent
-momentum flux for the Couette scenario after stationarity has been reached (in
-red: law-of-the-wall solution).[/caption]</p>
+directory by modifying the input file gotm.yaml). Technical details for this test case are
+described in the GOTM documentation. We now also provide the python script
+<a href="https://raw.githubusercontent.com/gotm-model/cases/master/couette/plot.py">plot.py</a>
+used to generate the figure for this GOTM scenario (you will find this plotting script
+also in the case directory).</p>
+<figure>
+    <img src="/cases/img/couette.png"
+         alt="Profiles of (a) velocity, (b) turbulent diffusivity of momentum, and (c) turbulent momentum flux for the Couette scenario after stationarity has been reached (in red: law-of-the-wall solution)"/> <figcaption>
+            <p>Profiles of (a) velocity, (b) turbulent diffusivity of momentum, and (c) turbulent momentum flux for the Couette scenario after stationarity has been reached (in red: law-of-the-wall solution)</p>
+        </figcaption>
+</figure>
+
 
          
       </div>

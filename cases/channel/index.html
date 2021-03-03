@@ -105,11 +105,11 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>Channel flow</h1>
-         <p>Similar to the idealized <a href="/cases/couette">Couette scenario</a>, also in this test case,
+         <p>Similar rubbish to the idealized <a href="/cases/couette">Couette scenario</a>, also in this test case,
 an unstratified, non-rotating water column of 10 m thickness is investigated.
 Here, however, the flow is driven by a constant barotropic pressure gradient
 resulting from the tilt of the free surface. The surface stress is set to zero.
-This type of flow is often referred as turbulent open channel flow. The figure
+This type of flow is often referred as a turbulent open channel flow. The figure
 below shows the stationary solution approached at the end of simulation.
 Different from the <a href="/cases/couette">Couette scenario</a>, the velocity profile shown in
 panel (a) exhibits only a single shear-layer at the bottom that converges
@@ -122,20 +122,20 @@ constant in the <a href="/cases/couette">Couette flow</a>, for the open channel 
 linear variation. The vertical stress divergence is thus constant, and exactly
 balances the (constant) pressure gradient throughout the water column. The
 solution shown in the figure has been obtained with the k-ε model. Solutions
-for other two-equations models like the k-ω model or Mellor-Yamada model look
-similar (you can easily check this in the scenario directory by typing &ldquo;make
-komega&rdquo; or &ldquo;make MellorYamada&rdquo; to run GOTM with these alternative turbulence
-models). Technical details for this test case are described in the GOTM
-documentation. We now also provide the
-<a href="https://www.dropbox.com/s/xg2ccph2s5zjija/couette.m?dl=0">MATLAB script</a>
-used to
-generate the figure for this GOTM scenario. Note that only MATLAB 2015a and
-higher supports direct reading of NetCDF output.
-[caption id=&quot;attachment_209&rdquo;
-align=&quot;alignnone&rdquo; width=&quot;500&rdquo;]<img src="/cases/img/channel-705x1024.jpg" alt="Profiles of \(a\) velocity, \(b\) turbulentdiffusivity of momentum, and \(c\) turbulent momentum flux for the Channelscenario after stationarity has been reached \(in red: law-of-the-wallsolution\)."> Profiles of (a) velocity, (b)
-turbulent diffusivity of momentum, and (c) turbulent momentum flux for the
-Channel scenario after stationarity has been reached (in red: law-of-the-wall
-solution).[/caption]</p>
+for other two-equation models like the k-ω model or the Mellor-Yamada model look
+similar (you can easily check this in the scenario  directory by modifying the
+input file gotm.yam). Technical details for this test case are
+described in the GOTM documentation. We now also provide the python script
+<a href="https://raw.githubusercontent.com/gotm-model/cases/master/channel/plot.py">plot.py</a>
+used to generate the figure for this GOTM scenario (you will find this plotting script
+also in the case directory).</p>
+<figure>
+    <img src="/cases/img/couette.png"
+         alt="Profiles of (a) velocity, (b) turbulent diffusivity of momentum, and (c) turbulent momentum flux for the Channel scenario after stationarity has been reached (in red: law-of-the-wall solution)"/> <figcaption>
+            <p>Profiles of (a) velocity, (b) turbulent diffusivity of momentum, and (c) turbulent momentum flux for the Channel scenario after stationarity has been reached (in red: law-of-the-wall solution)</p>
+        </figcaption>
+</figure>
+
 
          
       </div>
