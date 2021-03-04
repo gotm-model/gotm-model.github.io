@@ -28,7 +28,7 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://gotm-model.github.io/cases/channel/</guid>
-      <description>Similar rubbish to the idealized Couette scenario, also in this test case, an unstratified, non-rotating water column of 10 m thickness is investigated. Here, however, the flow is driven by a constant barotropic pressure gradient resulting from the tilt of the free surface. The surface stress is set to zero. This type of flow is often referred as a turbulent open channel flow. The figure below shows the stationary solution approached at the end of simulation.</description>
+      <description>Similar to the idealized Couette scenario, also in this test case, an unstratified, non-rotating water column of 10 m thickness is investigated. Here, however, the flow is driven by a constant barotropic pressure gradient resulting from the tilt of the free surface. The surface stress is set to zero. This type of flow is often referred to as a turbulent open channel flow. The figure below shows the stationary solution approached at the end of the simulation.</description>
     </item>
     
     <item>
