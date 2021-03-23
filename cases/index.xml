@@ -35,7 +35,7 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://gotm-model.github.io/cases/entrainment/</guid>
-      <description>The entrainment scenario is similar to the Couette scenario, except that the water column is now stably stratified by a vertically constant density gradient. Also in this scenario, the effect of Earth&amp;rsquo;s rotation is ignored. The entrainment scenario is ideally suited to benchmark the model performance in stress-driven entrainment situations against available experiments (see Umlauf and Burchard, 2005) The results shown in the figure below illustrate that after the onset of the constant surface stress in the x-direction, a thin near-surface layer is accelerated (panel a), and slowly entrains into the stratified, non-turbulent interior region.</description>
+      <description>The entrainment scenario is similar to the Couette scenario, except that the water column is now stably stratified by a vertically constant density gradient. Also in this scenario, the effect of Earth&amp;rsquo;s rotation is ignored. The entrainment scenario is ideally suited to benchmark the model performance in stress-driven entrainment situations against available experiments (see Umlauf and Burchard, 2005). The results shown in the figure below illustrate that after the onset of the constant surface stress, a thin near-surface layer is accelerated (panel a), gradually entraining into the stratified, non-turbulent interior region.</description>
     </item>
     
     <item>
