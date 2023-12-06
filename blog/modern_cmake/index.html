@@ -135,33 +135,33 @@
 <p>Modern CMake is about <em>targets</em> and <em>properties</em> and provides a model for creating re-usable software components easy integratable with each other. In order to fully benefit from this we re-wrote the old monolithic <em>CMakeLists.txt</em> to a series of smaller and easier to handle configuration files.</p>
 <p>A minimum CMake version of 3.0 is required.</p>
 <h3 id="using-_git_-submodules">Using <em>Git</em> submodules</h3>
-<p>A number of software components are used by FABM, GOTM and GETM (and 3rd party software projects as well). Cross maintaining these components across different use cases has some times been a hassle and resulted in reduced progress. Utilising the Modern CMake principles and <em>Git</em>&lsquo;s submodule facility we have now moved shared code componets out of GOTM.</p>
+<p>A number of software components are used by FABM, GOTM and GETM (and 3rd party software projects as well). Cross maintaining these components across different use cases has some times been a hassle and resulted in reduced progress. Utilising the Modern CMake principles and <em>Git</em>&rsquo;s submodule facility we have now moved shared code componets out of GOTM.</p>
 <p>So far - <em>yaml</em>, <em>flexout</em> and <em>fabm</em> are submodules in GOTM.</p>
 <p>The submodules are full clones of the respective repositories - we have put the code in the <em>extern</em> folder in the GOTM root folder.</p>
 <p>As a consequence of adding FABM as a submodule it is not necessery to specify FABM_BASE anymore.</p>
 <h4 id="gotm-code-already-cloned">GOTM code already cloned</h4>
 <p>From a users point of view we have made the transition very smooth and in general things should work just out of the box. There is one small caveat though - when updating the GOTM source code using <em>git pull</em> - an additional argument must be provided to also update the submodules.</p>
-<pre><code>git pull
+<pre tabindex="0"><code>git pull
 </code></pre><p>becomes</p>
-<pre><code>git pull --recurse-submodules
+<pre tabindex="0"><code>git pull --recurse-submodules
 </code></pre><p>Using the following setting:</p>
-<pre><code>git config  submodule.recurse true
+<pre tabindex="0"><code>git config  submodule.recurse true
 </code></pre><p><em>git pull</em> will in the future automatically also update the submodules.</p>
 <p>During the update of the code a warning might be issued. The reason is that before the command to configure via CMake was e.g.:</p>
-<pre><code>cmake ~/GOTM/code/src
+<pre tabindex="0"><code>cmake ~/GOTM/code/src
 </code></pre><p>This has now been changed to:</p>
-<pre><code>cmake ~/GOTM/code
+<pre tabindex="0"><code>cmake ~/GOTM/code
 </code></pre><p>i.e. <em>src/</em> is dropped and we are using <em>CMakeLists.txt</em> in the main GOTM folder.</p>
 <p>It is possible to get rid of the warning by editing the <em>CMakeCache.txt</em> in the build directory as follows:</p>
-<pre><code>sed -i -e &quot;s#/code/src#/code#&quot; CMakeCache.txt
+<pre tabindex="0"><code>sed -i -e &quot;s#/code/src#/code#&quot; CMakeCache.txt
 </code></pre><p>followed by:</p>
-<pre><code>cmake -c CMakeCache.txt
+<pre tabindex="0"><code>cmake -c CMakeCache.txt
 </code></pre><h4 id="new-gotm-clone">New GOTM clone</h4>
 <p>When making a new clone it is important to add options to inform <em>Git</em> about the submodules. This is done like:</p>
-<pre><code>git clone https://github.com/gotm-model/code.git
+<pre tabindex="0"><code>git clone https://github.com/gotm-model/code.git
 git submodule update --init --recursive
 </code></pre><p>With <em>git</em> 1.7.3 and up the commands can be combined to one:</p>
-<pre><code>git clone --recurse-submodules https://github.com/gotm-model/code.git
+<pre tabindex="0"><code>git clone --recurse-submodules https://github.com/gotm-model/code.git
 </code></pre><p>When the code is cloned the instructions just given above can be used.</p>
       
        </div>

@@ -139,13 +139,13 @@
 <p>STIM provides a frame-work for including a number of different simple ice models. Presently two different models are fully working - and a third one is on progess. The STIM page will contain more information and hopefully be expanded in the future.</p>
 <h4 id="run-time-configuration---yaml-only">Run-time configuration - YAML only</h4>
 <p>The configuration is very sipmple and takes only 3 variables. Se below:</p>
-<pre><code>  ice:
+<pre tabindex="0"><code>  ice:
     ice_model: 0                     # [0=None, 1=Lebedev (1938), 2=MyLake, 3=Winton; default=0]
     Hice: 0.0                        # total ice thickness [m; default=0.0]
     ocean_ice_flux: 0.0              # heat flux from ocean to ice [W/m2; default=0.0]
 </code></pre><p>valid values for ice_model is 1, 2, (3). Hice is the initial ice thickness. The ocean_ice_flux is a non-resolved flux of heat from ocean water to the ice.</p>
 <p>And additional option might be added to use the <em>old</em> GOTM implementation - even in the case GOTM is compiled with support for STIM.</p>
-<pre><code>ice:
+<pre tabindex="0"><code>ice:
    time_unit: hour
    time_step: 24
    sync_interval: 0
@@ -155,8 +155,7 @@
       - source: ice/*
 </code></pre><h4 id="a-simulation-example">A simulation example</h4>
 <p>Below is shown 7 year simulation with all 3 different ice models compared to observations from the Northern Baltic Sea. Ice thickness data provided by Adolf Stips, JRC.</p>
-<figure>
-    <img src="../baltic_ice.png" width="100%"/> 
+<figure><img src="../baltic_ice.png" width="100%"/>
 </figure>
       
        </div>

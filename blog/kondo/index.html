@@ -137,18 +137,16 @@
 <h3 id="checking-the-bulk-transfer-coefficients">Checking the bulk transfer coefficients</h3>
 <p>During my work with <em>kondo.F90</em> I found ways to optimize the code. I&rsquo;ve checked the code and old and new versions give <em>the same</em> - in the sense close enough.</p>
 <p>Furthermore, there should not have been any impact on simulation results - or if so - only very, very minor - here from the NNS annual setup.
-<figure>
-    <img src="../sensible-new-old.png" width="100%"/> 
+<figure><img src="../sensible-new-old.png" width="100%"/>
 </figure>
 
-<figure>
-    <img src="../latent-new-old.png" width="100%"/> 
+<figure><img src="../latent-new-old.png" width="100%"/>
 </figure>
 </p>
 <p>For the actual calcuation of the momentum and heat fluxes the speed up is 40% - but when the percentage of the flux calculations is very, very small - the effect is not very big in a 1D model context.</p>
 <p>In addition I&rsquo;ve created a small tool consisting of a Fortran test program and associated Python plot script.</p>
 <p>The following lines show how to use the tool - note CMake configuration must have been done.</p>
-<pre><code>kb@orca ~ $ BUILDDIR=~/source/build/intel/19.2/code/tests
+<pre tabindex="0"><code>kb@orca ~ $ BUILDDIR=~/source/build/intel/19.2/code/tests
 kb@orca ~ $ cd $BUILDDIR
 kb@orca ~/source/build/intel/19.2/code/tests $ make test_bulk
 kb@orca ~/source/build/intel/19.2/code/tests $ ./test_bulk

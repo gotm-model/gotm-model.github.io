@@ -1,203 +1,126 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://gotm-model.github.io/portfolio/software/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://gotm-model.github.io/cases/estuary/</loc>
+    <lastmod>2023-12-06T01:58:00+05:30</lastmod>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/channel/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/couette/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/entrainment/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/portfolio/idealized/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/portfolio/lake/</loc>
     <lastmod>2018-08-14T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/ravn/</loc>
     <lastmod>2018-08-14T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/flex/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/gotland_deep/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/liverpool_bay/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/northern_ns_seasonal/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/northern_ns_annual/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/portfolio/ocean/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/cases/ows_papa/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/portfolio/documentation/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://gotm-model.github.io/cases/</loc>
+    <lastmod>2023-12-06T01:58:00+05:30</lastmod>
+  </url><url>
+    <loc>https://gotm-model.github.io/</loc>
+    <lastmod>2023-12-06T01:58:00+05:30</lastmod>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/</loc>
     <lastmod>2020-09-11T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/</loc>
-    <lastmod>2020-09-11T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/parsac/</loc>
     <lastmod>2020-09-11T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/cvmix/</loc>
     <lastmod>2020-06-22T19:59:15-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/stokes_drift/</loc>
     <lastmod>2020-06-22T19:59:15-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/bbl_stability/</loc>
     <lastmod>2020-02-20T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/now_with_ice/</loc>
     <lastmod>2020-02-10T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/kondo/</loc>
     <lastmod>2019-09-19T10:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/editscenario/</loc>
     <lastmod>2019-09-13T10:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/check_netcdf/</loc>
     <lastmod>2019-08-01T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/towards_release_5_4/</loc>
     <lastmod>2019-07-29T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/modern_cmake/</loc>
     <lastmod>2019-06-16T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gotm-model.github.io/cases/</loc>
-    <lastmod>2018-08-14T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/portfolio/</loc>
     <lastmod>2018-08-14T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/release_5_2/</loc>
     <lastmod>2018-03-07T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/roadmap_2017/</loc>
     <lastmod>2017-12-22T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/windows_netcdf-update/</loc>
     <lastmod>2017-11-25T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/blog/release_5_0/</loc>
     <lastmod>2017-10-11T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/history/</loc>
     <lastmod>2017-05-24T14:40:05+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/about/</loc>
     <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/software/linux/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/software/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/software/windows/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gotm-model.github.io/tags/</loc>
   </url>
-  
 </urlset>

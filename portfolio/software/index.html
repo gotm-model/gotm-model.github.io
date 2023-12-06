@@ -112,12 +112,12 @@
 <p>The main change between the old and new configuration is the use of <em>submodules</em>. Submodules makes it possible to use <em>git</em> to knit together different software components to form a whole. The individual components can be developed in their respective projects and only updated in GOTM when ready for prime time.</p>
 <p>From a user point of view this implies the following changes when working with the code (here we show the changed operation when using the command line - graphical frontends to <em>git</em> will allow for similar operations):</p>
 <p><strong>GOTM new clone:</strong></p>
-<pre><code>git clone --recursive https://github.com/gotm-model/code.git
+<pre tabindex="0"><code>git clone --recursive https://github.com/gotm-model/code.git
 git submodule update --init --recursive
 </code></pre><p><strong>GOTM already cloned:</strong></p>
-<pre><code>git submodule update --init --recursive
+<pre tabindex="0"><code>git submodule update --init --recursive
 </code></pre><p><strong>GOTM pull:</strong></p>
-<pre><code>git pull --recurse-submodules
+<pre tabindex="0"><code>git pull --recurse-submodules
 </code></pre><p>For some time we will keep the original instructions in <del>strikeout</del> but new users should follow the updated instructions.</p>
 <p><strong>End change as of 2019-06-14</strong></p>
 <ol>

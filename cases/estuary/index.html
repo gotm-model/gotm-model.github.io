@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Gotland Deep</title>
+<title>Estuary flow</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -104,25 +104,38 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Gotland Deep</h1>
-         <p>These simulations are made for the location of station 271** Central Eastern
-Gotland Sea of the Baltic Sea** at 20 deg E and 57.3 deg N with a water depth
-of 250 m. Initial conditions for temperature and salinity are derived from
-measurements. Meteorological forcing was available from the ERA15 reanalysis
-data set. For the penetration of solar radiation into the water column, fairly
-turbid water (Jerlov type IB) is assumed. Salinity concentrations are nudged to
-observations with a time scale of 50 days.
-[caption id=&ldquo;attachment_520&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;640&rdquo;]<img src="/portfolio/img/gotland-deep.png" alt="Simulated temperature, salinity contours and examplary ERGOM state variables in the Central Baltic Sea.">
-Simulated temperature, salinity contours and examplary ERGOM state variables
-in the Central Baltic Sea. This plot was created with
-<a href="/portfolio/img/gotland.py">gotland.py</a>.
-[/caption]
-The simulation is carried out for the years 1980-1990. For the discretisation,
-the water column has been divided into 100 vertical layers, with a strong
-zooming towards the surface, resulting in a mean near-surface resolution of
-less than 0.5 m. The time step for these simulations is set to 10 minutes. For
-details of the gotland scenario see
-<a href="http://dx.doi.org/10.1016/j.jmarsys.2005.04.011">Burchard et al. (2006)</a>.</p>
+         <h1>Estuary flow</h1>
+         <p>The estuary scenario demonstrates in a basic manner how to calculate estuarine exchange flow by means of a water column model. Since the model has no resolution in horizontal direction, all horizontal gradients need to be prescribed. The barotropic pressure gradient is replaced by the vertically averaged time series of velocity to reproduce the tidal flow including the residual flow due to river run-off. This principle has been shown by Burchard (1999).</p>
+<p>The internal pressure gradient is prescribed by means of a horizontal salinity gradient that is constant in time and space. From that, GOTM calculates the horizontal density gradient and the internal pressure gradient as well as the horizontal advection term for salinity. In addition to the pressure gradients, a free-surface tidal oscillation is added in a way that we have a standing tidal wave. Both, M~2~ and S~2~ tidal components are included, such that a spring-neap cycle is resulting (the simulation starts with a spring tide and moves half way toward a neap tide). In the figure below, the horizontal tidal velocity, the salinity, the eddy diffusivity and the buoyancy production are shown.</p>
+<p>A typical SIPS (Strain-Induced Periodic Stratification) dynamics is developing, with destabilisation of the water column during flood (positive flow velocity, due to differential advection) and stabilisation during ebb flow (negative velocity). This type of estuary scenario has been applied in several publications such that in Burchard &amp; Hetland (2010) and Burchard et al. (2023).</p>
+<p>References:</p>
+<p>Burchard, H., <em>Recalculation of surface slopes as forcing for numerical water column models of tidal flow</em>, Appl. Math. Modelling, 23, 737-755, 1999.</p>
+<p>Burchard, H., and R.D. Hetland, <em>Quantifying the contributions of tidal straining and gravitational circulation to residual circulation in periodically stratified tidal estuaries</em>, J. Phys. Oceanogr., 40, 1243-1262, 2010.</p>
+<p>Burchard, H., K. Bolding, X. Lange and A. Osadchiev, <em>Decomposition of estuarine circulation and residual stratification under land-fast sea ice</em>, J. Phys. Oceanogr., 53, 55-78, 2023.</p>
+<p><figure><img src="/cases/img/estuary_u.png"
+         alt="Profiles of longitudinal velocity for the estuary scenario."/><figcaption>
+            <p>Profiles of longitudinal velocity for the estuary scenario.</p>
+        </figcaption>
+</figure>
+
+<figure><img src="/cases/img/estuary_s.png"
+         alt="Profiles of salinity for the estuary scenario."/><figcaption>
+            <p>Profiles of salinity for the estuary scenario.</p>
+        </figcaption>
+</figure>
+
+<figure><img src="/cases/img/estuary_n.png"
+         alt="Profiles of eddy diffusivity for the estuary scenario."/><figcaption>
+            <p>Profiles of eddy diffusivity for the estuary scenario.</p>
+        </figcaption>
+</figure>
+
+<figure><img src="/cases/img/estuary_b.png"
+         alt="Profiles of buoyancy production for the estuary scenario."/><figcaption>
+            <p>Profiles of buoyancy production for the estuary scenario.</p>
+        </figcaption>
+</figure>
+</p>
 
          
       </div>
