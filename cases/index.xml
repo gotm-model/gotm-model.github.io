@@ -6,7 +6,16 @@
     <description>Recent content in Cases on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Dec 2023 01:58:00 +0530</lastBuildDate><atom:link href="https://gotm-model.github.io/cases/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jan 2024 18:25:22 +0530</lastBuildDate><atom:link href="https://gotm-model.github.io/cases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subglacial plume</title>
+      <link>https://gotm-model.github.io/cases/plume/</link>
+      <pubDate>Fri, 05 Jan 2024 18:25:22 +0530</pubDate>
+      
+      <guid>https://gotm-model.github.io/cases/plume/</guid>
+      <description>The subglacial plume scenario described in a simple geometry the vertical structure of a subglacial plume rising under a sloping ice shelf - ocean interface. This scenario has been built by Burchard et al. (2022) to develop consistent ways of coupling melting processes at the ice-ocean interface with the turbulent stucture of the plume. This principle has also been applied by Reinert et al. (2023) for a two-dimensional study with vertical resolution.</description>
+    </item>
+    
     <item>
       <title>Estuary flow</title>
       <link>https://gotm-model.github.io/cases/estuary/</link>
@@ -85,19 +94,19 @@
     
     <item>
       <title>Northern North Sea (Seasonal)</title>
-      <link>https://gotm-model.github.io/cases/northern_ns_seasonal/</link>
+      <link>https://gotm-model.github.io/cases/nns_seasonal/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
-      <guid>https://gotm-model.github.io/cases/northern_ns_seasonal/</guid>
+      <guid>https://gotm-model.github.io/cases/nns_seasonal/</guid>
       <description>This Northern North Sea seasonal experiment has been carried out in the framework of the PROVESS (PROcesses of VErtical mixing in Shealf Seas) project (MAS3-CT97-0025, 1998-2001) which has been funded by the European Communities MAST-III program. The observations in the Northern North Sea were carried out in September and October 1998. Here, a period of 20 days from October 7 - 27, 1998 is simulated. All forcing and validation data have been carefully processed from observations during this PROVESS-NNS experiment.</description>
     </item>
     
     <item>
       <title>Northern NS (Annual)</title>
-      <link>https://gotm-model.github.io/cases/northern_ns_annual/</link>
+      <link>https://gotm-model.github.io/cases/nns_annual/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
-      <guid>https://gotm-model.github.io/cases/northern_ns_annual/</guid>
+      <guid>https://gotm-model.github.io/cases/nns_annual/</guid>
       <description>Here the annual simulation of the Northern Sea at 59 deg 20&#39; N and 1 deg 17&#39; E during the year 1998 as discussed by Bolding et al. (2002) is performed. For this simulation, time series of surface slopes were extrapolated from observations during autumn 1998 based on four partial tides by means of harmonic analysis. All necessary meteorological data are from the UK Meteorological Office Model in a 6-hourly temporal resolution (meteo.</description>
     </item>
     
