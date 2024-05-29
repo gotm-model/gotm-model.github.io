@@ -57,7 +57,7 @@
       
         <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
       
-        <li><a href="https://gotm-model.github.io/status/">Status</a></li>
+        <li><a href="https://gotm-model.github.io/kaj/">Kaj</a></li>
       
         <li><a href="https://gotm-model.github.io/about/">About</a></li>
       
@@ -119,12 +119,36 @@ plot was created with
 [/caption]
 The way how bulk formulae for the surface momentum and heat
 fluxes have been used here is discussed in detail in
-<a href="http://io-warnemuende.de/tl_files/staff/burchard/pdf/papers/report.pdf">Burchard et al. (1999)</a>.
-The maximum simulation time allowed by the included surface forcing file and
-the temperature profile file is January 1 (17.00 h), 1960 - December 31 (12.00
-h), 1968. In this scenario, the simulation time is run from March 25, 1961
-(0.00 h) to March 25, 1962 (0.00 h). For further information, see
-<a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0485(2001)031%3C1943:CAOFSM%3E2.0.CO%3B2">Burchard and Bolding (2001)</a>.</p>
+<a href="http://io-warnemuende.de/tl_files/staff/burchard/pdf/papers/report.pdf">Burchard et al. (1999)</a>.</p>
+<p>Here, 12 different model configurations are used, each contained in a
+different yaml file. Here is the list of the yaml files included:</p>
+<p>gotm_cvmix_era5.yaml</p>
+<p>gotm_cvmix_flux.yaml</p>
+<p>gotm_cvmix_legacy.yaml</p>
+<p>gotm_cvmix_meteo.yaml</p>
+<p>gotm_keps_era5.yaml</p>
+<p>gotm_keps_flux.yaml</p>
+<p>gotm_keps_legacy.yaml</p>
+<p>gotm_keps_meteo.yaml</p>
+<p>gotm_kw_era5.yaml</p>
+<p>gotm_kw_flux.yaml</p>
+<p>gotm_kw_legacy.yaml</p>
+<p>gotm_kw_meteo.yaml</p>
+<p>The difference between the model simulations
+are given in terms of</p>
+<p>(i) three different turbulence
+closure models, indicated by keps (for the k-epsilon model), kw (for the
+k-omega model) and cvmix (for the KPP model inside the cvmix environment);</p>
+<p>(ii) four different sets of forcing types, indicated by era5 (for meteo files from the ERA5 reanalysis), meteo (for meteo files from observations),
+flux (for air-sea fluxes precalculated from observed meteorology) and legacy
+(for the original flux-driven scenario described by Burchard and Bolding (2001)](<a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0485">http://journals.ametsoc.org/doi/abs/10.1175/1520-0485</a>(2001)).</p>
+<p>Different forcing scenarios will use different simulation periods.</p>
+<p>It can be seen that for multi-annual flux-driven scenarios
+a drift in temperature occurs due to missing feedback between
+sea surface temperature and air temperature.</p>
+<p>The default yaml file is set to gotm_keps_era5.yaml.</p>
+<p>For further information, see
+<a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0485(2001)031%3C1943:CAOFSM%3E2.0.CO%3B2">Burchard and Bolding (2001)</a> and <a href="https://gmd.copernicus.org/articles/14/4261/2021/">Li et al. (2021)</a>.</p>
 
          
       </div>

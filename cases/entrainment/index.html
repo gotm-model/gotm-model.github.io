@@ -57,7 +57,7 @@
       
         <li><a href="https://gotm-model.github.io/publications/">Publications</a></li>
       
-        <li><a href="https://gotm-model.github.io/status/">Status</a></li>
+        <li><a href="https://gotm-model.github.io/kaj/">Kaj</a></li>
       
         <li><a href="https://gotm-model.github.io/about/">About</a></li>
       
@@ -109,10 +109,22 @@
 scenario</a>, except that the water column is now stably
 stratified by a vertically constant density gradient. Also in this
 scenario, the effect of Earth&rsquo;s rotation is ignored. The entrainment
-scenario  is ideally suited to benchmark the model performance in
+scenario  is ideally suited to benchmark model performance in
 stress-driven entrainment situations against available experiments
 (see <a href="http://dx.doi.org/10.1016/j.csr.2004.08.004">Umlauf and Burchard,
-2005</a>). The results shown
+2005</a>). Various yaml files
+corresponding to different turbulence models can be found in the scenario
+directory to run and compare these
+different models. These include the k-epsilon model, the k-omega model of
+<a href="http://dx.doi.org/10.1016/S1463-5003(02)00039-2">Umlauf et al. (2003)</a>,
+and the GLS (generic length scale) model described in
+<a href="https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1008&amp;context=journal_of_marine_research">Umlauf and Burchard (2003)</a>,).
+Note especially that now also the KPP implementation
+of CVMix is available in GOTM (<a href="https://gmd.copernicus.org/articles/14/4261/2021/">Qing et al. 2021</a>).
+Using gotm_cvmix.yaml in the scenario directory, this version of the KPP model
+can be run (don&rsquo;t forget to run cmake with -DGOTM_USE_CVMIX=on before compiling
+the source code).</p>
+<p>The results shown
 in the figure below illustrate that after the onset of the constant
 surface stress, a thin near-surface layer is accelerated (panel a),
 gradually entraining into the stratified, non-turbulent interior
@@ -131,12 +143,7 @@ now also provide the python script
 used to generate the figure below</p>
 <p>The numerical solution shown in the figure has been obtained with the
 k-ε model. Solutions for other two-equation models available in GOTM
-look similar. You can easily check this by modifying the gotm.yaml
-files to run the k-ω model (<a href="http://dx.doi.org/10.1016/S1463-5003(02)00039-2">Umlauf et al.,
-2003</a>) or the GLS
-(generic length scale) model described in <a href="http://dx.doi.org/10.1357/002224003322005087">Umlauf and Burchard
-(2003)</a>.  Technical
-details for this GOTM scenario may be found in the GOTM documentation.</p>
+look similar.</p>
 <p>Note that <a href="https://doi.org/10.1080/03091927208236105">Pollard et
 al. (1973)</a> also derived an
 entrainment model for the case with rotation. To compare this model to

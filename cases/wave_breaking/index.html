@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Check NetCDF library availability</title>
+<title>Surface-wave breaking</title>
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -35,8 +35,7 @@
   <div id="all">
       <div class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left">
-              
-<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="https://gotm-model.github.io/">GOTM</a></h1>
     
@@ -95,72 +94,60 @@
   </div>
 </div>
 
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
   <div class="small-navbar visible-xs">
   <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-  <h1 class="small-navbar-heading"><a href="/">GOTM</a></h1>
+  <h1 class="small-navbar-heading"><a href="https://gotm-model.github.io/">GOTM</a></h1>
 </div>
 
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Surface-wave breaking</h1>
+         <p>The wave-breaking scenario has many similarities with the
+<a href="/cases/couette/">couette scenario</a>:
+A shallow, non-rotating and unstratified water column is forced by a constant wind stress
+until the flow has become stationary. Now, however, near-surface turbulence generated
+by breaking surface waves is taken into acount as suggested by
+<a href="https://journals.ametsoc.org/view/journals/phoc/24/12/1520-0485_1994_024_2546_mwetit_2_0_co_2.xml">Craig and Banner (1994)</a>.
+In their approach, the injection of turbulence during the breaking process is modeled
+as a surface TKE flux that is proportional to the cube of the friction velocity.
+In this case, a so-called &ldquo;transport layer&rdquo; develops near the surface, in which TKE dissipation
+and vertical TKE transport balance,  and all turbulence quantities follow power-law relationships.
+Data summarized in
+<a href="https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1008&amp;context=journal_of_marine_research">Umlauf and Burchard (2003)</a>
+suggest, for example, that the TKE decays away from the surface with a slope of approximately -2,
+whereas the turbulence length scale increases linearly with a slope close to L=0.2. As shown by
+<a href="https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1008&amp;context=journal_of_marine_research">Umlauf and Burchard (2003)</a>,
+this implies a linear decrease of the velocity profile. While all two-equations models investigated by
+<a href="https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1008&amp;context=journal_of_marine_research">Umlauf and Burchard (2003)</a>
+do show a power-law decay of the TKE away from the surface, only their generic length scale (GLS) model
+reproduces the observed TKE decay rate of -2. Also the k-omega model with a predicted decay rate of -2.53
+is approximately consistent with the observations, while the k-epsilon model fails
+(<a href="https://www.sciencedirect.com/science/article/abs/pii/S1463500302000392">Umlauf et al., 2003)</a>. Below the
+transport layer, the solutions gradually converge to the classical law of the wall behavior of the couette
+scenario (logarithmic velocity profile, constant TKE, etc.).</p>
+<p>The solutions for the k-omega models and the theoretical power-law relationships are shown in the
+figure below. After running GOTM for this scenario, you can reproduce the figure with the help
+of the plotting script
+<a href="https://raw.githubusercontent.com/gotm-model/cases/master/wave_breaking/plot_wave_breaking.py">plot_wave_breaking.py</a>,
+which can also be found in the scenario directory. For this scenario, we also provide an alternative
+yaml file to run the GLS model for comparison. If you run GOTM with this input file, make sure to adjust
+the parameters and filename in
+<a href="https://raw.githubusercontent.com/gotm-model/cases/master/wave_breaking/plot_wave_breaking.py">plot_wave_breaking.py</a>.</p>
+<figure><img src="/cases/img/wave_breaking.png"
+         alt="Profiles of (a) velocity, (b) turbulence kinetic energy, and (c) turbulence length scale (in red: theoretical power-law solutions)"/><figcaption>
+            <p>Profiles of (a) velocity, (b) turbulence kinetic energy, and (c) turbulence length scale (in red: theoretical power-law solutions)</p>
+        </figcaption>
+</figure>
 
-
-            <div class="row">
-                  <div class="col-sm-4">
-                    <div class="image">
-                      <img src="https://gotm-model.github.io/blog/img/" class="img-responsive" alt="">
-                    </div>
-                  </div>
-
-                  <div class="col-md-8">
-                      <h2>Check NetCDF library availability</h2>
-                          <p class="author-category">
-                            Karsten Bolding
-                          </p>
-
-                          <p class="date-comments">
-                          <i class="fa fa-calendar-o"></i> August 1, 2019
-                          </p>
-
-                          
-                  
-                      </div>
-                    </div>
-                  </br>
-
-<div class="row">
-   <div class="content-column-content">
-          <div class="col-lg-8">
-
-
-<p>The script is only usable for Linux and Mac users as the NetCDF libraries are included for Windows.</p>
-<p>Since NetCDF 4.4.1 a utility called - <em>nf-config</em> - is installed alongside the libraries. This utility is used by the GOTM CMake configuration to include necessary compile and link information (1).</p>
-<p>So first thing is to check the availability of <em>nf-config</em>:</p>
-<pre tabindex="0"><code>command -v nf-config
-</code></pre><p>If <em>nf-config</em> exists we can continue to the next test - can CMake actually find the NetCDF libraries. You must be in the GOTM main folder when executing this command.</p>
-<pre tabindex="0"><code>cmake -P extern/flexout/cmake/Modules/FindNetCDF.cmake
-</code></pre><p>If the latter command writes - among other things - Found NetCDF - it is safe to proceed with the configuration and compilation of GOTM.</p>
-<p>If the command fails steps must be taken to remedy the problem. How - is beyond the gotm-users and gotm-devel mailing lists.</p>
-<p>The above have been put in a small script with some additional information written to the terminal. The script is execuated as:</p>
-<pre tabindex="0"><code>./check_netcdf.sh
-</code></pre><ol>
-<li>There is another way of specifying the information but that is only for very old systems - before 4.4.1 - or in other special cases.</li>
-</ol>
-      
-       </div>
-     </div>
-   </div>
-
-
-
-
-
-        <a href="#" class="back-to-top">
-        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
-
-        </a>
 
          
       </div>
-   
+    </div>
+  </div>
+</div>
 
           </div>
       </div>
@@ -179,4 +166,3 @@
 
 </body>
 </html>
-
