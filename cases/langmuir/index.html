@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Idealized cases</title>
+
 <meta name="description" content="General Ocean Turbulence Model">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -104,24 +104,13 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Idealized cases</h1>
-         <p>Idealized test case demonstrating various GOTM features.</p>
-<ul>
-<li><a href="/cases/couette">Couette</a></li>
-<li><a href="/cases/channel">Channel</a></li>
-<li><a href="/cases/entrainment">Entrainment</a></li>
-<li><a href="/cases/wave_breaking">Wave Breaking</a></li>
-<li><a href="/cases/estuary">Estuary</a></li>
-<li><a href="/cases/langmuir">Langmuir</a></li>
-<li><a href="/cases/plume">Plume</a></li>
-</ul>
-<p>Figure from <a href="https://en.wikipedia.org/wiki/Couette_flow">here</a></p>
-<p>Unstratified Couette flow driven by a constant surface wind stress</p>
-<p>Unstratified open-channel flow driven by a constant barotropic pressure gradient</p>
-<p>Stress-driven entrainment into a linearly stratified fluid</p>
-<p>TKE injection by breaking surface waves</p>
-<p>Tidally forced estuary</p>
-<p>Plume under ice driven by melting</p>
+         <h1></h1>
+         <p>This case demonstrates the use of a KPP-based Langmuir turbulence parameterization described in Li and Fox-Kemper (2017) via CVMix. Surface forcing data is from the <a href="https://www.pmel.noaa.gov/ocs/Papa">Ocean Weather Station Papa (OWS Papa)</a> and Stokes drift is computed from the surface wave spectrum collected at the Waverider Mooring at the same site by <a href="https://apl.uw.edu/project/project.php?id=ows-p">APL-UW</a>. See Section 3.2 of Li et al. (2021) for more information on this case.</p>
+<p>The maximum simulation time allowed by the included forcing data is March 21, 2012 - March 20, 2013, covering one annual cycle at OWS Papa. Surface forcing and T/S profiles are provided at hourly frequency. Both surface Stokes drift and Stokes drift profile are provided roughly every half an hour. Note that there is a data gap between September 21, 2012 and October 4, 2012 in the Stokes drift.</p>
+<p>References:</p>
+<p>Li, Q., &amp; Fox-Kemper, B. (2017). Assessing the effects of Langmuir turbulence on the entrainment buoyancy flux in the ocean surface boundary layer. Journal of Physical Oceanography, 47(12), 2863–2886. <a href="https://doi.org/10.1175/JPO-D-17-0085.1">https://doi.org/10.1175/JPO-D-17-0085.1</a></p>
+<p>Li, Q., Bruggeman, J., Burchard, H., Klingbeil, K., Umlauf, L., &amp; Bolding, K. (2021). Integrating CVMix into GOTM (v6.0): a consistent framework for testing, comparing, and applying ocean mixing schemes. Geoscientific Model Development, 14(7), 4261–4282. <a href="https://doi.org/10.5194/gmd-14-4261-2021">https://doi.org/10.5194/gmd-14-4261-2021</a></p>
+
          
       </div>
     </div>
