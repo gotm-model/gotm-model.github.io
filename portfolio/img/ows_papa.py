@@ -2,13 +2,15 @@
 # encoding: utf-8
 
 import netCDF4
+import netcdftime
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec
 
 if __name__  == '__main__':
 
-  NC = netCDF4.Dataset('ows_papa.nc')
+#  NC = netCDF4.Dataset('ows_papa.nc')
+  NC = netCDF4.Dataset('ows_papa_keps_meteo.nc')
 
   TIME = NC.variables['time']
   time = TIME[:]
@@ -22,7 +24,7 @@ if __name__  == '__main__':
   varname = 'temp_obs'
   if varname in NC.variables:
     temp_obs_name = varname
-  if temp_obs_name is not '':
+  if temp_obs_name != '':
     temp_obs = NC.variables[temp_obs_name][:]
     
   N, K, J, I = temp.shape
@@ -40,7 +42,7 @@ if __name__  == '__main__':
 
   timex2d = np.expand_dims(timex, 1)
   timex2d = timex2d.repeat(K+1, axis=1)
-  datex2d = netCDF4.netcdftime.utime(TIME.units).num2date(timex2d)
+  datex2d = netcdftime.utime(TIME.units).num2date(timex2d)
 
   golden_ratio = (1.+np.sqrt(5.))/2.
   figwidth=7.48 # 3.54 (Elsevier 2-columnwidth), 7.48 (Elsevier 1-columnwidth)
