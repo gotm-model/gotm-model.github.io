@@ -76,7 +76,6 @@
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/entrainment&#34;&gt;Entrainment&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/wave_breaking&#34;&gt;Wave Breaking&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/estuary&#34;&gt;Estuary&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/langmuir&#34;&gt;Langmuir&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/plume&#34;&gt;Plume&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Figure from &lt;a href=&#34;https://en.wikipedia.org/wiki/Couette_flow&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
@@ -176,6 +175,7 @@
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/nns_seasonal/&#34;&gt;Northern NS (Seasonal)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/nns_annual/&#34;&gt;Northern NS (Annual)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/ows_papa/&#34;&gt;OWS Papa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/langmuir&#34;&gt;OWS Papa (Langmuir)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/portfolio/ocean#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Photo by Hans Burchard.&lt;/p&gt;</description>
@@ -358,8 +358,7 @@ are mention in the list below.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gotm-model.github.io/cases/langmuir/</guid>
-      <description>This case demonstrates the use of a KPP-based Langmuir turbulence parameterization described in Li and Fox-Kemper (2017) via CVMix. Surface forcing data is from the Ocean Weather Station Papa (OWS Papa) and Stokes drift is computed from the surface wave spectrum collected at the Waverider Mooring at the same site by APL-UW. See Section 3.2 of Li et al. (2021) for more information on this case.
-The maximum simulation time allowed by the included forcing data is March 21, 2012 - March 20, 2013, covering one annual cycle at OWS Papa.</description>
+      <description>This case demonstrates the use of Stokes drift module to drive Langmuir turbulence models in GOTM. Currently, we have two Langmuir turbulence models implemented in GOTM, including a modified Mellor-Yamada model that includes the production terms due to Stokes drift shear as described in Kantha and Clayson (2004, hereafter KC04), and a modified KPP model via CVMix that includes Langmuir-enhanced turbulent velocity scale and Langmuir-modulated boundary layer entrainment as described in Li and Fox-Kemper (2017, hereafter LF17).</description>
     </item>
     
   </channel>
