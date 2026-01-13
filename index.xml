@@ -6,361 +6,252 @@
     <description>Recent content on GOTM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 May 2024 08:30:00 +0000</lastBuildDate><atom:link href="https://gotm-model.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jan 2024 18:25:22 +0530</lastBuildDate>
+    <atom:link href="https://gotm-model.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software</title>
       <link>https://gotm-model.github.io/portfolio/software/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/portfolio/software/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/gotm-model/code&#34;&gt;&lt;img src=&#34;https://travis-ci.org/gotm-model/code.svg?branch=master&#34; alt=&#34;Build Status&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Begin change as of 2019-06-14&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/gotm-model/code&#34;&gt;&lt;img src=&#34;https://travis-ci.org/gotm-model/code.svg?branch=master&#34; alt=&#34;Build Status&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GOTM is relative easy to install and run on most operating systems - just follow the instructions carefully.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Begin change as of 2019-06-14&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Subglacial plume</title>
+      <title>Surface- or bottom attached plume</title>
       <link>https://gotm-model.github.io/cases/plume/</link>
       <pubDate>Fri, 05 Jan 2024 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/plume/</guid>
-      <description>The subglacial plume scenario described in a simple geometry the vertical structure of a subglacial plume rising under a sloping ice shelf - ocean interface. This scenario has been built by Burchard et al. (2022) to develop consistent ways of coupling melting processes at the ice-ocean interface with the turbulent stucture of the plume. This principle has also been applied by Reinert et al. (2023) for a two-dimensional study with vertical resolution.</description>
+      <description>In this idealised scenario, two types of plumes can be simulated: surface- and bottom attached plumes (density currents), driven by a sloping surface (interface between glacial ide and ocean water) or bottom.&#xA;Subglacial surface plume scenario:&#xA;The subglacial plume scenario described in a simple geometry the vertical structure of a subglacial plume rising under a sloping ice shelf - ocean interface. This scenario has been built by Burchard et al. (2022) to develop consistent ways of coupling melting processes at the ice-ocean interface with the turbulent stucture of the plume.</description>
     </item>
-    
     <item>
       <title>Estuary flow</title>
       <link>https://gotm-model.github.io/cases/estuary/</link>
       <pubDate>Wed, 06 Dec 2023 01:58:00 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/estuary/</guid>
       <description>The estuary scenario demonstrates in a basic manner how to calculate estuarine exchange flow by means of a water column model. Since the model has no resolution in horizontal direction, all horizontal gradients need to be prescribed. The barotropic pressure gradient is replaced by the vertically averaged time series of velocity to reproduce the tidal flow including the residual flow due to river run-off. This principle has been shown by Burchard (1999).</description>
     </item>
-    
     <item>
       <title>Channel flow</title>
       <link>https://gotm-model.github.io/cases/channel/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/channel/</guid>
       <description>Similar to the idealized Couette scenario, also in this test case, an unstratified, non-rotating water column of 10 m thickness is investigated. Here, however, the flow is driven by a constant barotropic pressure gradient resulting from the tilt of the free surface. The surface stress is set to zero. This type of flow is often referred to as a turbulent open channel flow. The figure below shows the stationary solution approached at the end of the simulation.</description>
     </item>
-    
     <item>
       <title>Coutte flow</title>
       <link>https://gotm-model.github.io/cases/couette/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/couette/</guid>
       <description>The Couette scenario is the most basic of all GOTM scenarios. It represents a shallow (10 m deep), unstratified layer of fluid above a flat bottom that is driven by a constant surface stress in the x-direction. Earth&amp;rsquo;s rotation is ignored. This flow is often referred to as a turbulent Couette flow. After the onset of the surface stress, a thin turbulent near-surface layer is generated that rapidly entrains into the non-turbulent deeper parts of the water column.</description>
     </item>
-    
     <item>
       <title>Entrainment</title>
       <link>https://gotm-model.github.io/cases/entrainment/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/entrainment/</guid>
       <description>The entrainment scenario is similar to the Couette scenario, except that the water column is now stably stratified by a vertically constant density gradient. Also in this scenario, the effect of Earth&amp;rsquo;s rotation is ignored. The entrainment scenario is ideally suited to benchmark model performance in stress-driven entrainment situations against available experiments (see Umlauf and Burchard, 2005). Various yaml files corresponding to different turbulence models can be found in the scenario directory to run and compare these different models.</description>
     </item>
-    
     <item>
       <title>Idealized cases</title>
       <link>https://gotm-model.github.io/portfolio/idealized/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/portfolio/idealized/</guid>
-      <description>&lt;p&gt;Idealized test case demonstrating various GOTM features.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/couette&#34;&gt;Couette&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/channel&#34;&gt;Channel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/entrainment&#34;&gt;Entrainment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/wave_breaking&#34;&gt;Wave Breaking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/estuary&#34;&gt;Estuary&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/plume&#34;&gt;Plume&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Figure from &lt;a href=&#34;https://en.wikipedia.org/wiki/Couette_flow&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Idealized test case demonstrating various GOTM features.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/couette&#34;&gt;Couette&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/channel&#34;&gt;Channel&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/entrainment&#34;&gt;Entrainment&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/wave_breaking&#34;&gt;Wave Breaking&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/estuary&#34;&gt;Estuary&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/plume&#34;&gt;Plume&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Figure from &lt;a href=&#34;https://en.wikipedia.org/wiki/Couette_flow&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Surface-wave breaking</title>
       <link>https://gotm-model.github.io/cases/wave_breaking/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/wave_breaking/</guid>
       <description>The wave-breaking scenario has many similarities with the couette scenario: A shallow, non-rotating and unstratified water column is forced by a constant wind stress until the flow has become stationary. Now, however, near-surface turbulence generated by breaking surface waves is taken into acount as suggested by Craig and Banner (1994). In their approach, the injection of turbulence during the breaking process is modeled as a surface TKE flux that is proportional to the cube of the friction velocity.</description>
     </item>
-    
     <item>
       <title>Lake cases</title>
       <link>https://gotm-model.github.io/portfolio/lake/</link>
       <pubDate>Tue, 14 Aug 2018 12:00:00 +0000</pubDate>
-      
       <guid>https://gotm-model.github.io/portfolio/lake/</guid>
-      <description>&lt;p&gt;GOTM configured in Lake mode - i.e. using a hypsograph to specify depth-area relations. The GOTM lake branch is kept in sync with the master branch and merging is hopefully soon to occur.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/ravn/&#34;&gt;Ravn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Picture from &lt;a href=&#34;https://pixabay.com/en/sunset-lake-water-reflection-clouds-549677/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;GOTM configured in Lake mode - i.e. using a hypsograph to specify depth-area relations. The GOTM lake branch is kept in sync with the master branch and merging is hopefully soon to occur.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/ravn/&#34;&gt;Ravn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Picture from &lt;a href=&#34;https://pixabay.com/en/sunset-lake-water-reflection-clouds-549677/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Ravn</title>
       <link>https://gotm-model.github.io/cases/ravn/</link>
       <pubDate>Tue, 14 Aug 2018 12:00:00 +0000</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/ravn/</guid>
-      <description>Lake Ravn is a 33 meter deep Danish lake, which stratifies for approx. five months each year. The lake is part of a National Monitoring Program, and the ecological quality of the lake has been followed by collection of bi-weekly or monthly data since 1989.
- Lake Ravn, Denmark, D. Trolle (2005)
-  During stratification, hypolimnetic oxygen is depleted, and consequently phosphate is released from the reduced bottom sediments (see figure below).</description>
+      <description>Lake Ravn is a 33 meter deep Danish lake, which stratifies for approx. five months each year. The lake is part of a National Monitoring Program, and the ecological quality of the lake has been followed by collection of bi-weekly or monthly data since 1989.&#xA;Lake Ravn, Denmark, D. Trolle (2005)&#xA;During stratification, hypolimnetic oxygen is depleted, and consequently phosphate is released from the reduced bottom sediments (see figure below). This nutrient release can, when later mixed into the upper waters, fuel phytoplankton production.</description>
     </item>
-    
     <item>
       <title>FLEX</title>
       <link>https://gotm-model.github.io/cases/flex/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/flex/</guid>
-      <description>A data set which has been used throughout the last 40 years as a calibration for mixing parameterisations has been collected during the measurements of the Fladenground Experiment 1976 (FLEX&#39;76) campaign. Starting from a well-mixed winter situation, a surface mixed layer is established, which is several times deepened and partly removed by storm events.
- Spring temperature development at the FLEX site in the Northern North Sea.
-  The measurements of meteorological forcing and potential temperature profiles were carried out in spring 1976 in the northern North Sea at a water depth of about 145 m and a geographical position at 58 deg 55&amp;rsquo;N and 0 deg 32&amp;rsquo;E.</description>
+      <description>A data set which has been used throughout the last 40 years as a calibration for mixing parameterisations has been collected during the measurements of the Fladenground Experiment 1976 (FLEX&#39;76) campaign. Starting from a well-mixed winter situation, a surface mixed layer is established, which is several times deepened and partly removed by storm events.&#xA;Spring temperature development at the FLEX site in the Northern North Sea.&#xA;The measurements of meteorological forcing and potential temperature profiles were carried out in spring 1976 in the northern North Sea at a water depth of about 145 m and a geographical position at 58 deg 55&amp;rsquo;N and 0 deg 32&amp;rsquo;E.</description>
     </item>
-    
     <item>
       <title>Gotland Deep</title>
       <link>https://gotm-model.github.io/cases/gotland_deep/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/gotland_deep/</guid>
       <description>These simulations are made for the location of station 271** Central Eastern Gotland Sea of the Baltic Sea** at 20 deg E and 57.3 deg N with a water depth of 250 m. Initial conditions for temperature and salinity are derived from measurements. Meteorological forcing was available from the ERA15 reanalysis data set. For the penetration of solar radiation into the water column, fairly turbid water (Jerlov type IB) is assumed.</description>
     </item>
-    
     <item>
       <title>Liverpool Bay</title>
       <link>https://gotm-model.github.io/cases/liverpool_bay/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/liverpool_bay/</guid>
       <description>The observations for this scenario have been carried out by Rippeth et al (2001} in the** Liverpool Bay ROFI** on July 5 and 6, 1999 at a position of 53 deg 28.4&amp;rsquo;N, 3 deg 39.2&amp;rsquo;W. The dissipation rate measurements were carried out with a FLY shear probe mounted on a free-falling profiler. Sensors for temperature and conductivity attached to the profiler give detailed information on the vertical density distribution during each cast.</description>
     </item>
-    
     <item>
       <title>Northern North Sea (Seasonal)</title>
       <link>https://gotm-model.github.io/cases/nns_seasonal/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/nns_seasonal/</guid>
       <description>This Northern North Sea seasonal experiment has been carried out in the framework of the PROVESS (PROcesses of VErtical mixing in Shealf Seas) project (MAS3-CT97-0025, 1998-2001) which has been funded by the European Communities MAST-III program. The observations in the Northern North Sea were carried out in September and October 1998. Here, a period of 20 days from October 7 - 27, 1998 is simulated. All forcing and validation data have been carefully processed from observations during this PROVESS-NNS experiment.</description>
     </item>
-    
     <item>
       <title>Northern NS (Annual)</title>
       <link>https://gotm-model.github.io/cases/nns_annual/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/nns_annual/</guid>
-      <description>Here the annual simulation of the Northern Sea at 59 deg 20&#39; N and 1 deg 17&#39; E during the year 1998 as discussed by Bolding et al. (2002) is performed. For this simulation, time series of surface slopes were extrapolated from observations during autumn 1998 based on four partial tides by means of harmonic analysis. All necessary meteorological data are from the UK Meteorological Office Model in a 6-hourly temporal resolution (meteo.</description>
+      <description>Here the annual simulation of the Northern Sea at 59 deg 20&amp;rsquo; N and 1 deg 17&amp;rsquo; E during the year 1998 as discussed by Bolding et al. (2002) is performed. For this simulation, time series of surface slopes were extrapolated from observations during autumn 1998 based on four partial tides by means of harmonic analysis. All necessary meteorological data are from the UK Meteorological Office Model in a 6-hourly temporal resolution (meteo.</description>
     </item>
-    
     <item>
       <title>Ocean cases</title>
       <link>https://gotm-model.github.io/portfolio/ocean/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/portfolio/ocean/</guid>
-      <description>&lt;p&gt;Realistic test cases demonstrating various GOTM features.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/flex/&#34;&gt;FLEX&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/gotland_deep/&#34;&gt;Gotland Deep&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/liverpool_bay/&#34;&gt;Liverpool Bay&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/nns_seasonal/&#34;&gt;Northern NS (Seasonal)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/nns_annual/&#34;&gt;Northern NS (Annual)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/ows_papa/&#34;&gt;OWS Papa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/langmuir&#34;&gt;OWS Papa (Langmuir)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/portfolio/ocean#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Photo by Hans Burchard.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Realistic test cases demonstrating various GOTM features.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/flex/&#34;&gt;FLEX&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/gotland_deep/&#34;&gt;Gotland Deep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/liverpool_bay/&#34;&gt;Liverpool Bay&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/nns_seasonal/&#34;&gt;Northern NS (Seasonal)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/nns_annual/&#34;&gt;Northern NS (Annual)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/ows_papa/&#34;&gt;OWS Papa&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/cases/langmuir&#34;&gt;OWS Papa (Langmuir)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gotm-model.github.io/portfolio/ocean#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Photo by Hans Burchard.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OWS Papa</title>
       <link>https://gotm-model.github.io/cases/ows_papa/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/ows_papa/</guid>
-      <description>This scenario is a classical scenario for the Northern Pacific, for which long term observations of meteorological parameters and temperature profiles are available. The station Papaat 145 deg W, 50 deg N has the advantage that it is situated in a region where the horizontal advection of heat and salt is assumed to be small. Various authors used these data for validating turbulence closure schemes.
- Annual cycle of temperature development at the OWS Papa site in the North East Pacific.</description>
+      <description>This scenario is a classical scenario for the Northern Pacific, for which long term observations of meteorological parameters and temperature profiles are available. The station Papa at 145 deg W, 50 deg N has the advantage that it is situated in a region where the horizontal advection of heat and salt is assumed to be small. Various authors used these data for validating turbulence closure schemes.&#xA;Annual cycle of temperature development at the OWS Papa site in the North East Pacific.</description>
     </item>
-    
     <item>
       <title>Documentation</title>
       <link>https://gotm-model.github.io/portfolio/documentation/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/portfolio/documentation/</guid>
-      <description>&lt;p&gt;GOTM comes with a detailed documentation including some information on the
-theoretical background of individual the turbulence models.&lt;/p&gt;
-&lt;p&gt;Figure from &lt;a href=&#34;https://pixabay.com/en/photos/document/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;GOTM comes with a detailed documentation including some information on the&#xA;theoretical background of individual the turbulence models.&lt;/p&gt;&#xA;&lt;p&gt;Figure from &lt;a href=&#34;https://pixabay.com/en/photos/document/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ParSAC calibration slowing down when printing output to console</title>
       <link>https://gotm-model.github.io/blog/parsac/</link>
       <pubDate>Fri, 11 Sep 2020 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/parsac/</guid>
       <description>&lt;p&gt;ParSAC calibration can slow down over time if output is printed to the console.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CVMix module</title>
       <link>https://gotm-model.github.io/blog/cvmix/</link>
       <pubDate>Mon, 22 Jun 2020 19:59:15 -0600</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/cvmix/</guid>
       <description>&lt;p&gt;CVMix is now included GOTM, bringing more options of turbulence closures including KPP and its variants with Langmuir turbulence.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Stokes drift</title>
       <link>https://gotm-model.github.io/blog/stokes_drift/</link>
       <pubDate>Mon, 22 Jun 2020 19:59:15 -0600</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/stokes_drift/</guid>
       <description>&lt;p&gt;A new Stokes drift module is added. This allows input of Stokes drift and exploration of Langmuir turbulence parameterizations and more in GOTM.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Numerical in-stabillities in the BBL</title>
       <link>https://gotm-model.github.io/blog/bbl_stability/</link>
       <pubDate>Thu, 20 Feb 2020 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/bbl_stability/</guid>
       <description>&lt;p&gt;Instabilities in the BBL for the FLEX setup at high vertical resolution.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>... now with ice ...</title>
       <link>https://gotm-model.github.io/blog/now_with_ice/</link>
       <pubDate>Mon, 10 Feb 2020 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/now_with_ice/</guid>
       <description>&lt;p&gt;Version 5.4 of GOTM will contain a feature preview of ice modelling using &lt;a href=&#34;https://github.com/BoldingBruggeman/stim&#34;&gt;STIM&lt;/a&gt;. Additional work will have to go into the development - but the coupled GOTM/STIM system does produce results that resembles reality.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kondo - what was wrong</title>
       <link>https://gotm-model.github.io/blog/kondo/</link>
       <pubDate>Thu, 19 Sep 2019 10:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/kondo/</guid>
       <description>&lt;p&gt;The file - kondo.F90 - is one of the oldest and least changed in the GOTM repository. And still - it had issues.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>EditScenario and friends</title>
       <link>https://gotm-model.github.io/blog/editscenario/</link>
       <pubDate>Fri, 13 Sep 2019 10:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/editscenario/</guid>
-      <description>&lt;p&gt;Updated status on September 13. 2019.&lt;/p&gt;
-&lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Updated status on September 13. 2019.&lt;/p&gt;&#xA;&lt;p&gt;Updated status on EditScenario and friends. Jorn has an Python3 only laptop. It made an incentive to update some of the tools making it easier to handle GOTM.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Check NetCDF library availability</title>
       <link>https://gotm-model.github.io/blog/check_netcdf/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/check_netcdf/</guid>
-      <description>&lt;p&gt;By far the most frequent issue arising when people want to build GOTM is NetCDF.
-We have included a small script that can be used to test if NetCDF requirements are fulfilled.&lt;/p&gt;</description>
+      <description>&lt;p&gt;By far the most frequent issue arising when people want to build GOTM is NetCDF.&#xA;We have included a small script that can be used to test if NetCDF requirements are fulfilled.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Towards GOTM 5.4</title>
       <link>https://gotm-model.github.io/blog/towards_release_5_4/</link>
       <pubDate>Mon, 29 Jul 2019 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/towards_release_5_4/</guid>
       <description>&lt;p&gt;Version 5.4 of GOTM contains a number of changes making the normal release method un-suitable. The new version contains a mixture of under the hood compile configuration changes, use of &lt;em&gt;Git&lt;/em&gt; sub-modules, new run time configuration method and new features.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Modern CMake and sub-modules</title>
       <link>https://gotm-model.github.io/blog/modern_cmake/</link>
       <pubDate>Sun, 16 Jun 2019 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/modern_cmake/</guid>
       <description>&lt;p&gt;We have re-written the CMake configuration file(s) to be in line with principles of Modern CMake. In addition - using these principles - we have moved code pieces not part of &lt;em&gt;essential&lt;/em&gt; GOTM out into individual projects.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GOTM release - v5.2</title>
       <link>https://gotm-model.github.io/blog/release_5_2/</link>
       <pubDate>Wed, 07 Mar 2018 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/release_5_2/</guid>
-      <description>&lt;p&gt;Version 5.2 of GOTM is ready for release. It comes relative shortly after the
-release of version 5.0. One of the policies for a new release are changes in
-configuration files - releated to the new features.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Version 5.2 of GOTM is ready for release. It comes relative shortly after the&#xA;release of version 5.0. One of the policies for a new release are changes in&#xA;configuration files - releated to the new features.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GOTM Roadmap - as of end of 2017</title>
       <link>https://gotm-model.github.io/blog/roadmap_2017/</link>
       <pubDate>Fri, 22 Dec 2017 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/roadmap_2017/</guid>
       <description>&lt;p&gt;Below we will give a short description of the planned developments in the next 1 to 2 years. These plans do not in any way exclude other developments but only list what we have planned or have already started (likely because of project deliverables).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Updated Windows NetCDF libraries</title>
       <link>https://gotm-model.github.io/blog/windows_netcdf-update/</link>
       <pubDate>Sat, 25 Nov 2017 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/windows_netcdf-update/</guid>
-      <description>&lt;p&gt;Mainly for developers.&lt;/p&gt;
-&lt;p&gt;Updated NetCDF libraries for Windows. Still 3.6.3 but now both 32 and 64 bit are supported.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Mainly for developers.&lt;/p&gt;&#xA;&lt;p&gt;Updated NetCDF libraries for Windows. Still 3.6.3 but now both 32 and 64 bit are supported.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GOTM release - v5.0</title>
       <link>https://gotm-model.github.io/blog/release_5_0/</link>
       <pubDate>Wed, 11 Oct 2017 12:00:00 +0200</pubDate>
-      
       <guid>https://gotm-model.github.io/blog/release_5_0/</guid>
-      <description>&lt;p&gt;Finally the version 5 of GOTM is ready for release. It comes with a
-very large number of changes and improvements. Some - but not all -
-are mention in the list below.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Finally the version 5 of GOTM is ready for release. It comes with a&#xA;very large number of changes and improvements. Some - but not all -&#xA;are mention in the list below.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Linux/Mac</title>
       <link>https://gotm-model.github.io/software/linux/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/software/linux/</guid>
-      <description>Overview  Get GOTM For now we do not provide pre-compiled versions of GOTM for Linux and Mac. The main reason being that all pre-requisites for building locally are readily available on these platforms - notably a working Fortran compiler. So please follow the instructions below for three different ways to build GOTM - of increasing complexity. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site.</description>
+      <description>Overview Get GOTM For now we do not provide pre-compiled versions of GOTM for Linux and Mac. The main reason being that all pre-requisites for building locally are readily available on these platforms - notably a working Fortran compiler. So please follow the instructions below for three different ways to build GOTM - of increasing complexity. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site.</description>
     </item>
-    
     <item>
       <title>Windows</title>
       <link>https://gotm-model.github.io/software/windows/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
       <guid>https://gotm-model.github.io/software/windows/</guid>
-      <description>Quick start  Get GOTM It is easiest to download the pre-built GOTM software for Windows (gotm.exe) , provided with each stable release. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site. Run To run a scenario, open a command prompt (&amp;ldquo;cmd&amp;rdquo;), cd to the scenario directory, and run GOTM by typing the full path to gotm.</description>
+      <description>Quick start Get GOTM It is easiest to download the pre-built GOTM software for Windows (gotm.exe) , provided with each stable release. Get examples Download the example scenarios for your version of GOTM. You may run these scenarios to familiarize yourself with GOTM or to learn about ocean turbulence; the example scenarios are discussed in detail on this web site. Run To run a scenario, open a command prompt (&amp;ldquo;cmd&amp;rdquo;), cd to the scenario directory, and run GOTM by typing the full path to gotm.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://gotm-model.github.io/cases/langmuir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gotm-model.github.io/cases/langmuir/</guid>
       <description>This case demonstrates the use of Stokes drift module to drive Langmuir turbulence models in GOTM. Currently, we have two Langmuir turbulence models implemented in GOTM, including a modified Mellor-Yamada model that includes the production terms due to Stokes drift shear as described in Kantha and Clayson (2004, hereafter KC04), and a modified KPP model via CVMix that includes Langmuir-enhanced turbulent velocity scale and Langmuir-modulated boundary layer entrainment as described in Li and Fox-Kemper (2017, hereafter LF17).</description>
     </item>
-    
   </channel>
 </rss>
