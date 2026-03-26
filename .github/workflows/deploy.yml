@@ -1,4 +1,4 @@
-name: Deploy Hugo Site to Pages
+name: Deploy Hugo Site to Pages - gotm-model.github.io
 
 on:
   push:
