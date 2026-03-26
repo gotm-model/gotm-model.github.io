@@ -1,0 +1,6 @@
+convert flex_full.png -resize 32% flex.png
+convert gotland-1024x632.png -resize 60% gotland-deep.png
+convert nns_annual-768x791.png -resize 90%  nns_annual.png
+convert ows_papa-1024x632.png -resize 70%  ows_papa.png 
+convert nns_seasonal-1024x632.png -resize 70%  nns_seasonal.png 
+
