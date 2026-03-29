@@ -76,7 +76,7 @@ the source code).&lt;/p&gt;</description></item><item><title>Idealized cases</ti
 &lt;li&gt;&lt;a href="https://gotm.net/cases/estuary"&gt;Estuary&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://gotm.net/cases/plume"&gt;Plume&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Figure from &lt;a href="https://en.wikipedia.org/wiki/Couette_flow"&gt;here&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Surface-wave breaking</title><link>https://gotm.net/cases/wave_breaking/</link><pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate><guid>https://gotm.net/cases/wave_breaking/</guid><description>&lt;p&gt;The wave-breaking scenario has many similarities with the
+&lt;p&gt;Figure from &lt;a href="https://en.wikipedia.org/wiki/Couette_flow"&gt;here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Surface-wave breaking</title><link>https://gotm.net/cases/wave_breaking/</link><pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate><guid>https://gotm.net/cases/wave_breaking/</guid><description>&lt;p&gt;The wave-breaking scenario has many similarities with the
 &lt;a href="https://gotm.net/cases/couette/"&gt;couette scenario&lt;/a&gt;:
 A shallow, non-rotating and unstratified water column is forced by a constant wind stress
 until the flow has become stationary. Now, however, near-surface turbulence generated
