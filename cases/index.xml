@@ -108,7 +108,7 @@ measurements. Meteorological forcing was available from the ERA15 reanalysis
 data set. For the penetration of solar radiation into the water column, fairly
 turbid water (Jerlov type IB) is assumed. Salinity concentrations are nudged to
 observations with a time scale of 50 days.
-[caption id=&amp;ldquo;attachment_520&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;640&amp;rdquo;]&lt;img src="https://gotm.net/portfolio/img/gotland-deep.png" alt="Simulated temperature, salinity contours and examplary ERGOM state variables in the Central Baltic Sea."&gt;
+[caption id=&amp;ldquo;attachment_520&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;640&amp;rdquo;]&lt;img src="https://gotm.net/cases/img/gotland-deep.png" alt="Simulated temperature, salinity contours and examplary ERGOM state variables in the Central Baltic Sea."&gt;
 Simulated temperature, salinity contours and examplary ERGOM state variables
 in the Central Baltic Sea. This plot was created with
 &lt;a href="https://gotm.net/portfolio/img/gotland.py"&gt;gotland.py&lt;/a&gt;.
